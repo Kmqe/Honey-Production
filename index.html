@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <!--============ Font Awesome Library ============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--============ SWIPER CSS ============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    
     <!--============ Main Template CSS File ============-->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -66,7 +70,7 @@
         <section class="hero">
             <div class="container">
                 <div class="data-hero">
-                    <p>100% ORGANIC HONEY</p>
+                    <p >100% ORGANIC HONEY</p>
                     <h1>HONEYBEE</h1>
                     <p>We offer a great assortment of pure raw honey from our swaths in California. Order honey from our honeycombs!</p>
                     <a href="#" class="btn-primary">
@@ -77,23 +81,224 @@
         </section>
         
 
-        <!--============ TEXT ============-->
-        <section>
+        <!--============ SERVICES ============-->
+        <section class="services">
+            <div class="container">
+                <div class="data-services">
+                    <h5 class="section-label">SERVICES</h5>
+                    <h1 class="section-title">WHAT WE DO</h1>
+                    <p class="section-description">Our family-owned company is engaged with everything related to honey and its production. Learn more below about our services.
+                    </p>
+                </div>
 
+
+                <div class="sliders">
+                    <!-- Slider main container -->
+                    <div class="card_container swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide card-item">
+                                <img src="assets/images/icon1.svg" alt="">
+                                <div class="body_card">
+                                    <h3>Honey Production</h3>
+                                    <p>We produce, bottle, and sell honey harvested by our beekeepers.</p>
+                                    <a href="#">Learn More</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide card-item">
+                                <img src="assets/images/icon3.svg" alt="">
+                                <div class="body_card">
+                                    <h3>Honey Shop</h3>
+                                    <p>We offer over 10 types of organic raw honey in our online store. </p>
+                                    <a href="#">Learn More</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide card-item">
+                                <img src="assets/images/icon2.svg" alt="">
+                                <div class="body_card">
+                                    <h3>Supplements</h3>
+                                    <p>You can buy bee pollen, propolis, and hive mixtures. </p>
+                                    <a href="#">Learn More</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide card-item">
+                                <img src="assets/images/icon4.svg" alt="">
+                                <div class="body_card">
+                                    <h3>Beekeeping Classes</h3>
+                                    <p>Feel free to book excursions and workshops at our swaths.</p>
+                                    <a href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination swiper-pagination-services"></div>
+                </div>
+            </div>
         </section>
 
-        <!--============ TEXT ============-->
-        <section>
+        <!--============ ABOUT ============-->
+        <section class="about">
+            <div class="container">
+                <img src="./assets/images/about.png" alt="image">
+                <div class="data-about">
+                    <h5 class="section-label">WHY CHOOSE US</h5>
+                    <h1 class="section-title">ABOUT BEEHONEY</h1>
+                    <p class="section-description">We are a family-owned business managing 5+ swaths in California. We bottle our honey with love and care.
+                    </p>
 
+                    <div class="features-container">
+                        <ul>
+                            <div class="feature-box">
+                                <div class="feature-icon">
+                                    <img src="./assets/images/icon6.svg" alt="image">
+                                </div>
+                                <div class="feature-text">
+                                    <h3 class="feature-title">Natural Environment</h3>
+                                    <p class="feature-description">Our swaths are located in ecologically clean areas in California. The bees feel really happy there!
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="feature-box">
+                                <div class="feature-icon">
+                                    <img src="./assets/images/icon5.svg" alt="image">
+                                </div>
+                                <div class="feature-text">
+                                    <h3 class="feature-title">Certified Honey Production</h3>
+                                    <p class="feature-description">We produce 100% organic raw honey without pasteurization or filtration processes.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="feature-box">
+                                <div class="feature-icon">
+                                    <img src="./assets/images/icon7.svg" alt="image">
+                                </div>
+                                <div class="feature-text">
+                                    <h3 class="feature-title">Fast Shipping</h3>
+                                    <p class="feature-description">We are really fast at shipping, so you can enjoy our honey in a couple of days after your order!
+                                    </p>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
         
+        <!--============ HERO VIDEO ============-->
+        <section class="hero-video">
+            <div class="play-icon">
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <h3>How Honey Is Made</h3>
+        </section>
+
+        <!--============ HONEY TYPES ============-->
+        <section class="honey-types">
+            <div class="container">
+                <div class="data-honey-types">
+                    <h5 class="section-label">TYPES OF HONEY</h5>
+                    <h1 class="section-title">TOP HONEY FLAVORS FROM OUR SWATHS</h1>
+                    <p class="section-description">Honey is a versatile source of vitamins and useful materials for your health:</p>
+
+                    <ul class="honey-benefits">
+                        <div>
+                            <img src="assets/images/check-20icon.svg" alt="image">
+                            <li>It is good for your digestive system.</li>
+                        </div>
+                        <div>
+                            <img src="assets/images/check-20icon.svg" alt="image">
+                            <li>Raw honey is rich in antioxidants.</li>
+                        </div>
+                        <div>
+                            <img src="assets/images/check-20icon.svg" alt="image">
+                            <li>Honey has beneficial effects on heart health.</li>
+                        </div>
+                        <div>
+                            <img src="assets/images/check-20icon.svg" alt="image">
+                            <li>It improves the cholesterol rate.</li>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="sliders">
+                    <!-- Slider main container -->
+                    <div class="cards_honey swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide card-item">
+                                <img src="assets/images/icon1.svg" alt="image">
+                                <div class="body_card">
+                                    <h3>Clover Honey</h3>
+                                    <p>Thick honey is produced by honeybees that collect the nectar of clover plants. Mild in taste and light in color.
+                                    </p>
+                                    <a class="btn-primary" href="#">Shop Now</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide card-item">
+                                <img src="assets/images/icon3.svg" alt="">
+                                <div class="body_card">
+                                    <h3>Buckwheat Honey</h3>
+                                    <p>It is highly nutritious amber-colored honey with a slight reddish tint. It has a has a pleasant sweet taste.
+                                    </p>
+                                    <a class="btn-primary" href="#">Shop Now</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide card-item">
+                                <img src="assets/images/icon2.svg" alt="">
+                                <div class="body_card">
+                                    <h3>Wildflower Honey</h3>
+                                    <p>It is also known as polyfloral honey. It is made from the nectar of different species of flowers or blossoms.
+                                    </p>
+                                    <a class="btn-primary" href="#">Shop Now</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide card-item">
+                                <img src="assets/images/icon4.svg" alt="">
+                                <div class="body_card">
+                                    <h3>Citrus Blossom Honey</h3>
+                                    <p>This honey is sweet and relatively thick, a perfect match for your tea or toast. It is the best association with California!
+                                    </p>
+                                    <a class="btn-primary" href="#">Shop Now</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination swiper-pagination-honey"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="">
+
+        </section>
     </main>
     
     <!--============ FOOTER ============-->
     <footer>
 
     </footer>
-    
+
+    <!--============ SWIPER CSS ============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <!--============ MAIN JS ============-->
     <script src="assets/js/script.js"></script>
 </body>
