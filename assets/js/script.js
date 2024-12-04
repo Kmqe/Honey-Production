@@ -75,3 +75,99 @@ new Swiper('.cards_honey', {
         }
     }
 });
+
+new Swiper('.store_slider', {
+    loop: true,
+    lazy: true,
+    spaceBetween: 30,
+    // Pagination bullets
+    pagination: {
+        el: '.swiper-pagination-store',
+        clickable: true,
+        // dynamicBullets: true
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    // Responsive breakpoints
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 4
+        }
+    }
+});
+
+
+
+new Swiper('.testimonials_slider', {
+    // loop: true,
+    lazy: true,
+    spaceBetween: 30,
+    // Pagination bullets
+    pagination: {
+        el: '.swiper-pagination-testimonials',
+        clickable: true,
+        // dynamicBullets: true
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    // Responsive breakpoints
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 2
+        }
+    }
+});
+
+
+
+
+
+new Swiper('.blog_slider', {
+    // loop: true,
+    lazy: true,
+    spaceBetween: 30,
+    // Pagination bullets
+    pagination: {
+        el: '.swiper-pagination-blog',
+        clickable: true,
+        // dynamicBullets: true
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    // Responsive breakpoints
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        992: {
+            slidesPerView: 3
+        },
+        1024: {
+            slidesPerView: 3
+        }
+    }
+});
