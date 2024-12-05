@@ -1286,3 +1286,124 @@ nav .nav__close {
         margin: 20px auto;
     }
 }
+
+/*=============== FAQ ===============*/
+.faq {
+    background-color: var(--bg-color);
+}
+
+.faq .container {
+    display: grid;
+    grid-template-columns: 530px minmax(200px, 600px);
+    gap: 30px;
+}
+
+.faq .data-faq {
+    text-align: flex-start;
+}
+
+.faq .data-faq .section-label,
+.faq .data-faq .section-title,
+.faq .data-faq .section-description{
+    text-align: inherit;
+}
+
+.faq .data-faq .section-title::before {
+    left: 0;
+    transform: translateX(0);
+}
+
+.faq-container {
+    margin-top: 50px;
+}
+
+.faq-container .faq-item {
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.faq-container .faq-question {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-container .faq-item h2 {
+    font-size: 22px;
+    font-family: var(--secondary-font);
+    color: #5a3733;
+}
+
+.faq-container .faq-toggle {
+    position: relative;
+    width: 20px;
+}
+
+.faq-container .faq-toggle span:first-child {
+    height: 15px;
+    width: 2px;
+    background-color: #5a3733; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.faq-container .faq-toggle span:last-child {
+    height: 15px;
+    width: 2px;
+    background-color: #5a3733;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .4s;
+}
+
+.faq-container .faq-toggle span:last-child.expanded {
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotatex(90deg);
+}
+
+.faq .faq-answer {
+    max-height: 0;
+    transition: max-height .4s linear ;
+    overflow: hidden;
+}
+
+.faq .faq-answer.show {
+    max-height: 200px;
+}
+
+.faq-answer p {
+    padding-top: 30px;
+    font-family: var(--primary-font); 
+    color: #504F4E;
+    line-height: 1.8; 
+}
+
+@media (max-width: 992px) {
+    .faq .container {
+        display: grid;
+        grid-template-columns: minmax(200px, 800px);
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .faq .data-faq .section-title{
+    font-size: 40px;
+    }
+
+    .faq .data-faq .section-title::before {
+        left: 0;
+        transform: translateX(0);
+        width: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-container .faq-item h2 {
+        font-size: 20px;
+    }
+}

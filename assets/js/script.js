@@ -1,6 +1,11 @@
 const navToggle = document.getElementById("nav-toggle");
 const navClose = document.getElementById("nav-close")
 const navMenu = document.querySelector(".nav__list");
+const faq_item = document.querySelectorAll(".faq-item");
+const toggle_ele = document.querySelectorAll(".toggle-ele");
+const faq_answer = document.querySelectorAll(".faq-answer");
+
+console.log(faq_item)
 
 navToggle.addEventListener("click", () => {
     navMenu.classList.add("show");
@@ -13,6 +18,26 @@ navClose.addEventListener("click", () => {
     navToggle.classList.remove("hide")
     navClose.classList.remove("show")
 })
+
+
+faq_item.forEach((item, index) => {
+    item.addEventListener("click", () => {
+        faq_item.forEach((otherItem, otherIndex) => {
+            if (otherIndex !== index) {
+                toggle_ele[otherIndex].classList.remove("expanded");
+                faq_answer[otherIndex].classList.remove("show");
+            }
+        });
+
+        toggle_ele[index].classList.toggle("expanded");
+        faq_answer[index].classList.toggle("show");
+    });
+});
+
+
+
+
+
 
 
 new Swiper('.card_container', {
