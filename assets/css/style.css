@@ -1568,3 +1568,146 @@ nav .nav__close {
         max-width: 100%;
     }
 }
+
+/*=============== HONEY GALLERY ===============*/
+.honey-gallery {
+    background-color: var(--bg-color);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 40px 25px;
+    gap: 35px;
+}
+
+.honey-gallery img {
+    border-radius: 10px;
+}
+
+@media(max-width: 992px){
+    .honey-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media(max-width: 480px){
+    .honey-gallery {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+
+
+footer {
+    background-image: url("../images/60a6253e05e9ab0021e6d36f_optimized_2327.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 30px;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .container .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+footer .container .logo img {
+    width: 70px;
+}
+
+footer .container .logo span {
+    font-size: 14px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #aa9b8f;
+}
+
+footer .nav__list {
+    display: flex;
+    column-gap: 32px;
+    margin: 35px 0;
+}
+
+footer .nav__list li {
+    display: flex;
+    align-items: center;
+}
+
+footer .nav__list .nav__link,
+footer .nav__list .btn__link {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 16px;
+    color: #5a3733;
+}
+
+footer .nav__list .nav__link {
+    position: relative;
+    transition: 0.2s;
+}
+
+footer .nav__list .nav__link:hover {
+    color: #eb6d2f;
+}
+
+footer .nav__list .nav__link:hover::before {
+    width: 130%;
+}
+
+footer .social {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+footer .social .social_link {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eb6d2f;
+    color: white;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+footer .social .social_link:hover {
+    background-color: #e75106;
+}
+
+footer .copyright {
+    font-size: 14px;
+    font-family: var(--primary-font);
+    color: #444;
+}
+
+footer .copyright span {
+    display: inline-block;
+    color: #eb6d2f;
+    font-weight: 700;
+}
+
+@media(max-width: 768px){
+
+
+    footer .nav__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
