@@ -53,8 +53,8 @@ new Swiper('.card_container', {
     },
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.services-next',
+        prevEl: '.services-prev',
     },
     // Responsive breakpoints
     breakpoints: {
@@ -84,8 +84,8 @@ new Swiper('.cards_honey', {
     },
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.type-next',
+        prevEl: '.type-prev',
     },
     // Responsive breakpoints
     breakpoints: {
@@ -113,8 +113,8 @@ new Swiper('.store_slider', {
     },
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.store-next',
+        prevEl: '.store-prev',
     },
     // Responsive breakpoints
     breakpoints: {
@@ -144,8 +144,8 @@ new Swiper('.testimonials_slider', {
     },
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.testimonials-next',
+        prevEl: '.testimonials-prev',
     },
     // Responsive breakpoints
     breakpoints: {
@@ -166,7 +166,7 @@ new Swiper('.testimonials_slider', {
 
 
 new Swiper('.blog_slider', {
-    // loop: true,
+    loop: true,
     lazy: true,
     spaceBetween: 30,
     // Pagination bullets
@@ -177,8 +177,8 @@ new Swiper('.blog_slider', {
     },
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.blog-next',
+        prevEl: '.blog-prev',
     },
     // Responsive breakpoints
     breakpoints: {
