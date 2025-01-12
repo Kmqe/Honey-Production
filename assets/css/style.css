@@ -1060,6 +1060,11 @@ nav .nav__close {
     width: 120px;
 }
 
+.testimonials .body_card img.image {
+    border-radius: 50%;
+    border: 4px solid #eb6d2f;
+}
+
 .testimonials h3 {
     color: #f7bd00;
     font-family: var(--secondary-font);
@@ -1703,8 +1708,6 @@ footer .copyright span {
 }
 
 @media(max-width: 768px){
-
-
     footer .nav__list {
         flex-direction: column;
         align-items: center;
