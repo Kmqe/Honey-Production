@@ -1,24 +1,6 @@
-const navToggle = document.getElementById("nav-toggle");
-const navClose = document.getElementById("nav-close")
-const navMenu = document.querySelector(".nav__list");
 const faq_item = document.querySelectorAll(".faq-item");
 const toggle_ele = document.querySelectorAll(".toggle-ele");
 const faq_answer = document.querySelectorAll(".faq-answer");
-
-console.log(faq_item)
-
-navToggle.addEventListener("click", () => {
-    navMenu.classList.add("show");
-    navToggle.classList.add("hide")
-    navClose.classList.add("show")
-})
-
-navClose.addEventListener("click", () => {
-    navMenu.classList.remove("show");
-    navToggle.classList.remove("hide")
-    navClose.classList.remove("show")
-})
-
 
 faq_item.forEach((item, index) => {
     item.addEventListener("click", () => {
@@ -33,6 +15,42 @@ faq_item.forEach((item, index) => {
         faq_answer[index].classList.toggle("show");
     });
 });
+
+
+let products = document.querySelectorAll(".store .card-item");
+
+// products.forEach(product => {
+//     product.addEventListener("click", function(e){
+//         let productObject = {
+//             src: this.dataset.src,
+//             name: this.dataset.name,
+//             price: this.dataset.price,
+//         }
+
+//         localStorage.setItem("product-info", JSON.stringify(productObject))
+//     });
+// })
+
+// localStorage.clear()
+
+function storeProductData(product){
+
+    let productObject = {
+        src: product.dataset.src,
+        name: product.dataset.name,
+        price: product.dataset.price,
+        code: product.dataset.code,
+        weight: product.dataset.weight,
+    }
+
+    console.log(productObject)
+
+    localStorage.setItem("product-info", JSON.stringify(productObject))
+}
+
+
+
+
 
 
 
@@ -104,6 +122,7 @@ new Swiper('.cards_honey', {
 new Swiper('.store_slider', {
     loop: true,
     lazy: true,
+    // clickStartPreventDefault: false,
     spaceBetween: 30,
     // Pagination bullets
     pagination: {
@@ -166,7 +185,7 @@ new Swiper('.testimonials_slider', {
 
 
 new Swiper('.blog_slider', {
-    loop: true,
+    // loop: true,
     lazy: true,
     spaceBetween: 30,
     // Pagination bullets
