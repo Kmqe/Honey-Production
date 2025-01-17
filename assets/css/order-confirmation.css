@@ -1,0 +1,77 @@
+/*=============== ORDER DETAILS ===============*/
+.order-details h1 {
+    color: #5a3733;
+    margin-bottom: 60px;
+}
+
+.order-details .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 30px;
+    font-family: var(--primary-font);
+}
+
+.order-details .bill,
+.order-details .customer-details {
+    padding: 45px 30px;
+    border: 2px solid #EBE7E6;
+    border-radius: 10px;
+    color: #939393;
+}
+
+.order-details .bill .product-order {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px 0 10px;
+}
+
+.order-details .bill .product-order .image-and-name {
+    display: flex;
+    align-items: center;
+}
+
+.order-details .bill .product-order .image-and-name img {
+    width: 40px;
+}
+
+.order-details .bill .product-order .name {
+    margin-left: 20px;
+}
+
+.order-details .bill .count-and-price {
+    margin-left: auto;
+}
+
+.order-details .customer-details h3 {
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.order-details .customer-details p:not(:first-of-type) {
+    margin-top: 10px;
+}
+
+.total {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+@media (max-width: 768px){
+    .order-details .container {
+        grid-template-columns: 1fr;
+        row-gap: 60px;
+    }
+}
+
+@media (max-width: 480px){
+    .order-details .bill .product-order {
+        flex-direction: column;
+        align-items: start;
+    }
+    .order-details .bill .count-and-price {
+        margin-left: 60px;
+        margin-top: 5px;
+    }
+}

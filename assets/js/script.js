@@ -3,6 +3,7 @@ const toggle_ele = document.querySelectorAll(".toggle-ele");
 const faq_answer = document.querySelectorAll(".faq-answer");
 
 faq_item.forEach((item, index) => {
+
     item.addEventListener("click", () => {
         faq_item.forEach((otherItem, otherIndex) => {
             if (otherIndex !== index) {
@@ -10,31 +11,15 @@ faq_item.forEach((item, index) => {
                 faq_answer[otherIndex].classList.remove("show");
             }
         });
-
         toggle_ele[index].classList.toggle("expanded");
         faq_answer[index].classList.toggle("show");
     });
-});
 
+});
 
 let products = document.querySelectorAll(".store .card-item");
 
-// products.forEach(product => {
-//     product.addEventListener("click", function(e){
-//         let productObject = {
-//             src: this.dataset.src,
-//             name: this.dataset.name,
-//             price: this.dataset.price,
-//         }
-
-//         localStorage.setItem("product-info", JSON.stringify(productObject))
-//     });
-// })
-
-// localStorage.clear()
-
 function storeProductData(product){
-
     let productObject = {
         src: product.dataset.src,
         name: product.dataset.name,
@@ -42,21 +27,8 @@ function storeProductData(product){
         code: product.dataset.code,
         weight: product.dataset.weight,
     }
-
-    console.log(productObject)
-
     localStorage.setItem("product-info", JSON.stringify(productObject))
 }
-
-
-
-
-
-
-
-
-
-
 
 new Swiper('.card_container', {
     loop: true,
@@ -87,7 +59,6 @@ new Swiper('.card_container', {
         }
     }
 });
-
 
 new Swiper('.cards_honey', {
     loop: true,
@@ -149,8 +120,6 @@ new Swiper('.store_slider', {
     }
 });
 
-
-
 new Swiper('.testimonials_slider', {
     // loop: true,
     lazy: true,
@@ -179,10 +148,6 @@ new Swiper('.testimonials_slider', {
         }
     }
 });
-
-
-
-
 
 new Swiper('.blog_slider', {
     // loop: true,

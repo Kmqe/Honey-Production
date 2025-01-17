@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <!--============ Font Awesome Library ============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!--============ SWIPER CSS ============-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     
     <!--============ Main Template CSS File ============-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--============ Product CSS File ============-->
+    <link rel="stylesheet" href="assets/css/product.css">
+
+    <!--============ Global Template CSS File ============-->
+    <link rel="stylesheet" href="assets/css/global.css">
 </head>
 <body>
     <!--============ HEADER ============-->
@@ -77,8 +80,8 @@
                 <hr>
 
                 <div class="quantity">
-                    <input type="number" class="input-count" name="" id="" value="1">
-                    <button class="btn-primary">Add to cart</button>
+                    <input type="number" class="input-count" name="" id="product_count" value="1">
+                    <button class="btn-primary" id="addToCart">Add to cart</button>
                 </div>
 
                 <p class="description">Description</p>
@@ -91,6 +94,89 @@
             </div>
         </div>
     </section>
+
+    <!--============ SHOPPING PAGE ============-->
+    <div class="overlay" id="overlay">
+        <div class="" id="change-height">
+            <div class="shopping-page" id="shopping_page">
+                <div class="header-shopping-page">
+                    <h2>Shopping cart</h2>
+                    <i class="fa-solid fa-xmark" id="close_shopping_page"></i>
+                </div>
+                <div class="container-shopping" id="container_shopping">
+        
+                    <div class="layer-empty" id="layer_empty">
+                        <p>Shopping cart is empty</p>
+                        <p>Continue shopping to add product to your cart</p>
+                    </div>
+        
+                    <div class="body-shopping-page">
+                        <p>Products</p>
+                        <div class="shop-carts" id="shop_carts">
+                            <!-- <div class="cart-item">
+                                <div class="item-image">
+                                    <img src="./assets/images/480 (2).jpeg" alt="cart item">
+                                </div>
+                                <div class="item-info">
+                                    <a>Buckwheat Honey</a>
+                                    <input type="number" id="">
+                                    <p>$60,000USD</p>
+                                    <i class="fa-regular fa-trash-can trash"></i>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+            
+                    <div class="promo-total">
+                        <div>
+                            <button class="promo-code">Promo code</button>
+                            <div class="container-promo-input">
+                                <div>
+                                    <input type="text" placeholder="Enter Promo code" class="">
+                                    <p class="promo-invalid" id="promo_invalid">Promo code can't be applied</p>
+                                </div>
+                                <button>ok</button>
+                            </div>
+                        </div>
+                        <p class="total" id="total">Total: $60,000</p>
+                    </div>
+            
+                    <div class="place">
+                        Place an order
+                    </div>
+                    
+                    <form action="order-confirmation.html">
+                        <div class="input-container">
+                            <p>Name <span>*</span></p>
+                            <input type="text" name="name" id="name_input" placeholder="Your Name" required>
+                        </div>
+            
+                        <div class="input-container">
+                            <p>Email <span>*</span></p>
+                            <input type="email" name="email" id="email_input" placeholder="Your email address" required>
+                        </div>
+            
+                        <div class="input-container">
+                            <p>Phone <span>*</span></p>
+                            <input type="text" name="phone" id="phone_input" placeholder="Your Phone" required>
+                        </div>
+            
+                        <div class="input-container">
+                            <p>Comment</p>
+                            <textarea type="text" name="comment" id="comment_input" placeholder="Your comment"></textarea>
+                        </div>
+            
+                        <input type="submit" class="btn-primary" id="order_honey" value="Order">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--============ CART SHOPPING ============-->
+    <div class="cart-shopping" id="cart_shopping" data-count="0">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
     
     <!--============ FOOTER ============-->
     <footer>
@@ -137,11 +223,12 @@
         </div>
     </footer>
 
-    <!--============ SWIPER JS ============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
     <!--============ MAIN JS ============-->
     <script src="./assets/js/mainLogic.js"></script>
     <!--============ MAIN JSs ============-->
     <script src="./assets/js/product.js"></script>
+    <!--============ SWIPER JS ============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
 </body>
 </html>

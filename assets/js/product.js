@@ -1,10 +1,10 @@
 if(localStorage.getItem("product-info")){
     let product = JSON.parse(localStorage.getItem("product-info"))
-    // console.log(product)
-    showProduct(product)
+    displayProductDetails(product)
 }
 
-function showProduct(product){
+// Dynamically renders the product's details, such as name, price, and description, inside the container element.
+function displayProductDetails(product){
     let container_product = document.getElementById("container_product");
     container_product.innerHTML = `
     <div class="image-container">
@@ -18,8 +18,8 @@ function showProduct(product){
                 <hr>
 
                 <div class="quantity">
-                    <input type="number" class="input-count" name="" id="" value="1">
-                    <button class="btn-primary">Add to cart</button>
+                    <input type="number" class="input-count" name="" id="product_count" value="1" min="1">
+                    <button class="btn-primary" onclick="addProductToCart(${true})" id="addToCart">Add to carttttt</button>
                 </div>
 
                 <p class="description">Description</p>
@@ -27,7 +27,6 @@ function showProduct(product){
                 <hr>
 
                 <p class="description-text">This honey is harvested from sunny Californian meadows. It features mild taste and intense aroma. Great for your breakfasts!</p>
-
                 <p class="weight">Weight: ${product.weight}g</p>
     `
 }
