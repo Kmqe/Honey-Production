@@ -19,7 +19,7 @@ function displayProductDetails(product){
 
                 <div class="quantity">
                     <input type="number" class="input-count" name="" id="product_count" value="1" min="1">
-                    <button class="btn-primary" onclick="addProductToCart()" id="addToCart">Add to carttttt</button>
+                    <button class="btn-primary" onclick="addProductToCart()" id="addToCart">Add to cart</button>
                 </div>
 
                 <p class="description">Description</p>
