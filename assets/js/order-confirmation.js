@@ -50,7 +50,6 @@ function renderUI(){
     <p>Phone: ${customer_info.phone}</p>
     <p>Comment: ${customer_info.comment}</p>
     `;
-    
 }
 
 renderUI()
@@ -62,3 +61,22 @@ function getRandomNumber(){
     }
     return randomNumber;
 }
+
+
+window.addEventListener('beforeunload', (event) => {
+    localStorage.removeItem("cart-shopping");
+    localStorage.removeItem("customer_info");
+
+
+
+    const currentState = history.state;
+
+    history.replaceState(currentState, '', 'cartIsEmpty.html'); 
+
+    // أضف حالة جديدة إلى السجل
+    history.pushState(null, '', window.location.href);
+
+    window.addEventListener('popstate', () => {
+        history.replaceState(null, '', 'cartIsEmpty.html'); 
+    });
+});

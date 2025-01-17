@@ -18,7 +18,7 @@ faq_item.forEach((item, index) => {
 });
 
 let products = document.querySelectorAll(".store .card-item");
-
+// localStorage.clear();
 function storeProductData(product){
     let productObject = {
         src: product.dataset.src,

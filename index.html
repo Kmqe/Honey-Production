@@ -22,34 +22,34 @@
     <!--============ HEADER ============-->
     <header>
         <nav class="nav container">
-            <a href="#" class="nav__logo">
+            <a href="index.html" class="nav__logo">
                 <img src="assets/images/logotype.svg" alt="image">
             </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li>
-                        <a href="#" class="nav__link">About Us</a>
+                        <a href="#about" class="nav__link">About Us</a>
                     </li>
 
                     <li>
-                        <a href="#" class="nav__link">Types of Honey</a>
+                        <a href="#type" class="nav__link">Types of Honey</a>
                     </li>
 
                     <li>
-                        <a href="#" class="nav__link">Store</a>
+                        <a href="#store" class="nav__link">Store</a>
                     </li>
 
                     <li>
-                        <a href="#" class="nav__link">Testimonials</a>
+                        <a href="#testimonials" class="nav__link">Testimonials</a>
                     </li>
 
                     <li>
-                        <a href="#" class="nav__link">Contact Us</a>
+                        <a href="#contact_us" class="nav__link">Contact Us</a>
                     </li>
 
                     <li>
-                        <a href="#" class="btn__link">Buy Honey</a>
+                        <a href="#store" class="btn__link">Buy Honey</a>
                     </li>
                 </ul>
 
@@ -147,7 +147,7 @@
         </section>
 
         <!--============ ABOUT ============-->
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <img src="./assets/images/about.png" alt="image">
                 <div class="data-about">
@@ -205,7 +205,7 @@
         </section>
 
         <!--============ HONEY TYPES ============-->
-        <section class="honey-types">
+        <section class="honey-types" id="type">
             <div class="container">
                 <div class="data-honey-types">
                     <h5 class="section-label">TYPES OF HONEY</h5>
@@ -290,7 +290,7 @@
         </section>
 
         <!--============ STORE ============-->
-        <section class="store">
+        <section class="store" id="store">
             <h5 class="section-label">STORE</h5>
             <h1 class="section-title">OUR HONEY</h1>
             <p class="section-description">Shop our best honey bottled this season. We produce only natural, raw, and sweet honey without any impurities or additives. If you want to buy honey, hurry up!
@@ -319,7 +319,8 @@
                                         <h3>Wildflower Honey</h3>
                                     </a>
                                     <h3 class="price">$7,00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(false)">Buy Now</button>
+                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))">Buy Now</button>
+                                    <!-- <button class="btn-primary" onclick="addProductToCart(false)">Buy Now</button> -->
                                 </div>
                             </div>
 
@@ -338,7 +339,7 @@
                                         <h3>Blossom Honey</h3>
                                     </a>
                                     <h3 class="price">$20.00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(false)" >Buy Now</button>
+                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >Buy Now</button>
                                 </div>
                             </div>
 
@@ -357,7 +358,7 @@
                                         <h3 >Clover Honey</h3>
                                     </a>
                                     <h3 class="price">$8.00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(false)" >Buy Now</button>
+                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >Buy Now</button>
                                 </div>
                             </div>
 
@@ -376,7 +377,7 @@
                                         <h3>Buckwheat Honey</h3>
                                     </a>
                                     <h3 class="price">$10.00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(false)" >Buy Now</button>
+                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >Buy Now</button>
                                 </div>
                             </div>
 
@@ -395,7 +396,7 @@
                                         <h3>Citrus Blossom Honey</h3>
                                     </a>
                                     <h3 class="price" >$15.00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(false)" >Buy Now</button>
+                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >Buy Now</button>
                                 </div>
                             </div>
 
@@ -443,7 +444,7 @@
         </section>
 
         <!--============ TESTIMONIALS ============-->
-        <section class="testimonials">
+        <section class="testimonials" id="testimonials">
             <div class="container">
                 <h5 class="section-label">TESTIMONIALS</h5>
                 <h1 class="section-title">WHAT OUR CLIENTS SAY</h1>
@@ -659,7 +660,7 @@
         </section>
 
         <!--============ CONTACT ============-->
-        <section class="contact">
+        <section class="contact" id="contact_us">
             <div class="container">
                 <div class="data-contact">
                     <h5 class="section-label">CONTACTS</h5>

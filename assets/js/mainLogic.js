@@ -52,21 +52,26 @@ close_shopping_page.addEventListener("click", () => {
 
 cart_shopping_icon.addEventListener("click", displayCartDetails);
 
-
-
-// localStorage.clear()
-
 // Adds a product to the shopping cart or updates its quantity if it already exists.
-function addProductToCart(check){ // false /////////////////
-    // The `check` parameter determines where the purchase button was clicked: 
-    // `true` if clicked on the product page, allowing custom quantity input, 
-    // or `false` if clicked on the homepage, defaulting to a quantity of 1.
+function addProductToCart(dataProduct = false){ // false /////////////////
+
     let count = 1;
+    if(dataProduct){
+        let productObject = {
+            src: dataProduct.dataset.src,
+            name: dataProduct.dataset.name,
+            price: dataProduct.dataset.price,
+            code: dataProduct.dataset.code,
+            weight: dataProduct.dataset.weight,
+        }
+        localStorage.setItem("product-info", JSON.stringify(productObject))
+    }
+
     let isNewProduct = true;
     let change_height = document.getElementById("change-height");
-
     change_height.classList.remove("change-height");
-    if(check){
+
+    if(!dataProduct){
         count = document.getElementById("product_count").value;
     }
 
@@ -74,7 +79,7 @@ function addProductToCart(check){ // false /////////////////
         ...JSON.parse(localStorage.getItem("product-info")),
         count: count,
     }
-    console.log(JSON.parse(localStorage.getItem("product-info")))
+    
     let productsArray = [product];
     
     if(localStorage.getItem("cart-shopping")){

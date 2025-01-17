@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
     <!--============ Order Confimation CSS File ============-->
-    <link rel="stylesheet" href="assets/css/order-confirmation.css">
+    <link rel="stylesheet" href="assets/css/cartIsEmpty.css">
     
     <!--============ Main Template CSS File ============-->
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!--============ Global Template CSS File ============-->
     <link rel="stylesheet" href="assets/css/global.css">
+
 </head>
 <body>
     <!--============ HEADER ============-->
@@ -49,7 +50,7 @@
                     </li>
 
                     <li>
-                        <a href="index.html#sotre" class="btn__link">Buy Honey</a>
+                        <a href="index.html#store" class="btn__link">Buy Honey</a>
                     </li>
                 </ul>
 
@@ -65,66 +66,10 @@
             </div>
         </nav>
     </header>
-    
 
-    
-    <section class="order-details" id="order_details">
+    <section>
         <div class="container">
-            <h1>Thank you for your order!</h1>
-        </div>
-        <div class="container">
-
-            <div class="bill" id="bill">
-                <p>#38246</p>
-                <div class="info-order">
-                    <div class="product-order">
-                        <div class="image-and-name">
-                            <img src="./assets/images/480 (2).jpeg" alt="product order">
-                            <p class="name" id="name">Buckwheat Honey</p>
-                        </div>
-                        <div class="count-and-price">
-                            <p>1x $10,00USD</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info-order">
-                    <div class="product-order">
-                        <div class="image-and-name">
-                            <img src="./assets/images/480 (2).jpeg" alt="product order">
-                            <p class="name" id="name">Buckwheat Honey</p>
-                        </div>
-                        <div class="count-and-price">
-                            <p>1x $10,00USD</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info-order">
-                    <div class="product-order">
-                        <div class="image-and-name">
-                            <img src="./assets/images/480 (2).jpeg" alt="product order">
-                            <p class="name" id="name">Buckwheat Honey</p>
-                        </div>
-                        <div class="count-and-price">
-                            <p>1x $10,00USD</p>
-                        </div>
-                    </div>
-                </div>
-
-                <p id="total">Total: 000</p>
-            </div>
-
-            <div class="customer-details" id="customer_details">
-                <!-- <h3>Customer details</h3>
-
-                <p>Name: Mohammed</p>
-                <p>Email: a@gmail.com</p>
-                <p>Phone: 0507577627</p>
-                <p>Comment: Thank you ❤️</p> -->
-            </div>
-
-
+            <h1><i class="fa-solid fa-face-frown">The cart is empty.</i></h1>
         </div>
     </section>
 
@@ -174,6 +119,6 @@
     </footer>
 
     <!--============ MAIN JS ============-->
-    <script src="./assets/js/order-confirmation.js"></script>
+    <script src="./assets/js/cartIsEmpty.js"></script>
 </body>
 </html>

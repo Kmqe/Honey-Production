@@ -1,0 +1,13 @@
+section {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    letter-spacing: 5px;
+    color: #5a3733;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.8;
+}
