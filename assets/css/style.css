@@ -1585,19 +1585,19 @@ footer .copyright span {
     }
 } */
 
-@media (max-height: 1000px) and (max-width: 767px){
+@media screen and (max-height: 767px){
     .overlay > div {
         height: 185vh;
     }
 }
 
-@media(max-height: 700px){
+@media screen and (max-height: 700px){
     .overlay > div {
         height: 225vh;
     }
 }
 
-@media(max-height: 550px){
+@media screen and (max-height: 550px){
     .overlay > div {
         height: 255vh;
     }
