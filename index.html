@@ -698,15 +698,27 @@
                     </div>
                 </div>
 
-                <form class="form">
-                    <input type="text" class="input" placeholder="Enter your full name*">
-                    <input type="text" class="input" placeholder="Enter your phone number*">
-                    <input type="email" class="input" placeholder="Enter your e-mail*">
-                    <textarea type="email" class="input" placeholder="Type your message" ></textarea>
-                    <input type="button" class="btn-primary" value="Request a Quote">
+                <form class="form" action="#">
+                    <input type="text" class="input required" placeholder="Enter your full name*" required>
+                    <input type="text" class="input required" placeholder="Enter your phone number*" required>
+                    <input type="email" class="input required" placeholder="Enter your e-mail*" required>
+                    <textarea class="input" placeholder="Type your message"></textarea>
+                    <input type="submit" class="btn-primary" id="input_request" value="Request a Quote">
                 </form>
             </div>
         </section>
+
+        <div class="pop-up-contact" id="pop_up_contact">
+            <i class="fa-solid fa-xmark close" id="close"></i>
+            <img src="./assets/images/done.png" alt="done">
+            <h4>Thank you!</h4>
+            <p>We will contact you shortly.</p>
+            <button class="btn-primary">ok</button>
+        </div>
+        <div class="pop-up-shadow" id="pop_up_shadow">
+
+        </div>
+        
 
         <!--============ HONEY GALLERY ============-->
         <section class="honey-gallery">

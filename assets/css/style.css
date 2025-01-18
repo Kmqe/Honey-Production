@@ -1366,6 +1366,11 @@ nav .nav__close {
     height: 150px;
 }
 
+.contact .form input[type="submit"] {
+    margin: 50px auto;
+    width: 100%;
+}
+
 .contact .form .input:not(:first-child) {
     margin-top: 20px;
 }
@@ -1414,6 +1419,69 @@ nav .nav__close {
         margin-top: 40px;
         max-width: 100%;
     }
+}
+/* pop-up-contact */
+.pop-up-contact {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    width: 350px;
+    height: 300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 19px 0px;
+    z-index: 650;
+    border-radius: 3px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pop-up-shadow {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.438);
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 600;
+    display: none;
+}
+
+.pop-up-contact .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    color: #5a3733;
+    font-size: 20px;
+}
+
+.pop-up-contact img {
+    width: 60px;
+    margin-top: 50px;
+}
+
+.pop-up-contact h4 {
+    font-family: var(--secondary-font);
+    margin-top: 35px;
+    color: #939393;
+}
+
+.pop-up-contact p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #939393;
+    font-family: var(--primary-font);
+}
+
+.pop-up-contact button {
+    background-color: #f7bd00;
+    font-family: var(--secondary-font);
+    padding: 10px 90px;
+    text-align: center;
+    margin-top: 40px;
 }
 
 /*=============== HONEY GALLERY ===============*/
