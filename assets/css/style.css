@@ -1585,7 +1585,7 @@ footer .copyright span {
     }
 } */
 
-@media(max-height: 1000px){
+@media (max-height: 1000px) and (max-width: 767px){
     .overlay > div {
         height: 185vh;
     }
