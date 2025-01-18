@@ -1571,9 +1571,15 @@ footer .copyright span {
     width: 100%;
     top: 0px;
     left: 0;
-    height: 135vh;
+    height: 140vh;
     display: flex;
     align-items: center;
+}
+
+@media(max-width: 576px){
+    .overlay > div {
+        height: 180vh;
+    }
 }
 
 .overlay > div.change-height {
