@@ -1579,11 +1579,30 @@ footer .copyright span {
     align-items: center;
 }
 
-@media(max-width: 576px){
+/* @media(max-width: 576px){
     .overlay > div {
         height: 180vh;
     }
+} */
+
+@media(max-height: 800px){
+    .overlay > div {
+        height: 160vh;
+    }
 }
+
+@media(max-height: 700px){
+    .overlay > div {
+        height: 200vh;
+    }
+}
+
+@media(max-height: 550px){
+    .overlay > div {
+        height: 230vh;
+    }
+}
+
 
 .overlay > div.change-height {
     height: 70vh;
@@ -1823,6 +1842,20 @@ footer .copyright span {
     margin: 50px auto 30px;
 }
 
+@media only screen and (max-width : 1024px) {
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        opacity: 1 !important;
+        margin: 0;
+        width: 30px ;
+        height: 36px;
+        font-size: 10px !important;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
 @media(max-width: 768px){
     .shopping-page {
         width: 500px;
@@ -1852,7 +1885,7 @@ footer .copyright span {
     }
 
     .shopping-page .body-shopping-page .cart-item input[type="number"] {
-        height: 30px;
+        height: 40px;
     }
 
     .shopping-page .body-shopping-page .cart-item .trash {
