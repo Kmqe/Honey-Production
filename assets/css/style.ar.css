@@ -1,0 +1,112 @@
+/*============ GOOGLE FONTS ============*/
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+/*=============== HEADER ===============*/
+@media (max-width: 992px) {
+    nav .nav__close {
+        left: 23px;
+        right: initial;
+    }
+}
+
+/*=============== HERO ===============*/
+.hero {
+    background-image: url("../images/cover_ar.png");
+}
+
+/*=============== ABOUT ===============*/
+.about .data-about .section-title::before {
+    right: 0;
+    transform: translateX(0);
+}
+
+/*=============== HONEY TYPES ===============*/
+.honey-types .data-honey-types .section-title::before {
+    right: 0;
+    transform: translateX(0);
+}
+
+/*=============== FAQ ===============*/
+.faq .data-faq .section-title::before {
+    right: 0;
+    transform: translateX(0);
+}
+
+/*=============== CONTACT ===============*/
+.contact .data-contact .section-title::before {
+    right: 0;
+    transform: translateX(0);
+}
+
+.contact .form .input:not(:first-child) {
+    margin-top: 20px;
+    direction: rtl;
+}
+
+/*=============== shopping-page ===============*/
+.shopping-page .body-shopping-page .cart-item p {
+    color: #939393;
+    margin-right: auto;
+    margin-left: initial;
+}
+
+.shopping-page .body-shopping-page .cart-item .trash {
+    margin-left: initial;
+    margin-right: 30px;
+}
+
+.shopping-page .body-shopping-page .cart-item input[type="number"] {
+    margin-right: 15px;
+    margin-left: initial;
+}
+
+.shopping-page .body-shopping-page .cart-item a {
+    margin-right: 30px;
+    margin-left: initial;
+}
+
+.shopping-page .body-shopping-page .cart-item .containe_input_count .click-down {
+    left: -8px;
+    right: initial;
+}
+
+.shopping-page .body-shopping-page .cart-item .containe_input_count .click-up {
+    left: -8px;
+    right: initial;
+}
+
+@media (max-width: 768px) {
+    .shopping-page .body-shopping-page .cart-item .trash {
+        position: absolute;
+        top: 27%;
+        left: 0;
+        right: initial;
+    }
+
+    .shopping-page .body-shopping-page .cart-item .containe_input_count .click-up {
+        top: -4px;
+        left: 8px;
+    }
+
+    .shopping-page .body-shopping-page .cart-item .containe_input_count .click-down {
+        bottom: -4px;
+        left: 8px;
+    }
+
+    .shopping-page .body-shopping-page .cart-item .containe_input_count {
+        margin-right: 20px;
+    }
+
+    .shopping-page .body-shopping-page .cart-item a,
+    .shopping-page .body-shopping-page .cart-item p,
+    .shopping-page .body-shopping-page .cart-item .trash {
+        margin-left: initial;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    .shopping-page .body-shopping-page .cart-item input[type="number"] {
+        margin-right: 0;
+    }
+}

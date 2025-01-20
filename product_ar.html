@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,41 +15,57 @@
     <!--============ Product CSS File ============-->
     <link rel="stylesheet" href="assets/css/product.css">
 
+    <!--============ Main Template Arabic lang CSS File ============-->
+    <link rel="stylesheet" href="assets/css/product_ar.css">
+
     <!--============ Global Template CSS File ============-->
     <link rel="stylesheet" href="assets/css/global.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+
+    :root {
+        --primary-font:"El Messiri", serif;
+        --secondary-font: "El Messiri", serif;
+        --bg-color: #F9F4F0;
+    }
+    </style>
+
 </head>
 <body>
     <!--============ HEADER ============-->
     <header>
         <nav class="nav container">
-            <a href="index.html" class="nav__logo">
+            <a href="index.ar.html" class="nav__logo">
                 <img src="assets/images/logotype.svg" alt="image">
             </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li>
-                        <a href="index.html#about" class="nav__link">About Us</a>
+                        <a href="index.ar.html#about" class="nav__link">من نحن</a>
                     </li>
 
                     <li>
-                        <a href="index.html#type" class="nav__link">Types of Honey</a>
+                        <a href="index.ar.html#type" class="nav__link">انواع العسل</a>
                     </li>
 
                     <li>
-                        <a href="index.html#store" class="nav__link">Store</a>
+                        <a href="index.ar.html#store" class="nav__link">المتجر</a>
                     </li>
 
                     <li>
-                        <a href="index.html#testimonials" class="nav__link">Testimonials</a>
+                        <a href="index.ar.html#testimonials" class="nav__link">التعليقات</a>
                     </li>
 
                     <li>
-                        <a href="index.html#contact_us" class="nav__link">Contact Us</a>
+                        <a href="index.ar.html#contact_us" class="nav__link">تواصل معنا</a>
                     </li>
 
                     <li>
-                        <a href="index.html#sotre" class="btn__link">Buy Honey</a>
+                        <a href="index.ar.html#store" class="btn__link">شراء عسل</a>
                     </li>
                 </ul>
 
@@ -73,7 +89,7 @@
                 <img src="./assets/images/480 (1).jpeg" alt="">
             </div>
             <div class="product-info">
-                <p class="product-available">In stock</p>
+                <p class="product-available">متوفر في المخزون</p>
                 <h1 class="title-product" id="title_product">Wildflower Honey</h1>
                 <p class="product-code" id="product_code">Product code 18</p>
                 <strong class="product-price" id="product_price">$7,00 USD</strong>
@@ -100,18 +116,18 @@
         <div class="" id="change-height">
             <div class="shopping-page" id="shopping_page">
                 <div class="header-shopping-page">
-                    <h2>Shopping cart</h2>
+                    <h2>السلة</h2>
                     <i class="fa-solid fa-xmark" id="close_shopping_page"></i>
                 </div>
                 <div class="container-shopping" id="container_shopping">
         
                     <div class="layer-empty" id="layer_empty">
-                        <p>Shopping cart is empty</p>
-                        <p>Continue shopping to add product to your cart</p>
+                        <p>عربة التسوق فارغة</p>
+                        <p>تابع التسوق لإضافة منتج إلى عربة التسوق الخاصة بك.</p>
                     </div>
         
                     <div class="body-shopping-page">
-                        <p>Products</p>
+                        <p>المنتجات</p>
                         <div class="shop-carts" id="shop_carts">
                             <!-- <div class="cart-item">
                                 <div class="item-image">
@@ -129,44 +145,44 @@
             
                     <div class="promo-total">
                         <div>
-                            <button class="promo-code" id="promo_code">Promo code</button>
+                            <button class="promo-code" id="promo_code">كود الخصم</button>
                             <div class="container-promo-input" id="container_promo_input">
                                 <div>
-                                    <input type="text" placeholder="Enter Promo code" id="input_promo">
-                                    <p class="promo-invalid" id="promo_invalid">Promo code can't be applied</p>
+                                    <input type="text" placeholder="ادخل كود الخصم" id="input_promo">
+                                    <p class="promo-invalid" id="promo_invalid">كود الخصم غير صالح</p>
                                 </div>
-                                <button id="promo_ok">ok</button>
+                                <button id="promo_ok">تطبيق</button>
                             </div>
                         </div>
-                        <div class="container_total">Total: <p class="total" id="total">$60,000</p></div>
+                        <div class="container_total">المجموع: <p class="total" id="total">$60,000</p></div>
                     </div>
             
                     <div class="place">
                         Place an order
                     </div>
                     
-                    <form action="order-confirmation.html">
+                    <form action="order-confirmation_ar.html">
                         <div class="input-container">
-                            <p>Name <span>*</span></p>
-                            <input type="text" name="name" id="name_input" placeholder="Your Name" required>
+                            <p>الاسم <span>*</span></p>
+                            <input type="text" name="name" id="name_input" placeholder="اسمك" required>
                         </div>
             
                         <div class="input-container">
-                            <p>Email <span>*</span></p>
-                            <input type="email" name="email" id="email_input" placeholder="Your email address" required>
+                            <p>البريد الإكتروني <span>*</span></p>
+                            <input type="email" name="email" id="email_input" placeholder="بريدك الإكتروني" required>
                         </div>
             
                         <div class="input-container">
-                            <p>Phone <span>*</span></p>
-                            <input type="text" name="phone" id="phone_input" placeholder="Your Phone" required>
+                            <p>رقم الهاتف <span>*</span></p>
+                            <input type="text" name="phone" id="phone_input" placeholder="رقم هاتفك" required>
                         </div>
             
                         <div class="input-container">
-                            <p>Comment</p>
-                            <textarea type="text" name="comment" id="comment_input" placeholder="Your comment"></textarea>
+                            <p>التعليق</p>
+                            <textarea type="text" name="comment" id="comment_input" placeholder="تعليقك"></textarea>
                         </div>
             
-                        <input type="submit" class="btn-primary" id="order_honey" value="Order">
+                        <input type="submit" class="btn-primary" id="order_honey" value="طلب">
                     </form>
                 </div>
             </div>
@@ -183,27 +199,27 @@
         <div class="container">
             <div class="logo">
                 <img src="assets/images/logotype2.svg" alt="Logo">
-                <span>Honey Production Company</span>
+                <span>شركة إنتاج العسل</span>
             </div>
             <ul class="nav__list">
                 <li>
-                    <a href="index.html#about" class="nav__link">About Us</a>
+                    <a href="index.ar.html#about" class="nav__link">من نحن</a>
                 </li>
 
                 <li>
-                    <a href="index.html#type" class="nav__link">Types of Honey</a>
+                    <a href="index.ar.html#type" class="nav__link">انواع العسل</a>
                 </li>
 
                 <li>
-                    <a href="index.html#store" class="nav__link">Store</a>
+                    <a href="index.ar.html#store" class="nav__link">المتجر</a>
                 </li>
 
                 <li>
-                    <a href="index.html#testimonials" class="nav__link">Testimonials</a>
+                    <a href="index.ar.html#testimonials" class="nav__link">التعليقات</a>
                 </li>
 
                 <li>
-                    <a href="index.html#contact_us" class="nav__link">Contact Us</a>
+                    <a href="index.ar.html#contact_us" class="nav__link">تواصل معنا</a>
                 </li>
             </ul>
 
@@ -219,14 +235,14 @@
                 </div>
             </div>
 
-            <p class="copyright">&copy; Created by <span>Mohammed</span> All rights Reserved</p>
+            <p class="copyright">&copy; تم الإنشاء بواسطة  <span>محمد العمري</span> جميع الحقوق محفوظة</p>
         </div>
     </footer>
 
     <!--============ MAIN JS ============-->
     <script src="./assets/js/mainLogic.js"></script>
     <!--============ MAIN JSs ============-->
-    <script src="./assets/js/product.js"></script>
+    <script src="./assets/js/product_ar.js"></script>
     <!--============ SWIPER JS ============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
 

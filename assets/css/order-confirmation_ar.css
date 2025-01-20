@@ -1,0 +1,14 @@
+.order-details .bill .count-and-price {
+    margin-right: auto;
+    margin-left: initial;
+}
+
+.total {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.order-details .bill .product-order .image-and-name {
+    column-gap: 15px;
+}

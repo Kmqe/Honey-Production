@@ -21,6 +21,24 @@ let totalPrice = document.getElementById("total");
 
 const orderHoney = document.getElementById("order_honey");
 
+const promo_code = document.getElementById("promo_code");
+const container_promo_input = document.getElementById("container_promo_input");
+const promo_ok = document.getElementById("promo_ok");
+
+promo_code.addEventListener("click", () => {
+    container_promo_input.classList.toggle("show");
+})
+
+promo_ok.addEventListener("click", () => {
+    let validPromo = "Honey";
+    let input_promo = document.getElementById("input_promo");
+    if(input_promo.value.length >= 1 && input_promo.value != validPromo){
+        input_promo.classList.add("error")
+        document.getElementById("promo_invalid").classList.add("show");
+    }
+})
+
+
 orderHoney.addEventListener("click", () => {
     let customer_info = {
         name: document.getElementById("name_input").value,
@@ -48,6 +66,10 @@ close_shopping_page.addEventListener("click", () => {
     document.querySelector("body").classList.remove("overflow")
     shopping_page.classList.remove("show")
     overlay.classList.remove("show")
+    container_promo_input.classList.remove("show");
+    document.getElementById("promo_invalid").classList.remove("show");
+    document.getElementById("input_promo").classList.remove("error");
+    document.getElementById("input_promo").value ="";
 })
 
 cart_shopping_icon.addEventListener("click", displayCartDetails);
@@ -131,14 +153,20 @@ function displayCartDetails(){
                 </div>
                 <div class="item-info">
                     <a>${item.name}</a>
-                    <input type="number" onclick="updateQuantity(${item.code})" id="number_input_${item.code}" value="${item.count}" min="1">
+
+                    <div class="containe_input_count">
+                        <button class="click-up" id="click_up" onclick="updateQuantity(${[item.code, 1]})"></button>
+                        <input type="number" id="number_input_${item.code}" onblur="updateQuantity(${[item.code, 0]})" value="${item.count}">
+                        <button class="click-down" id="click_down" onclick="updateQuantity(${[item.code, -1]})"></button>
+                    </div>
+                    
                     <p>$${price.toLocaleString("en-US")}USD</p>
                     <i class="fa-regular fa-trash-can trash" onclick="removeProduct(${item.code})" id="remove_product_${item.code}"></i>
                 </div>
             </div>
             `;
         }
-        totalPrice.innerHTML =`Total: $${total.toLocaleString("en-US")}USD`;
+        totalPrice.innerHTML =`$${total.toLocaleString("en-US")}USD`;
     }
 }
 
@@ -159,14 +187,20 @@ function updateCartCounter(){
 }
 
 // Updates the quantity of a product in the shopping cart
-function updateQuantity(itemCode){
+function updateQuantity(itemCode, x){
     // Get cart products from localStorage as an array
-    productsArray = JSON.parse(localStorage.getItem("cart-shopping"));
-    let number_input = document.getElementById(`number_input_${itemCode}`).value;
+    let number_input_value = document.getElementById(`number_input_${itemCode}`).value;
+    number_input_value = Number(number_input_value) + x
+    
+    if(number_input_value < 1 ){
+        number_input_value = 1;
+    }
 
+    productsArray = JSON.parse(localStorage.getItem("cart-shopping"));
+    
     for(product of productsArray){
         if(product.code == itemCode){
-            product.count = number_input;
+            product.count = number_input_value;
         }
     }
 

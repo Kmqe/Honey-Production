@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,41 +16,56 @@
     <!--============ Main Template CSS File ============-->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!--============ Main Template Arabic lang CSS File ============-->
+    <link rel="stylesheet" href="assets/css/style.ar.css">
+
     <!--============ Global Template CSS File ============-->
     <link rel="stylesheet" href="assets/css/global.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+
+    :root {
+        --primary-font:"El Messiri", serif;
+        --secondary-font: "El Messiri", serif;
+        --bg-color: #F9F4F0;
+    }
+    </style>
 </head>
 <body>
     <!--============ HEADER ============-->
     <header>
         <nav class="nav container">
-            <a href="index.html" class="nav__logo">
+            <a href="index.ar.html" class="nav__logo">
                 <img src="assets/images/logotype.svg" alt="image">
             </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li>
-                        <a href="#about" class="nav__link">About Us</a>
+                        <a href="#about" class="nav__link">من نحن</a>
                     </li>
 
                     <li>
-                        <a href="#type" class="nav__link">Types of Honey</a>
+                        <a href="#type" class="nav__link">انواع العسل</a>
                     </li>
 
                     <li>
-                        <a href="#store" class="nav__link">Store</a>
+                        <a href="#store" class="nav__link">المتجر</a>
                     </li>
 
                     <li>
-                        <a href="#testimonials" class="nav__link">Testimonials</a>
+                        <a href="#testimonials" class="nav__link">التعليقات</a>
                     </li>
 
                     <li>
-                        <a href="#contact_us" class="nav__link">Contact Us</a>
+                        <a href="#contact_us" class="nav__link">تواصل معنا</a>
                     </li>
 
                     <li>
-                        <a href="#store" class="btn__link">Buy Honey</a>
+                        <a href="#store" class="btn__link">شراء عسل</a>
                     </li>
                 </ul>
 
@@ -74,11 +89,11 @@
         <section class="hero">
             <div class="container">
                 <div class="data-hero">
-                    <p >100% ORGANIC HONEY</p>
+                    <p>عسل عضوي 100%</p>
                     <h1>HONEYBEE</h1>
-                    <p>We offer a great assortment of pure raw honey from our swaths in California. Order honey from our honeycombs!</p>
-                    <a href="#" class="btn-primary">
-                        Buy Now
+                    <p>نحن نقدم مجموعة رائعة من العسل الخام النقي من خلايا النحل لدينا في كاليفورنيا. اطلب العسل من خلايا النحل لدينا!</p>
+                    <a href="#store" class="btn-primary">
+                        اشتري الأن
                     </a>
                 </div>
             </div>
@@ -88,14 +103,13 @@
         <section class="services">
             <div class="container">
                 <div class="data-services">
-                    <h5 class="section-label">SERVICES</h5>
-                    <h1 class="section-title">WHAT WE DO</h1>
-                    <p class="section-description">Our family-owned company is engaged with everything related to honey and its production. Learn more below about our services.
+                    <h5 class="section-label">الخدمات</h5>
+                    <h1 class="section-title">خدماتنا</h1>
+                    <p class="section-description">شركتنا العائلية تعمل في كل ما يتعلق بالعسل وإنتاجه. تعرف على المزيد حول خدماتنا أدناه.
                     </p>
                 </div>
 
-
-                <div class="sliders">
+                <div class="sliders" dir="rtl">
                     <!-- Slider main container -->
                     <div class="card_container swiper">
                         <!-- Additional required wrapper -->
@@ -104,36 +118,36 @@
                             <div class="swiper-slide card-item">
                                 <img src="assets/images/icon1.svg" alt="">
                                 <div class="body_card">
-                                    <h3>Honey Production</h3>
-                                    <p>We produce, bottle, and sell honey harvested by our beekeepers.</p>
-                                    <a href="#">Learn More</a>
+                                    <h3>إنتاج العسل</h3>
+                                    <p>نقوم بإنتاج العسل وتعبئته وبيعه الذي يتم حصاده بواسطة نحالينا.</p>
+                                    <a href="#store">تعرف أكثر</a>
                                 </div>
                             </div>
 
                             <div class="swiper-slide card-item">
                                 <img src="assets/images/icon3.svg" alt="">
                                 <div class="body_card">
-                                    <h3>Honey Shop</h3>
-                                    <p>We offer over 10 types of organic raw honey in our online store. </p>
-                                    <a href="#">Learn More</a>
+                                    <h3>متجر العسل</h3>
+                                    <p>نقدم أكثر من 10 أنواع من العسل الخام العضوي في متجرنا الإلكتروني.</p>
+                                    <a href="#store">تعرف أكثر</a>
                                 </div>
                             </div>
 
                             <div class="swiper-slide card-item">
                                 <img src="assets/images/icon2.svg" alt="">
                                 <div class="body_card">
-                                    <h3>Supplements</h3>
-                                    <p>You can buy bee pollen, propolis, and hive mixtures. </p>
-                                    <a href="#">Learn More</a>
+                                    <h3>المكملات</h3>
+                                    <p>يمكنك شراء حبوب اللقاح من النحل، البروبوليس، وخلائط الخلايا.</p>
+                                    <a href="#store">تعرف أكثر</a>
                                 </div>
                             </div>
 
                             <div class="swiper-slide card-item">
                                 <img src="assets/images/icon4.svg" alt="">
                                 <div class="body_card">
-                                    <h3>Beekeeping Classes</h3>
-                                    <p>Feel free to book excursions and workshops at our swaths.</p>
-                                    <a href="#">Learn More</a>
+                                    <h3>دورات تربية النحل</h3>
+                                    <p>لا تتردد في حجز الرحلات وورش العمل في خلايانا.</p>
+                                    <a href="#store">تعرف أكثر</a>
                                 </div>
                             </div>
                         </div>
@@ -152,10 +166,9 @@
             <div class="container">
                 <img src="./assets/images/about.png" alt="image">
                 <div class="data-about">
-                    <h5 class="section-label">WHY CHOOSE US</h5>
-                    <h1 class="section-title">ABOUT BEEHONEY</h1>
-                    <p class="section-description">We are a family-owned business managing 5+ swaths in California. We bottle our honey with love and care.
-                    </p>
+                    <h5 class="section-label">لماذا تختارنا</h5>
+                    <h1 class="section-title">عن BEEHONEY</h1>
+                    <p class="section-description">نحن شركة عائلية تدير أكثر من 5 خلايا نحل في كاليفورنيا. نقوم بتعبئة عسلنا بحب ورعاية.</p>
 
                     <div class="features-container">
                         <ul>
@@ -164,8 +177,8 @@
                                     <img src="./assets/images/icon6.svg" alt="image">
                                 </div>
                                 <div class="feature-text">
-                                    <h3 class="feature-title">Natural Environment</h3>
-                                    <p class="feature-description">Our swaths are located in ecologically clean areas in California. The bees feel really happy there!
+                                    <h3 class="feature-title">بيئة الطبيعية</h3>
+                                    <p class="feature-description">تقع خلايانا في مناطق بيئية نظيفة في كاليفورنيا. النحل يشعر بالسعادة هناك!
                                     </p>
                                 </div>
                             </div>
@@ -175,8 +188,8 @@
                                     <img src="./assets/images/icon5.svg" alt="image">
                                 </div>
                                 <div class="feature-text">
-                                    <h3 class="feature-title">Certified Honey Production</h3>
-                                    <p class="feature-description">We produce 100% organic raw honey without pasteurization or filtration processes.
+                                    <h3 class="feature-title">إنتاج العسل المعتمد</h3>
+                                    <p class="feature-description">نقوم بإنتاج عسل خام عضوي 100% دون عمليات البسترة أو الفلترة.
                                     </p>
                                 </div>
                             </div>
@@ -186,8 +199,8 @@
                                     <img src="./assets/images/icon7.svg" alt="image">
                                 </div>
                                 <div class="feature-text">
-                                    <h3 class="feature-title">Fast Shipping</h3>
-                                    <p class="feature-description">We are really fast at shipping, so you can enjoy our honey in a couple of days after your order!
+                                    <h3 class="feature-title">شحن سريع</h3>
+                                    <p class="feature-description">نحن سريعون جدًا في الشحن، لذا يمكنك الاستمتاع بعسلنا بعد بضعة أيام من طلبك!
                                     </p>
                                 </div>
                             </div>
@@ -202,33 +215,33 @@
             <div class="play-icon">
                 <i class="fa-solid fa-play"></i>
             </div>
-            <h3>How Honey Is Made</h3>
+            <h3>كيف يصنع العسل</h3>
         </section>
 
         <!--============ HONEY TYPES ============-->
         <section class="honey-types" id="type">
             <div class="container">
                 <div class="data-honey-types">
-                    <h5 class="section-label">TYPES OF HONEY</h5>
-                    <h1 class="section-title">TOP HONEY FLAVORS FROM OUR SWATHS</h1>
-                    <p class="section-description">Honey is a versatile source of vitamins and useful materials for your health:</p>
+                    <h5 class="section-label">انواع العسل</h5>
+                    <h1 class="section-title">أفضل نكهات العسل من خلايانا</h1>
+                    <p class="section-description">العسل هو مصدر متعدد الاستخدامات للفيتامينات والمواد المفيدة لصحتك:</p>
 
                     <ul class="honey-benefits">
                         <div>
                             <img src="assets/images/check-20icon.svg" alt="image">
-                            <li>It is good for your digestive system.</li>
+                            <li>مفيد لجهازك الهضمي.</li>
                         </div>
                         <div>
                             <img src="assets/images/check-20icon.svg" alt="image">
-                            <li>Raw honey is rich in antioxidants.</li>
+                            <li>العسل الخام غني بمضادات الأكسدة.</li>
                         </div>
                         <div>
                             <img src="assets/images/check-20icon.svg" alt="image">
-                            <li>Honey has beneficial effects on heart health.</li>
+                            <li>للعسل تأثيرات مفيدة على صحة القلب.</li>
                         </div>
                         <div>
                             <img src="assets/images/check-20icon.svg" alt="image">
-                            <li>It improves the cholesterol rate.</li>
+                            <li>يعمل على تحسين معدل الكوليسترول.</li>
                         </div>
                     </ul>
                 </div>
@@ -242,40 +255,40 @@
                             <div class="swiper-slide card-item">
                                 <img src="assets/images/icon1.svg" alt="image">
                                 <div class="body_card">
-                                    <h3>Clover Honey</h3>
-                                    <p>Thick honey is produced by honeybees that collect the nectar of clover plants. Mild in taste and light in color.
+                                    <h3>عسل البرسيم</h3>
+                                    <p>العسل الكثيف الذي ينتجه النحل من رحيق نباتات البرسيم. يتميز بطعمه المعتدل ولونه الفاتح.
                                     </p>
-                                    <a class="btn-primary" href="#">Shop Now</a>
+                                    <a class="btn-primary" href="#">اشتري الأن</a>
                                 </div>
                             </div>
 
                             <div class="swiper-slide card-item">
                                 <img src="assets/images/icon3.svg" alt="">
                                 <div class="body_card">
-                                    <h3>Buckwheat Honey</h3>
-                                    <p>It is highly nutritious amber-colored honey with a slight reddish tint. It has a has a pleasant sweet taste.
+                                    <h3>عسل الحنطة السوداء</h3>
+                                    <p>هو عسل غني بالمواد الغذائية بلون الكهرمان مع لمسة من اللون الأحمر. يتمتع بطعم حلو لذيذ.
                                     </p>
-                                    <a class="btn-primary" href="#">Shop Now</a>
+                                    <a class="btn-primary" href="#">اشتري الأن</a>
                                 </div>
                             </div>
 
                             <div class="swiper-slide card-item">
                                 <img src="assets/images/icon2.svg" alt="">
                                 <div class="body_card">
-                                    <h3>Wildflower Honey</h3>
-                                    <p>It is also known as polyfloral honey. It is made from the nectar of different species of flowers or blossoms.
+                                    <h3>عسل الأزهار البرية</h3>
+                                    <p>يُعرف أيضًا باسم العسل متعدد الأزهار. يتم إنتاجه من رحيق أنواع مختلفة من الأزهار أو الأزهار المتنوعة.
                                     </p>
-                                    <a class="btn-primary" href="#">Shop Now</a>
+                                    <a class="btn-primary" href="#">اشتري الان</a>
                                 </div>
                             </div>
 
                             <div class="swiper-slide card-item">
                                 <img src="assets/images/icon4.svg" alt="">
                                 <div class="body_card">
-                                    <h3>Citrus Blossom Honey</h3>
-                                    <p>This honey is sweet and relatively thick, a perfect match for your tea or toast. It is the best association with California!
+                                    <h3>عسل زهور الحمضيات</h3>
+                                    <p>هذا العسل حلو وقوامه كثيف نسبيًا، وهو يتناسب تمامًا مع الشاي أو التوست. إنه أفضل ارتباط مع كاليفورنيا!
                                     </p>
-                                    <a class="btn-primary" href="#">Shop Now</a>
+                                    <a class="btn-primary" href="#">اشتري الان</a>
                                 </div>
                             </div>
                             
@@ -292,9 +305,9 @@
 
         <!--============ STORE ============-->
         <section class="store" id="store">
-            <h5 class="section-label">STORE</h5>
-            <h1 class="section-title">OUR HONEY</h1>
-            <p class="section-description">Shop our best honey bottled this season. We produce only natural, raw, and sweet honey without any impurities or additives. If you want to buy honey, hurry up!
+            <h5 class="section-label">المتجر</h5>
+            <h1 class="section-title">عسلنا</h1>
+            <p class="section-description">تسوق أفضل أنواع العسل المعبأ لهذا الموسم. نحن ننتج فقط العسل الطبيعي الخام والحلو دون أي شوائب أو إضافات. إذا كنت ترغب في شراء العسل، سارع الآن!
             </p>
 
             <div class="container">
@@ -306,98 +319,98 @@
                             <!-- Slides -->
                             
                             <div class="swiper-slide card-item" onclick="storeProductData(this)"
-                            data-name="Wildflower Honey"
+                            data-name="عسل الحنطة السوداء"
                             data-price="7,00"
                             data-src="assets/images/480 (3).jpeg"
                             data-code="18"
                             data-weight="300"
                             >
-                                <a href="product.html">
+                                <a href="product_ar.html">
                                     <img src="assets/images/480 (3).jpeg" alt="image">
                                 </a>
                                 <div class="body_card">
-                                    <a href="product.html">
-                                        <h3>Wildflower Honey</h3>
+                                    <a href="product_ar.html">
+                                        <h3>عسل الحنطة السوداء</h3>
                                     </a>
                                     <h3 class="price">$7,00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))">Buy Now</button>
-                                    <!-- <button class="btn-primary" onclick="addProductToCart(false)">Buy Now</button> -->
+                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))">اشتري الأن</button>
+                                    <!-- <button class="btn-primary" onclick="addProductToCart(false)">اشتري الأن</button> -->
                                 </div>
                             </div>
 
                             <div class="swiper-slide card-item" onclick="storeProductData(this)"
                             data-src="assets/images/480.jpeg"
-                            data-name="Blossom Honey"
+                            data-name="عسل الأزهار"
                             data-price="20,00"
                             data-code="19"
                             data-weight="450"
                             >
-                                <a href="./product.html">
+                                <a href="./product_ar.html">
                                     <img src="assets/images/480.jpeg" alt="image">
                                 </a>
                                 <div class="body_card">
-                                    <a href="./product.html">
-                                        <h3>Blossom Honey</h3>
+                                    <a href="./product_ar.html">
+                                        <h3>عسل الأزهار</h3>
                                     </a>
                                     <h3 class="price">$20.00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >Buy Now</button>
+                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >اشتري الأن</button>
                                 </div>
                             </div>
 
                             <div class="swiper-slide card-item" onclick="storeProductData(this)"
                             data-src="assets/images/480 (1).jpeg"
-                            data-name="Clover Honey"
+                            data-name="عسل البرسيم"
                             data-price="8,00"
                             data-code="20"
                             data-weight="300"
                             >
-                                <a href="product.html">
+                                <a href="product_ar.html">
                                     <img src="assets/images/480 (1).jpeg" alt="image">
                                 </a>
                                 <div class="body_card">
-                                    <a href="product.html">
-                                        <h3 >Clover Honey</h3>
+                                    <a href="product_ar.html">
+                                        <h3>عسل البرسيم</h3>
                                     </a>
                                     <h3 class="price">$8.00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >Buy Now</button>
+                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >اشتري الأن</button>
                                 </div>
                             </div>
 
                             <div class="swiper-slide card-item" onclick="storeProductData(this)"
                             data-src="assets/images/480 (2).jpeg"
-                            data-name="Buckwheat Honey"
+                            data-name="عسل الحنطة السوداء"
                             data-price="10,00"
                             data-code="21"
                             data-weight="300"
                             >
-                                <a href="product.html">
+                                <a href="product_ar.html">
                                     <img src="assets/images/480 (2).jpeg" alt="image">
                                 </a>
                                 <div class="body_card">
-                                    <a href="product.html">
-                                        <h3>Buckwheat Honey</h3>
+                                    <a href="product_ar.html">
+                                        <h3>عسل الحنطة السوداء</h3>
                                     </a>
                                     <h3 class="price">$10.00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >Buy Now</button>
+                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >اشتري الأن</button>
                                 </div>
                             </div>
 
                             <div class="swiper-slide card-item" onclick="storeProductData(this)"
                             data-src="assets/images/480 (4).jpeg"
-                            data-name="Citrus Blossom Honey"
+                            data-name="عسل زهور الحمضيات"
                             data-price="15,00"
                             data-code="22"
                             data-weight="450"
                             >
-                                <a href="product.html">
+                                <a href="product_ar.html">
                                     <img src="assets/images/480 (4).jpeg" alt="image" >
                                 </a>
                                 <div class="body_card">
-                                    <a href="product.html">
-                                        <h3>Citrus Blossom Honey</h3>
+                                    <a href="product_ar.html">
+                                        <h3>عسل زهور الحمضيات</h3>
                                     </a>
                                     <h3 class="price" >$15.00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >Buy Now</button>
+                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >اشتري الأن</button>
                                 </div>
                             </div>
 
@@ -416,40 +429,40 @@
 
             
             <div class="container">
-                <h5 class="section-label">HOW TO ORDER</h5>
-                <h1 class="section-title">WANT TO ORDER HONEY?</h1>
-                <p class="section-description">We are a small family-owned swath chain in California and we produce a limited amount of honey every season. If you want to buy honey, the information below is for you:
+                <h5 class="section-label">كيف تطلب</h5>
+                <h1 class="section-title">هل تريد ان تطلب عسل؟</h1>
+                <p class="section-description">نحن سلسلة خلايا نحل صغيرة مملوكة لعائلة في كاليفورنيا وننتج كمية محدودة من العسل في كل موسم. إذا كنت ترغب في شراء العسل، فالمعلومات أدناه هي لك:
                 </p>
 
                 <div class="order-container">
                     <div class="box-order">
                         <img src="assets/images/icon12.svg" alt="image">
-                        <h3>1. Wait a Bit</h3>
-                        <p>We harvest honey approximately 4 times a year, excluding winter.</p>
+                        <h3>1. انتظر قليلاً</h3>
+                        <p>نقوم بحصاد العسل تقريبًا 4 مرات في السنة، باستثناء فصل الشتاء.</p>
                     </div>
 
                     <div class="box-order">
                         <img src="assets/images/icon13.svg" alt="image">
-                        <h3>2. Choose Honey Type</h3>
-                        <p>Depending on the season, there may be different types of recently bottled honey on our site.</p>
+                        <h3>2. اختر نوع العسل</h3>
+                        <p>اعتمادًا على الموسم، قد توجد أنواع مختلفة من العسل المعبأ حديثًا على موقعنا.</p>
                     </div>
 
                     <div class="box-order">
                         <img src="assets/images/icon14.svg" alt="image">
-                        <h3>3. Order & Enjoy</h3>
-                        <p>We are really quick at shipping, so you'll get your parcel in a couple of days.</p>
+                        <h3>3. اطلب واستمتع</h3>
+                        <p>نحن سريعون جدًا في الشحن، لذا ستتلقى طردك في غضون أيام قليلة.</p>
                     </div>
                 </div>
-                <a class="btn-primary" href="#">Have a Special Request</a>
+                <a class="btn-primary" href="#">هل لديك طلب خاص؟</a>
             </div>
         </section>
 
         <!--============ TESTIMONIALS ============-->
         <section class="testimonials" id="testimonials">
             <div class="container">
-                <h5 class="section-label">TESTIMONIALS</h5>
-                <h1 class="section-title">WHAT OUR CLIENTS SAY</h1>
-                <p class="section-description">We are glad that our honey is to our clients' liking. Your reviews and warm words of appreciation make us better! 
+                <h5 class="section-label">التعليقات</h5>
+                <h1 class="section-title">ماذا يقول عملاؤنا</h1>
+                <p class="section-description">نحن سعيدون لأن عسلنا يلقى إعجاب عملائنا. تعليقاتكم وكلماتكم الدافئة من التقدير تجعلنا أفضل!
                 </p>
 
                 <div class="sliders">
@@ -462,7 +475,7 @@
                                 <div class="body_card">
                                     <img src="assets/images/user1.jpeg" alt="user Image" class="image">
                                     <h3>Jessica Peterson</h3>
-                                    <blockquote>“This is great honey, 100% natural! It is not the first time I order honey from this company, and every time I know that I will get delicious, high-quality, not crystallized honey. I use honey as a topping for pancakes, various desserts, and marinades. It is delicious and my children also like this honey!"
+                                    <blockquote>"هذا عسل رائع، 100% طبيعي! ليست هذه المرة الأولى التي أطلب فيها العسل من هذه الشركة، وفي كل مرة أعلم أنني سأحصل على عسل لذيذ وعالي الجودة وغير متبلور. أستخدم العسل كإضافة على الفطائر والحلويات المختلفة، وكذلك في التتبيلات. إنه لذيذ، وأطفالي يحبون هذا العسل أيضًا!"
                                     </blockquote>
                                     <p class="post-date">October 28, 2024</p>
                                 </div>
@@ -472,7 +485,7 @@
                                 <div class="body_card">
                                     <img src="assets/images/user-2.png" alt="user Image">
                                     <h3>Dean Nillstrom</h3>
-                                    <blockquote>“Nowadays it is not so easy to find really good, tasty, and natural honey. I first tried the HoneyBee honey several years ago, and since then I have been a regular customer of this producer. I know for sure that these guys work with feeling and sell real honey from their swaths. I am always happy with the product I receive."
+                                    <blockquote>“في الوقت الحاضر، ليس من السهل العثور على عسل جيد ولذيذ وطبيعي حقًا. جربت عسل HoneyBee لأول مرة منذ عدة سنوات، ومنذ ذلك الحين أصبحت زبونًا منتظمًا لهذا المنتج. أنا متأكد تمامًا من أن هؤلاء الأشخاص يعملون بحرفية ويبيعون عسلًا حقيقيًا من خلاياهم. أنا دائمًا راضٍ عن المنتج الذي أستلمه."
                                     </blockquote>
                                     <p class="post-date">February 12, 2024</p>
                                 </div>
@@ -483,7 +496,7 @@
                                     <img src="assets/images/user2.jpeg" alt="user Image" class="image">
                                     <h3>Diana Fergusson</h3>
                                     <blockquote>
-                                        “Having tasted this honey once, I no longer needed alternatives. This is the tastiest honey I've ever tried! I buy different types of honey, from clover to buckwheat. Each jar of honey is a real triumph of taste. This is real honey — thick, aromatic, dark, and moderately sweet. Exactly what I need!"
+                                        “بعد أن تذوقت هذا العسل مرة واحدة، لم أعد بحاجة إلى بدائل. هذا هو ألذ عسل جربته على الإطلاق! أشتري أنواعًا مختلفة من العسل، من عسل البرسيم إلى عسل الحنطة السوداء. كل جرة من العسل هي انتصار حقيقي في الطعم. هذا هو العسل الحقيقي — كثيف، عطره رائع، داكن، وحلو معتدل. بالضبط ما أحتاجه!"
                                     </blockquote>
                                     <p class="post-date">April 18, 2024</p>
                                 </div>
@@ -506,22 +519,22 @@
 
                 <div class="box-stat">
                     <h1 class="section-title">2574</h1>
-                    <h3>Honey jars produced in 2022</h3>
+                    <h3>جرار العسل المنتجة في عام 2022</h3>
                 </div>
 
                 <div class="box-stat">
                     <h1 class="section-title">130</h1>
-                    <h3>Customers every month</h3>
+                    <h3>العملاء كل شهر</h3>
                 </div>
 
                 <div class="box-stat">
                     <h1 class="section-title">12</h1>
-                    <h3>Swaths in California</h3>
+                    <h3>خلايا النحل في كاليفورنيا</h3>
                 </div>
 
                 <div class="box-stat">
                     <h1 class="section-title">3946</h1>
-                    <h3>Bees working for you</h3>
+                    <h3>النحل الذي يعمل من أجلك</h3>
                 </div>
 
             </div>
@@ -529,9 +542,9 @@
 
         <!--============ BLOG ============-->
         <section class="blog">
-            <h5 class="section-label">BLOG</h5>
-            <h1 class="section-title">LEARN MORE ABOUT HONEYBEE</h1>
-            <p class="section-description">Think that honey production is boring? Not at all! Read our blog and the latest news from our swaths to learn more!
+            <h5 class="section-label">المدونة</h5>
+            <h1 class="section-title">تعرف أكثر عن HoneyBee</h1>
+            <p class="section-description">تعتقد أن إنتاج العسل ممل؟ على الإطلاق! اقرأ مدونتنا وآخر الأخبار من خلايانا لتعرف المزيد!
             </p>
             <div class="container">
                 <div class="sliders">
@@ -544,8 +557,8 @@
                                 <div class="body_card">
                                     <img src="assets/images/news-2.jpg" alt="">
                                     <p class="post-date">FEBRUARY 7, 2024</p>
-                                    <h3>What is Natural Honey?</h3>
-                                    <p>Let's see how to distinguish natural honey from artificial honey. </p>
+                                    <h3>ما هو العسل الطبيعي؟</h3>
+                                    <p>لنرى كيف يمكن التمييز بين العسل الطبيعي والعسل الصناعي.</p>
                                 </div>
                             </div>
 
@@ -553,8 +566,8 @@
                                 <div class="body_card">
                                     <img src="assets/images/news-3.jpg" alt="">
                                     <p class="post-date">MARCH 10, 2024</p>
-                                    <h3>New Season is Here!</h3>
-                                    <p>After winter, work in our Californian swaths is in full swing again.</p>
+                                    <h3>الموسم الجديد هنا!</h3>
+                                    <p>بعد الشتاء، يبدأ العمل في خلايانا في كاليفورنيا من جديد وبكامل طاقته.</p>
                                 </div>
                             </div>
 
@@ -562,8 +575,8 @@
                                 <div class="body_card">
                                     <img src="assets/images/news-1.jpg" alt="">
                                     <p class="post-date">MARCH 17, 2023</p>
-                                    <h3>Honey in Jars</h3>
-                                    <p>Why is honey usually sold in glass jars? <br> Our expert explains.</p>
+                                    <h3>العسل في الجرار</h3>
+                                    <p>لماذا يُباع العسل عادة في الجرار الزجاجية؟ <br> خبيرنا يشرح.</p>
                                 </div>
                             </div>
 
@@ -571,8 +584,8 @@
                                 <div class="body_card">
                                     <img src="assets/images/news-4.jpg" alt="">
                                     <p class="post-date">APRIL 12, 2023</p>
-                                    <h3>How is Honey Harvested?</h3>
-                                    <p>After winter, work in our Californian <br> swaths is in full swing again</p>
+                                    <h3>كيف يتم حصاد العسل؟</h3>
+                                    <p>بعد الشتاء، يبدأ العمل في خلايانا في كاليفورنيا من جديد وبكامل طاقته.</p>
                                 </div>
                             </div>
                         </div>
@@ -589,68 +602,63 @@
             <div class="container">
                 <img src="assets/images/60a6203d80a13d0021b9d5b9_optimized_900_c900x1000-0x0.jpeg" alt="image">
                 <div class="data-faq">
-                    <h5 class="section-label">FAQ</h5>
-                    <h1 class="section-title">HONEY QUESTIONS</h1>
-                    <p class="section-description">Below are the most popular questions from our clients.</p>
+                    <h5 class="section-label">الأسئلة الشائعة</h5>
+                    <h1 class="section-title">أسئلة العسل</h1>
+                    <p class="section-description">فيما يلي أشهر الأسئلة من عملائنا.</p>
 
                     <div class="faq-container">
                         <div class="faq-item">
                             <div class="faq-question">
-                                <h2>What is raw honey?</h2>
+                                <h2>ما هو العسل الخام؟</h2>
                                 <div class="faq-toggle">
                                     <span></span>
                                     <span class="toggle-ele"></span>
                                 </div>
                             </div>
                             <div class="faq-answer">
-                                <p>Raw honey is honey as it is in the beehive. Raw honey is made by extracting honey from the honeycombs and separating it from impurities. It doesn't contain any hidden sugars and is not pasteurized or processed.
+                                <p>العسل الخام هو العسل كما هو في خلية النحل. يتم صنع العسل الخام عن طريق استخراج العسل من الأقراص العسلية وفصل الشوائب عنه. لا يحتوي على أي سكريات مخفية ولم يخضع لعملية البسترة أو المعالجة.
                                 </p>
                             </div>
                         </div>
 
-
                         <div class="faq-item">
                             <div class="faq-question">
-                                <h2>Can your honey cause allergies?</h2>
+                                <h2>هل يمكن أن يسبب عسلنا الحساسية؟</h2>
                                 <div class="faq-toggle">
                                     <span></span>
                                     <span class="toggle-ele"></span>
                                 </div>
                             </div>
                             <div class="faq-answer">
-                                <p>We sell pure organic honey but it can cause allergies, indeed. Typical symptoms are the same as common pollen allergy symptoms: runny nose, sneezing, and swelling.
+                                <p>نحن نبيع عسلًا عضويًا نقيًا، ولكن يمكن أن يسبب الحساسية بالفعل. الأعراض الشائعة هي نفسها أعراض حساسية حبوب اللقاح الشائعة: سيلان الأنف، والعطس، والتورم.
                                 </p>
                             </div>
                         </div>
 
-
-
                         <div class="faq-item">
                             <div class="faq-question">
-                                <h2>What payment options do you provide?</h2>
+                                <h2>ما هي خيارات الدفع التي تقدمها؟</h2>
                                 <div class="faq-toggle">
                                     <span></span>
                                     <span class="toggle-ele"></span>
                                 </div>
                             </div>
                             <div class="faq-answer">
-                                <p>We accept Visa and MasterCard cards issued by any American bank. You can also use PayPal.
+                                <p>نحن نقبل بطاقات فيزا وماستر كارد الصادرة من أي بنك أمريكي. يمكنك أيضًا استخدام بايبال.
                                 </p>
                             </div>
                         </div>
 
-
-
                         <div class="faq-item">
                             <div class="faq-question">
-                                <h2>Why does the assortment change sometimes?</h2>
+                                <h2>لماذا يتغير التشكيل أحيانًا؟</h2>
                                 <div class="faq-toggle">
                                     <span></span>
                                     <span class="toggle-ele"></span>
                                 </div>
                             </div>
                             <div class="faq-answer">
-                                <p>We bottle honey 3-4 times per year, according to the harvest seasons. Our capabilities are limited to around 3000 jars a year. Therefore, depending on the season, there may be different honey in our assortment, and some products may be temporarily unavailable.
+                                <p>نقوم بتعبئة العسل 3-4 مرات في السنة، وفقًا لمواسم الحصاد. قدراتنا محدودة بحوالي 3000 جرة في السنة. لذلك، اعتمادًا على الموسم، قد يكون هناك أنواع مختلفة من العسل في تشكيلنا، وقد تكون بعض المنتجات غير متوفرة مؤقتًا.
                                 </p>
                             </div>
                         </div>
@@ -664,29 +672,29 @@
         <section class="contact" id="contact_us">
             <div class="container">
                 <div class="data-contact">
-                    <h5 class="section-label">CONTACTS</h5>
-                    <h1 class="section-title">CONTACT US ANYTIME</h1>
-                    <p class="section-description">Feel free to contact us for any inquiries or commercial offers:</p>
+                    <h5 class="section-label">التواصل</h5>
+                    <h1 class="section-title">اتصل بنا في أي وقت</h1>
+                    <p class="section-description">لا تتردد في الاتصال بنا لأي استفسارات أو عروض تجارية:</p>
 
                     <div class="data-info">
                         <div class="info-group">
-                            <h3>Address</h3>
+                            <h3>العنوان</h3>
                             <p>
-                                44670 Mattole Rd, Honeydew, <br>
-                                CA 95545
+                                44670 طريق ماتول، هونيديو،
+                                كاليفورنيا 95545
                             </p>
                         </div>
 
                         <div class="info-group">
-                            <h3>Hours</h3>
+                            <h3>ساعات العمل</h3>
                             <p>
-                                Monday - Saturday: 11 AM - 9 PM <br>
-                                Sunday: 11 AM - 7 PM
+                                الأحد: من 11 صباحًا حتى 7 مساءً <br>
+                                الإثنين - السبت: من 11 صباحًا حتى 9 مساءً
                             </p>
                         </div>
 
                         <div class="info-group">
-                            <h3>Contacts</h3>
+                            <h3>وسائل الاتصال</h3>
                             <p>
                                 +1 (234) 567 89 00 <br>
                                 honeybee@email.com
@@ -700,11 +708,11 @@
                 </div>
 
                 <form class="form" action="#">
-                    <input type="text" class="input required" placeholder="Enter your full name*" required>
-                    <input type="tel" class="input required" placeholder="Enter your phone number*" required min="9">
-                    <input type="email" class="input required" placeholder="Enter your e-mail*" required>
-                    <textarea class="input" placeholder="Type your message"></textarea>
-                    <input type="submit" class="btn-primary" id="input_request" value="Request a Quote">
+                    <input type="text" class="input required" placeholder="ادخل اسمك كامل*" required>
+                    <input type="number" class="input required" placeholder="ادخل رقم هاتفك*" required min="9">
+                    <input type="email" class="input required" placeholder="ادخل بريدك الإكتروني*" required>
+                    <textarea class="input" placeholder="ادخل رسالتك"></textarea>
+                    <input type="submit" class="btn-primary" id="input_request" value="طلب عرض الاسعار">
                 </form>
             </div>
         </section>
@@ -712,9 +720,9 @@
         <div class="pop-up-contact" id="pop_up_contact">
             <i class="fa-solid fa-xmark close" id="close"></i>
             <img src="./assets/images/done.png" alt="done">
-            <h4>Thank you!</h4>
-            <p>We will contact you shortly.</p>
-            <button class="btn-primary">ok</button>
+            <h4>شكرا لك!</h4>
+            <p>سنتواصل معك في اقرب وقت</p>
+            <button class="btn-primary">حسناً</button>
         </div>
         <div class="pop-up-shadow" id="pop_up_shadow">
 
@@ -736,18 +744,18 @@
         <div class="" id="change-height">
             <div class="shopping-page" id="shopping_page">
                 <div class="header-shopping-page">
-                    <h2>Shopping cart</h2>
+                    <h2>السلة</h2>
                     <i class="fa-solid fa-xmark" id="close_shopping_page"></i>
                 </div>
                 <div class="container-shopping" id="container_shopping">
         
                     <div class="layer-empty" id="layer_empty">
-                        <p>Shopping cart is empty</p>
-                        <p>Continue shopping to add product to your cart</p>
+                        <p>عربة التسوق فارغة</p>
+                        <p>تابع التسوق لإضافة منتج إلى عربة التسوق الخاصة بك.</p>
                     </div>
         
                     <div class="body-shopping-page">
-                        <p>Products</p>
+                        <p>المنتجات</p>
                         <div class="shop-carts" id="shop_carts">
                             <!-- <div class="cart-item">
                                 <div class="item-image">
@@ -765,44 +773,44 @@
             
                     <div class="promo-total">
                         <div>
-                            <button class="promo-code" id="promo_code">Promo code</button>
+                            <button class="promo-code" id="promo_code">كود الخصم</button>
                             <div class="container-promo-input" id="container_promo_input">
                                 <div>
-                                    <input type="text" placeholder="Enter Promo code" id="input_promo">
-                                    <p class="promo-invalid" id="promo_invalid">Promo code can't be applied</p>
+                                    <input type="text" placeholder="ادخل كود الخصم" id="input_promo">
+                                    <p class="promo-invalid" id="promo_invalid">كود الخصم غير صالح</p>
                                 </div>
-                                <button id="promo_ok">ok</button>
+                                <button id="promo_ok">تطبيق</button>
                             </div>
                         </div>
-                        <div class="container_total">Total: <p class="total" id="total">$60,000</p></div>
+                        <div class="container_total">المجموع: <p class="total" id="total">$60,000</p></div>
                     </div>
             
                     <div class="place">
                         Place an order
                     </div>
                     
-                    <form action="order-confirmation.html">
+                    <form action="order-confirmation_ar.html">
                         <div class="input-container">
-                            <p>Name <span>*</span></p>
-                            <input type="text" name="name" id="name_input" placeholder="Your Name" required>
+                            <p>الاسم <span>*</span></p>
+                            <input type="text" name="name" id="name_input" placeholder="اسمك" required>
                         </div>
             
                         <div class="input-container">
-                            <p>Email <span>*</span></p>
-                            <input type="email" name="email" id="email_input" placeholder="Your email address" required>
+                            <p>البريد الإكتروني <span>*</span></p>
+                            <input type="email" name="email" id="email_input" placeholder="بريدك الإكتروني" required>
                         </div>
             
                         <div class="input-container">
-                            <p>Phone <span>*</span></p>
-                            <input type="text" name="phone" id="phone_input" placeholder="Your Phone" required>
+                            <p>رقم الهاتف <span>*</span></p>
+                            <input type="text" name="phone" id="phone_input" placeholder="رقم هاتفك" required>
                         </div>
             
                         <div class="input-container">
-                            <p>Comment</p>
-                            <textarea type="text" name="comment" id="comment_input" placeholder="Your comment"></textarea>
+                            <p>التعليق</p>
+                            <textarea type="text" name="comment" id="comment_input" placeholder="تعليقك"></textarea>
                         </div>
             
-                        <input type="submit" class="btn-primary" id="order_honey" value="Order">
+                        <input type="submit" class="btn-primary" id="order_honey" value="طلب">
                     </form>
                 </div>
             </div>
@@ -819,27 +827,27 @@
         <div class="container">
             <div class="logo">
                 <img src="assets/images/logotype2.svg" alt="Logo">
-                <span>Honey Production Company</span>
+                <span>شركة إنتاج العسل</span>
             </div>
             <ul class="nav__list">
                 <li>
-                    <a href="#about" class="nav__link">About Us</a>
+                    <a href="#about" class="nav__link">من نحن</a>
                 </li>
 
                 <li>
-                    <a href="#type" class="nav__link">Types of Honey</a>
+                    <a href="#type" class="nav__link">انواع العسل</a>
                 </li>
 
                 <li>
-                    <a href="#store" class="nav__link">Store</a>
+                    <a href="#store" class="nav__link">المتجر</a>
                 </li>
 
                 <li>
-                    <a href="#testimonials" class="nav__link">Testimonials</a>
+                    <a href="#testimonials" class="nav__link">التعليقات</a>
                 </li>
 
                 <li>
-                    <a href="#contact_us" class="nav__link">Contact Us</a>
+                    <a href="#contact_us" class="nav__link">تواصل معنا</a>
                 </li>
             </ul>
 
@@ -855,14 +863,14 @@
                 </div>
             </div>
 
-            <p class="copyright">&copy; Created by <span>Mohammed</span> All rights Reserved</p>
+            <p class="copyright">&copy; تم الإنشاء بواسطة  <span>محمد العمري</span> جميع الحقوق محفوظة</p>
         </div>
     </footer>
 
     <!--============ SWIPER JS ============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
-    <!--============ SWIPER LEFT TO RIGHT JS ============-->
-    <script src="assets/js/swiper_ltr.js"></script>
+    <!--============ SWIPER RIGHT TO LEFT JS ============-->
+    <script src="assets/js/swiper_rtl.js"></script>
     <!--============ MAIN LOGIC JS ============-->
     <script src="assets/js/mainLogic.js"></script>
     <!--============ MAIN JS ============-->
