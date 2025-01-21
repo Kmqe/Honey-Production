@@ -29,7 +29,7 @@ nav .nav__list {
     column-gap: 32px;
 }
 
-nav .nav__list li {
+nav .nav__list > li {
     display: flex;
     align-items: center;
 }
@@ -1630,6 +1630,14 @@ footer .copyright span {
     }
 }
 
+@media(max-width: 576px){
+    footer .copyright {
+        font-size: 12px;
+        font-family: var(--primary-font);
+        color: #444;
+    }
+}
+
 /*=============== shopping-page ===============*/
 .overlay { 
     position: fixed;
@@ -2088,4 +2096,98 @@ footer .copyright span {
 
 .shopping-page .layer-empty.show p:last-of-type {
     color: #939393;
+}
+
+.dropdown14 {
+    position: relative;
+}
+.dropdown14 input {
+    position: absolute;
+    opacity: 0;
+}
+.dropdown14 #dropdown14 + label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: flex-start;
+    height: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 200ms linear;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #5a3733;
+}
+.dropdown14 .arrow-down {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #5a3733;
+    transition: transform ease-in-out 0.3s;
+}
+.dropdown14-links {
+    list-style: none;
+    position: absolute;
+    top: 50px;
+    padding-left: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.dropdown14-links li {
+    position: relative;
+    left: 100%;
+    transition: 0.5s;
+    border-radius: 4px;
+    background-color: #eb6d2f;
+}
+.dropdown14-links li a {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 11px 10px;
+    color: #fff;
+    margin: 2px 0;
+    text-decoration: none;
+}
+.dropdown14 input:checked + label::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.dropdown14 input:checked + label > .arrow-down {
+    transform: rotate(180deg);
+}
+.dropdown14 input:checked ~ .dropdown14-links {
+    opacity: 1;
+    transform: translateY(0);
+}
+.dropdown14-links li:nth-child(1) {
+    transition-delay: 60ms;
+}
+.dropdown14-links li:nth-child(2) {
+    transition-delay: 120ms;
+}
+.dropdown14-links li:nth-child(3) {
+    transition-delay: 180ms;
+}
+.dropdown14-links li:nth-child(4) {
+    transition-delay: 240ms;
+}
+.dropdown14 input:checked ~ .dropdown14-links li {
+    left: 0;
+}
+.dropdown14-links li:hover {
+    background-color: #f7bd00;
+}
+
+@media (max-width: 768px){
+    .dropdown14 {
+        margin-bottom: 40px;
+    }
 }

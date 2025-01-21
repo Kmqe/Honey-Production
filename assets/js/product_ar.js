@@ -1,3 +1,10 @@
+if(localStorage.getItem("cartIsEmpty") || localStorage.getItem("order")){
+    localStorage.removeItem("cart-shopping");
+    localStorage.removeItem("customer_info");
+    localStorage.removeItem("cartIsEmpty");
+    localStorage.removeItem("order");
+}
+
 if(localStorage.getItem("product-info")){
     let product = JSON.parse(localStorage.getItem("product-info"))
     displayProductDetails(product)
@@ -30,3 +37,4 @@ function displayProductDetails(product){
                 <p class="weight">الوزن: ${product.weight} قرام </p>
     `
 }
+

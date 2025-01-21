@@ -6,6 +6,7 @@ let customer_details = document.getElementById("customer_details");
 // let total = document.getElementById("total");
 let totalPrice = 0;
 
+localStorage.setItem("order", localStorage.getItem("cart-shopping"));
 
 navToggle.addEventListener("click", () => {
     navMenu.classList.add("show");
@@ -20,7 +21,7 @@ navClose.addEventListener("click", () => {
 })
 
 function renderUI(){
-    productsArray = JSON.parse(localStorage.getItem("cart-shopping"));
+    productsArray = JSON.parse(localStorage.getItem("order"));
     console.log(productsArray)
     billContainer.innerHTML = `<p>#${getRandomNumber()}</p>`
     for(let product of productsArray){
@@ -64,19 +65,19 @@ function getRandomNumber(){
 
 
 window.addEventListener('beforeunload', (event) => {
-    localStorage.removeItem("cart-shopping");
-    localStorage.removeItem("customer_info");
+    // localStorage.removeItem("cart-shopping");
+    // localStorage.removeItem("customer_info");
 
 
 
     const currentState = history.state;
 
-    history.replaceState(currentState, '', 'cartIsEmpty.html'); 
+    history.replaceState(currentState, '', 'cartIsEmpty_ar.html'); 
 
     // أضف حالة جديدة إلى السجل
     history.pushState(null, '', window.location.href);
 
     window.addEventListener('popstate', () => {
-        history.replaceState(null, '', 'cartIsEmpty.html'); 
+        history.replaceState(null, '', 'cartIsEmpty_ar.html'); 
     });
 });

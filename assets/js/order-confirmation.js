@@ -64,10 +64,6 @@ function getRandomNumber(){
 
 
 window.addEventListener('beforeunload', (event) => {
-    localStorage.removeItem("cart-shopping");
-    localStorage.removeItem("customer_info");
-
-
 
     const currentState = history.state;
 

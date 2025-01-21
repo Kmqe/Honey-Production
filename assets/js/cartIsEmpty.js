@@ -13,3 +13,5 @@ navClose.addEventListener("click", () => {
     navToggle.classList.remove("hide")
     navClose.classList.remove("show")
 })
+
+localStorage.setItem("cartIsEmpty",true);

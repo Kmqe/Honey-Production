@@ -4,8 +4,14 @@ const faq_answer = document.querySelectorAll(".faq-answer");
 const colse_pop_up = document.getElementById("close");
 const input_request = document.getElementById("input_request");
 
-faq_item.forEach((item, index) => {
+if(localStorage.getItem("cartIsEmpty") || localStorage.getItem("order")){
+    localStorage.removeItem("cart-shopping");
+    localStorage.removeItem("customer_info");
+    localStorage.removeItem("cartIsEmpty");
+    localStorage.removeItem("order");
+}
 
+faq_item.forEach((item, index) => {
     item.addEventListener("click", () => {
         faq_item.forEach((otherItem, otherIndex) => {
             if (otherIndex !== index) {
@@ -16,7 +22,6 @@ faq_item.forEach((item, index) => {
         toggle_ele[index].classList.toggle("expanded");
         faq_answer[index].classList.toggle("show");
     });
-
 });
 
 let products = document.querySelectorAll(".store .card-item");
@@ -53,3 +58,4 @@ pop_up_contact.addEventListener("click", () => {
     document.getElementById("pop_up_contact").style.display = "none";
     document.getElementById("pop_up_shadow").style.display = "none";
 })
+
