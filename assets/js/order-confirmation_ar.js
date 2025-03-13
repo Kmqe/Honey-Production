@@ -9,24 +9,24 @@ let totalPrice = 0;
 localStorage.setItem("order", localStorage.getItem("cart-shopping"));
 
 navToggle.addEventListener("click", () => {
-    navMenu.classList.add("show");
-    navToggle.classList.add("hide")
-    navClose.classList.add("show")
-})
+  navMenu.classList.add("show");
+  navToggle.classList.add("hide");
+  navClose.classList.add("show");
+});
 
 navClose.addEventListener("click", () => {
-    navMenu.classList.remove("show");
-    navToggle.classList.remove("hide")
-    navClose.classList.remove("show")
-})
+  navMenu.classList.remove("show");
+  navToggle.classList.remove("hide");
+  navClose.classList.remove("show");
+});
 
-function renderUI(){
-    productsArray = JSON.parse(localStorage.getItem("order"));
-    console.log(productsArray)
-    billContainer.innerHTML = `<p>#${getRandomNumber()}</p>`
-    for(let product of productsArray){
-        totalPrice += parseFloat(product.price) * product.count;
-        billContainer.innerHTML += `
+function renderUI() {
+  productsArray = JSON.parse(localStorage.getItem("order"));
+  console.log(productsArray);
+  billContainer.innerHTML = `<p>#${getRandomNumber()}</p>`;
+  for (let product of productsArray) {
+    totalPrice += parseFloat(product.price) * product.count;
+    billContainer.innerHTML += `
         <div class="info-order">
             <div class="product-order">
                 <div class="image-and-name">
@@ -39,12 +39,14 @@ function renderUI(){
             </div>
         </div>
         `;
-    }
-    
-    billContainer.innerHTML += `<p class="total" id="total">الإجمالي: $${totalPrice.toLocaleString("en-US")}USD</p>`;
-    
-    customer_info = JSON.parse(localStorage.getItem("customer_info"));
-    customer_details.innerHTML = `
+  }
+
+  billContainer.innerHTML += `<p class="total" id="total">الإجمالي: $${totalPrice.toLocaleString(
+    "en-US"
+  )}USD</p>`;
+
+  customer_info = JSON.parse(localStorage.getItem("customer_info"));
+  customer_details.innerHTML = `
     <h3>تفاصيل العميل</h3>
     <p>الاسم: ${customer_info.name}</p>
     <p>البريد الإكتروني: ${customer_info.email}</p>
@@ -53,31 +55,28 @@ function renderUI(){
     `;
 }
 
-renderUI()
+renderUI();
 
-function getRandomNumber(){
-    let randomNumber = "";
-    for(let i = 0 ; i < 6; i++){
-        randomNumber += Math.floor(Math.random() * 9)
-    }
-    return randomNumber;
+function getRandomNumber() {
+  let randomNumber = "";
+  for (let i = 0; i < 6; i++) {
+    randomNumber += Math.floor(Math.random() * 9);
+  }
+  return randomNumber;
 }
 
+window.addEventListener("beforeunload", (event) => {
+  // localStorage.removeItem("cart-shopping");
+  // localStorage.removeItem("customer_info");
 
-window.addEventListener('beforeunload', (event) => {
-    // localStorage.removeItem("cart-shopping");
-    // localStorage.removeItem("customer_info");
+  const currentState = history.state;
 
+  history.replaceState(currentState, "", "cartIsEmpty_ar.html");
 
+  // أضف حالة جديدة إلى السجل
+  history.pushState(null, "", window.location.href);
 
-    const currentState = history.state;
-
-    history.replaceState(currentState, '', 'cartIsEmpty_ar.html'); 
-
-    // أضف حالة جديدة إلى السجل
-    history.pushState(null, '', window.location.href);
-
-    window.addEventListener('popstate', () => {
-        history.replaceState(null, '', 'cartIsEmpty_ar.html'); 
-    });
+  window.addEventListener("popstate", () => {
+    history.replaceState(null, "", "cartIsEmpty_ar.html");
+  });
 });
