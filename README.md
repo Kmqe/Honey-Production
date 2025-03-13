@@ -1,6 +1,6 @@
 # 🚀 Honey-Production
 
-🔗**DEMO [visit](link)**
+🔗**DEMO [visit](https://honey-production.netlify.app/)**
 
 ## 📋 Overview
 
