@@ -1,207 +1,124 @@
 /*============ GOOGLE FONTS ============*/
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 
 /*=============== HEADER ===============*/
 @media (max-width: 992px) {
-    nav .nav__close {
-        left: 23px;
-        right: initial;
-    }
+  nav .nav__close {
+    left: 23px;
+    right: initial;
+  }
 }
 
 /*=============== HERO ===============*/
 .hero {
-    background-image: url("../images/cover_ar.png");
+  background-image: url("../images/cover_ar.png");
 }
 
 /*=============== ABOUT ===============*/
 .about .data-about .section-title::before {
-    right: 0;
-    transform: translateX(0);
+  right: 0;
+  transform: translateX(0);
 }
 
 /*=============== HONEY TYPES ===============*/
 .honey-types .data-honey-types .section-title::before {
-    right: 0;
-    transform: translateX(0);
+  right: 0;
+  transform: translateX(0);
 }
 
 /*=============== FAQ ===============*/
 .faq .data-faq .section-title::before {
-    right: 0;
-    transform: translateX(0);
+  right: 0;
+  transform: translateX(0);
 }
 
 /*=============== CONTACT ===============*/
 .contact .data-contact .section-title::before {
-    right: 0;
-    transform: translateX(0);
+  right: 0;
+  transform: translateX(0);
 }
 
 .contact .form .input:not(:first-child) {
-    margin-top: 20px;
-    direction: rtl;
+  margin-top: 20px;
+  direction: rtl;
 }
 
 /*=============== shopping-page ===============*/
 .shopping-page .body-shopping-page .cart-item p {
-    color: #939393;
-    margin-right: auto;
-    margin-left: initial;
+  color: #939393;
+  margin-right: auto;
+  margin-left: initial;
 }
 
 .shopping-page .body-shopping-page .cart-item .trash {
-    margin-left: initial;
-    margin-right: 30px;
+  margin-left: initial;
+  margin-right: 30px;
 }
 
 .shopping-page .body-shopping-page .cart-item input[type="number"] {
-    margin-right: 15px;
-    margin-left: initial;
+  margin-right: 15px;
+  margin-left: initial;
 }
 
 .shopping-page .body-shopping-page .cart-item a {
-    margin-right: 30px;
-    margin-left: initial;
+  margin-right: 30px;
+  margin-left: initial;
 }
 
-.shopping-page .body-shopping-page .cart-item .containe_input_count .click-down {
-    left: -8px;
-    right: initial;
+.shopping-page
+  .body-shopping-page
+  .cart-item
+  .containe_input_count
+  .click-down {
+  left: -8px;
+  right: initial;
 }
 
 .shopping-page .body-shopping-page .cart-item .containe_input_count .click-up {
-    left: -8px;
-    right: initial;
+  left: -8px;
+  right: initial;
 }
 
 @media (max-width: 768px) {
-    .shopping-page .body-shopping-page .cart-item .trash {
-        position: absolute;
-        top: 27%;
-        left: 0;
-        right: initial;
-    }
-
-    .shopping-page .body-shopping-page .cart-item .containe_input_count .click-up {
-        top: -4px;
-        left: 8px;
-    }
-
-    .shopping-page .body-shopping-page .cart-item .containe_input_count .click-down {
-        bottom: -4px;
-        left: 8px;
-    }
-
-    .shopping-page .body-shopping-page .cart-item .containe_input_count {
-        margin-right: 20px;
-    }
-
-    .shopping-page .body-shopping-page .cart-item a,
-    .shopping-page .body-shopping-page .cart-item p,
-    .shopping-page .body-shopping-page .cart-item .trash {
-        margin-left: initial;
-        margin-right: 20px;
-        margin-top: 10px;
-    }
-
-    .shopping-page .body-shopping-page .cart-item input[type="number"] {
-        margin-right: 0;
-    }
-}
-
-
-/* .dropdown14 {
-    position: relative;
-}
-.dropdown14 input {
+  .shopping-page .body-shopping-page .cart-item .trash {
     position: absolute;
-    opacity: 0;
-}
-.dropdown14 #dropdown14 + label {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    column-gap: 10px;
-    justify-content: flex-start;
-    height: 50px;
-    font-weight: 600;
-    font-size: 16px;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: all 200ms linear;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    color: #5a3733;
-}
-.dropdown14 .arrow-down {
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 6px solid #5a3733;
-    transition: transform ease-in-out 0.3s;
-}
-.dropdown14-links {
-    list-style: none;
-    position: absolute;
-    top: 50px;
-    padding-left: 0px;
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(20px);
-}
-.dropdown14-links li {
-    position: relative;
-    left: 100%;
-    transition: 0.5s;
-    border-radius: 4px;
-    background-color: #eb6d2f;
-}
-.dropdown14-links li a {
-    display: block;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 11px 10px;
-    color: #fff;
-    margin: 2px 0;
-    text-decoration: none;
-}
-.dropdown14 input:checked + label::before {
-    position: fixed;
-    top: 0;
+    top: 27%;
     left: 0;
-    z-index: -1;
-}
-.dropdown14 input:checked + label > .arrow-down {
-    transform: rotate(180deg);
-}
-.dropdown14 input:checked ~ .dropdown14-links {
-    opacity: 1;
-    transform: translateY(0);
-}
-.dropdown14-links li:nth-child(1) {
-    transition-delay: 60ms;
-}
-.dropdown14-links li:nth-child(2) {
-    transition-delay: 120ms;
-}
-.dropdown14-links li:nth-child(3) {
-    transition-delay: 180ms;
-}
-.dropdown14-links li:nth-child(4) {
-    transition-delay: 240ms;
-}
-.dropdown14 input:checked ~ .dropdown14-links li {
-    left: 0;
-}
-.dropdown14-links li:hover {
-    background-color: #f7bd00;
-}
+    right: initial;
+  }
 
-@media (max-width: 768px){
-    .dropdown14 {
-        margin-bottom: 40px;
-    }
-} */
+  .shopping-page
+    .body-shopping-page
+    .cart-item
+    .containe_input_count
+    .click-up {
+    top: -4px;
+    left: 8px;
+  }
+
+  .shopping-page
+    .body-shopping-page
+    .cart-item
+    .containe_input_count
+    .click-down {
+    bottom: -4px;
+    left: 8px;
+  }
+
+  .shopping-page .body-shopping-page .cart-item .containe_input_count {
+    margin-right: 20px;
+  }
+
+  .shopping-page .body-shopping-page .cart-item a,
+  .shopping-page .body-shopping-page .cart-item p,
+  .shopping-page .body-shopping-page .cart-item .trash {
+    margin-left: initial;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+
+  .shopping-page .body-shopping-page .cart-item input[type="number"] {
+    margin-right: 0;
+  }
+}

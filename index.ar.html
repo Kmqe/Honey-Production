@@ -1,775 +1,933 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Honey Bee</title>
-    <link rel="shortcut icon" href="./assets/images/bee_icon_website.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/bee_icon_website.png"
+      type="image/x-icon"
+    />
     <!--============ Render All Elements Normally ============-->
-    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
     <!--============ Font Awesome Library ============-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!--============ SWIPER CSS ============-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
     <!--============ Main Template CSS File ============-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.min.css" />
 
     <!--============ Main Template Arabic lang CSS File ============-->
-    <link rel="stylesheet" href="assets/css/style.ar.css">
+    <link rel="stylesheet" href="assets/css/style.ar.min.css" />
 
     <!--============ Global Template CSS File ============-->
-    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/global.css" />
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 
-
-    :root {
-        --primary-font:"El Messiri", serif;
+      :root {
+        --primary-font: "El Messiri", serif;
         --secondary-font: "El Messiri", serif;
-        --bg-color: #F9F4F0;
-    }
+        --bg-color: #f9f4f0;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!--============ HEADER ============-->
     <header>
-        <nav class="nav container">
-            <a href="index.ar.html" class="nav__logo">
-                <img src="assets/images/logotype.svg" alt="image">
-            </a>
+      <nav class="nav container">
+        <a href="index.ar.html" class="nav__logo">
+          <img src="assets/images/logotype.svg" alt="image" />
+        </a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li>
-                        <a href="#about" class="nav__link">من نحن</a>
-                    </li>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a href="#about" class="nav__link">من نحن</a>
+            </li>
 
-                    <li>
-                        <a href="#type" class="nav__link">انواع العسل</a>
-                    </li>
+            <li>
+              <a href="#type" class="nav__link">انواع العسل</a>
+            </li>
 
-                    <li>
-                        <a href="#store" class="nav__link">المتجر</a>
-                    </li>
+            <li>
+              <a href="#store" class="nav__link">المتجر</a>
+            </li>
 
-                    <li>
-                        <a href="#testimonials" class="nav__link">التعليقات</a>
-                    </li>
+            <li>
+              <a href="#testimonials" class="nav__link">التعليقات</a>
+            </li>
 
-                    <li>
-                        <a href="#contact_us" class="nav__link">تواصل معنا</a>
-                    </li>
+            <li>
+              <a href="#contact_us" class="nav__link">تواصل معنا</a>
+            </li>
 
-                    <div class="dropdown14">
-                        <input type="checkbox" id="dropdown14" name="dropdown" >
-                        <label for="dropdown14">
-                            اللغات <span class="arrow-down"></span>
-                        </label>
-                        <ul class="dropdown14-links">
-                            <li>
-                                <a href="./index.html">English</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <li>
-                        <a href="#store" class="btn__link">شراء عسل</a>
-                    </li>
-                </ul>
-
-                <!-- Close button -->
-                <div class="nav__close" id="nav-close">
-                    <i class="fa-solid fa-x"></i>
-                </div>
+            <div class="dropdown14">
+              <input type="checkbox" id="dropdown14" name="dropdown" />
+              <label for="dropdown14">
+                اللغات <span class="arrow-down"></span>
+              </label>
+              <ul class="dropdown14-links">
+                <li>
+                  <a href="./index.html">English</a>
+                </li>
+              </ul>
             </div>
 
-            <!-- Toggle button -->
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </nav>
+            <li>
+              <a href="#store" class="btn__link">شراء عسل</a>
+            </li>
+          </ul>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </div>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
     </header>
 
     <!--============ MAIN ============-->
     <main class="main">
+      <!--============ HOME ============-->
+      <section class="hero">
+        <div class="container">
+          <div class="data-hero">
+            <p>عسل عضوي 100%</p>
+            <h1>HONEYBEE</h1>
+            <p>
+              نحن نقدم مجموعة رائعة من العسل الخام النقي من خلايا النحل لدينا في
+              كاليفورنيا. اطلب العسل من خلايا النحل لدينا!
+            </p>
+            <a href="#store" class="btn-primary"> اشتري الأن </a>
+          </div>
+        </div>
+      </section>
 
-        <!--============ HOME ============-->
-        <section class="hero">
-            <div class="container">
-                <div class="data-hero">
-                    <p>عسل عضوي 100%</p>
-                    <h1>HONEYBEE</h1>
-                    <p>نحن نقدم مجموعة رائعة من العسل الخام النقي من خلايا النحل لدينا في كاليفورنيا. اطلب العسل من خلايا النحل لدينا!</p>
-                    <a href="#store" class="btn-primary">
-                        اشتري الأن
-                    </a>
-                </div>
-            </div>
-        </section>
-        
-        <!--============ SERVICES ============-->
-        <section class="services">
-            <div class="container">
-                <div class="data-services">
-                    <h5 class="section-label">الخدمات</h5>
-                    <h1 class="section-title">خدماتنا</h1>
-                    <p class="section-description">شركتنا العائلية تعمل في كل ما يتعلق بالعسل وإنتاجه. تعرف على المزيد حول خدماتنا أدناه.
+      <!--============ SERVICES ============-->
+      <section class="services">
+        <div class="container">
+          <div class="data-services">
+            <h5 class="section-label">الخدمات</h5>
+            <h1 class="section-title">خدماتنا</h1>
+            <p class="section-description">
+              شركتنا العائلية تعمل في كل ما يتعلق بالعسل وإنتاجه. تعرف على
+              المزيد حول خدماتنا أدناه.
+            </p>
+          </div>
+
+          <div class="sliders" dir="rtl">
+            <!-- Slider main container -->
+            <div class="card_container swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide card-item">
+                  <img src="assets/images/icon1.svg" alt="" />
+                  <div class="body_card">
+                    <h3>إنتاج العسل</h3>
+                    <p>
+                      نقوم بإنتاج العسل وتعبئته وبيعه الذي يتم حصاده بواسطة
+                      نحالينا.
                     </p>
+                    <a href="#store">تعرف أكثر</a>
+                  </div>
                 </div>
 
-                <div class="sliders" dir="rtl">
-                    <!-- Slider main container -->
-                    <div class="card_container swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide card-item">
-                                <img src="assets/images/icon1.svg" alt="">
-                                <div class="body_card">
-                                    <h3>إنتاج العسل</h3>
-                                    <p>نقوم بإنتاج العسل وتعبئته وبيعه الذي يتم حصاده بواسطة نحالينا.</p>
-                                    <a href="#store">تعرف أكثر</a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item">
-                                <img src="assets/images/icon3.svg" alt="">
-                                <div class="body_card">
-                                    <h3>متجر العسل</h3>
-                                    <p>نقدم أكثر من 10 أنواع من العسل الخام العضوي في متجرنا الإلكتروني.</p>
-                                    <a href="#store">تعرف أكثر</a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item">
-                                <img src="assets/images/icon2.svg" alt="">
-                                <div class="body_card">
-                                    <h3>المكملات</h3>
-                                    <p>يمكنك شراء حبوب اللقاح من النحل، البروبوليس، وخلائط الخلايا.</p>
-                                    <a href="#store">تعرف أكثر</a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item">
-                                <img src="assets/images/icon4.svg" alt="">
-                                <div class="body_card">
-                                    <h3>دورات تربية النحل</h3>
-                                    <p>لا تتردد في حجز الرحلات وورش العمل في خلايانا.</p>
-                                    <a href="#store">تعرف أكثر</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev services-prev"></div>
-                    <div class="swiper-button-next services-next"></div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination swiper-pagination-services"></div>
+                <div class="swiper-slide card-item">
+                  <img src="assets/images/icon3.svg" alt="" />
+                  <div class="body_card">
+                    <h3>متجر العسل</h3>
+                    <p>
+                      نقدم أكثر من 10 أنواع من العسل الخام العضوي في متجرنا
+                      الإلكتروني.
+                    </p>
+                    <a href="#store">تعرف أكثر</a>
+                  </div>
                 </div>
+
+                <div class="swiper-slide card-item">
+                  <img src="assets/images/icon2.svg" alt="" />
+                  <div class="body_card">
+                    <h3>المكملات</h3>
+                    <p>
+                      يمكنك شراء حبوب اللقاح من النحل، البروبوليس، وخلائط
+                      الخلايا.
+                    </p>
+                    <a href="#store">تعرف أكثر</a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-item">
+                  <img src="assets/images/icon4.svg" alt="" />
+                  <div class="body_card">
+                    <h3>دورات تربية النحل</h3>
+                    <p>لا تتردد في حجز الرحلات وورش العمل في خلايانا.</p>
+                    <a href="#store">تعرف أكثر</a>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev services-prev"></div>
+            <div class="swiper-button-next services-next"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination swiper-pagination-services"></div>
+          </div>
+        </div>
+      </section>
 
-        <!--============ ABOUT ============-->
-        <section class="about" id="about">
-            <div class="container">
-                <img src="./assets/images/about.png" alt="image">
-                <div class="data-about">
-                    <h5 class="section-label">لماذا تختارنا</h5>
-                    <h1 class="section-title">عن BEEHONEY</h1>
-                    <p class="section-description">نحن شركة عائلية تدير أكثر من 5 خلايا نحل في كاليفورنيا. نقوم بتعبئة عسلنا بحب ورعاية.</p>
-
-                    <div class="features-container">
-                        <ul>
-                            <div class="feature-box">
-                                <div class="feature-icon">
-                                    <img src="./assets/images/icon6.svg" alt="image">
-                                </div>
-                                <div class="feature-text">
-                                    <h3 class="feature-title">بيئة الطبيعية</h3>
-                                    <p class="feature-description">تقع خلايانا في مناطق بيئية نظيفة في كاليفورنيا. النحل يشعر بالسعادة هناك!
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="feature-box">
-                                <div class="feature-icon">
-                                    <img src="./assets/images/icon5.svg" alt="image">
-                                </div>
-                                <div class="feature-text">
-                                    <h3 class="feature-title">إنتاج العسل المعتمد</h3>
-                                    <p class="feature-description">نقوم بإنتاج عسل خام عضوي 100% دون عمليات البسترة أو الفلترة.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="feature-box">
-                                <div class="feature-icon">
-                                    <img src="./assets/images/icon7.svg" alt="image">
-                                </div>
-                                <div class="feature-text">
-                                    <h3 class="feature-title">شحن سريع</h3>
-                                    <p class="feature-description">نحن سريعون جدًا في الشحن، لذا يمكنك الاستمتاع بعسلنا بعد بضعة أيام من طلبك!
-                                    </p>
-                                </div>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!--============ HERO VIDEO ============-->
-        <section class="hero-video">
-            <div class="play-icon">
-                <i class="fa-solid fa-play"></i>
-            </div>
-            <h3>كيف يصنع العسل</h3>
-        </section>
-
-        <!--============ HONEY TYPES ============-->
-        <section class="honey-types" id="type">
-            <div class="container">
-                <div class="data-honey-types">
-                    <h5 class="section-label">انواع العسل</h5>
-                    <h1 class="section-title">أفضل نكهات العسل من خلايانا</h1>
-                    <p class="section-description">العسل هو مصدر متعدد الاستخدامات للفيتامينات والمواد المفيدة لصحتك:</p>
-
-                    <ul class="honey-benefits">
-                        <div>
-                            <img src="assets/images/check-20icon.svg" alt="image">
-                            <li>مفيد لجهازك الهضمي.</li>
-                        </div>
-                        <div>
-                            <img src="assets/images/check-20icon.svg" alt="image">
-                            <li>العسل الخام غني بمضادات الأكسدة.</li>
-                        </div>
-                        <div>
-                            <img src="assets/images/check-20icon.svg" alt="image">
-                            <li>للعسل تأثيرات مفيدة على صحة القلب.</li>
-                        </div>
-                        <div>
-                            <img src="assets/images/check-20icon.svg" alt="image">
-                            <li>يعمل على تحسين معدل الكوليسترول.</li>
-                        </div>
-                    </ul>
-                </div>
-
-                <div class="sliders">
-                    <!-- Slider main container -->
-                    <div class="cards_honey swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide card-item">
-                                <img src="assets/images/icon1.svg" alt="image">
-                                <div class="body_card">
-                                    <h3>عسل البرسيم</h3>
-                                    <p>العسل الكثيف الذي ينتجه النحل من رحيق نباتات البرسيم. يتميز بطعمه المعتدل ولونه الفاتح.
-                                    </p>
-                                    <a class="btn-primary" href="#">اشتري الأن</a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item">
-                                <img src="assets/images/icon3.svg" alt="">
-                                <div class="body_card">
-                                    <h3>عسل الحنطة السوداء</h3>
-                                    <p>هو عسل غني بالمواد الغذائية بلون الكهرمان مع لمسة من اللون الأحمر. يتمتع بطعم حلو لذيذ.
-                                    </p>
-                                    <a class="btn-primary" href="#">اشتري الأن</a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item">
-                                <img src="assets/images/icon2.svg" alt="">
-                                <div class="body_card">
-                                    <h3>عسل الأزهار البرية</h3>
-                                    <p>يُعرف أيضًا باسم العسل متعدد الأزهار. يتم إنتاجه من رحيق أنواع مختلفة من الأزهار أو الأزهار المتنوعة.
-                                    </p>
-                                    <a class="btn-primary" href="#">اشتري الان</a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item">
-                                <img src="assets/images/icon4.svg" alt="">
-                                <div class="body_card">
-                                    <h3>عسل زهور الحمضيات</h3>
-                                    <p>هذا العسل حلو وقوامه كثيف نسبيًا، وهو يتناسب تمامًا مع الشاي أو التوست. إنه أفضل ارتباط مع كاليفورنيا!
-                                    </p>
-                                    <a class="btn-primary" href="#">اشتري الان</a>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev type-prev"></div>
-                    <div class="swiper-button-next type-next"></div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination swiper-pagination-honey"></div>
-                </div>
-            </div>
-        </section>
-
-        <!--============ STORE ============-->
-        <section class="store" id="store">
-            <h5 class="section-label">المتجر</h5>
-            <h1 class="section-title">عسلنا</h1>
-            <p class="section-description">تسوق أفضل أنواع العسل المعبأ لهذا الموسم. نحن ننتج فقط العسل الطبيعي الخام والحلو دون أي شوائب أو إضافات. إذا كنت ترغب في شراء العسل، سارع الآن!
+      <!--============ ABOUT ============-->
+      <section class="about" id="about">
+        <div class="container">
+          <img src="./assets/images/about.png" alt="image" />
+          <div class="data-about">
+            <h5 class="section-label">لماذا تختارنا</h5>
+            <h1 class="section-title">عن BEEHONEY</h1>
+            <p class="section-description">
+              نحن شركة عائلية تدير أكثر من 5 خلايا نحل في كاليفورنيا. نقوم
+              بتعبئة عسلنا بحب ورعاية.
             </p>
 
-            <div class="container">
-                <div class="sliders">
-                    <!-- Slider main container -->
-                    <div class="store_slider swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            
-                            <div class="swiper-slide card-item" onclick="storeProductData(this)"
-                            data-name="عسل الحنطة السوداء"
-                            data-price="7,00"
-                            data-src="assets/images/480 (3).jpeg"
-                            data-code="18"
-                            data-weight="300"
-                            >
-                                <a href="product_ar.html">
-                                    <img src="assets/images/480 (3).jpeg" alt="image">
-                                </a>
-                                <div class="body_card">
-                                    <a href="product_ar.html">
-                                        <h3>عسل الحنطة السوداء</h3>
-                                    </a>
-                                    <h3 class="price">$7,00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))">اشتري الأن</button>
-                                    <!-- <button class="btn-primary" onclick="addProductToCart(false)">اشتري الأن</button> -->
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item" onclick="storeProductData(this)"
-                            data-src="assets/images/480.jpeg"
-                            data-name="عسل الأزهار"
-                            data-price="20,00"
-                            data-code="19"
-                            data-weight="450"
-                            >
-                                <a href="./product_ar.html">
-                                    <img src="assets/images/480.jpeg" alt="image">
-                                </a>
-                                <div class="body_card">
-                                    <a href="./product_ar.html">
-                                        <h3>عسل الأزهار</h3>
-                                    </a>
-                                    <h3 class="price">$20.00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >اشتري الأن</button>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item" onclick="storeProductData(this)"
-                            data-src="assets/images/480 (1).jpeg"
-                            data-name="عسل البرسيم"
-                            data-price="8,00"
-                            data-code="20"
-                            data-weight="300"
-                            >
-                                <a href="product_ar.html">
-                                    <img src="assets/images/480 (1).jpeg" alt="image">
-                                </a>
-                                <div class="body_card">
-                                    <a href="product_ar.html">
-                                        <h3>عسل البرسيم</h3>
-                                    </a>
-                                    <h3 class="price">$8.00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >اشتري الأن</button>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item" onclick="storeProductData(this)"
-                            data-src="assets/images/480 (2).jpeg"
-                            data-name="عسل الحنطة السوداء"
-                            data-price="10,00"
-                            data-code="21"
-                            data-weight="300"
-                            >
-                                <a href="product_ar.html">
-                                    <img src="assets/images/480 (2).jpeg" alt="image">
-                                </a>
-                                <div class="body_card">
-                                    <a href="product_ar.html">
-                                        <h3>عسل الحنطة السوداء</h3>
-                                    </a>
-                                    <h3 class="price">$10.00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >اشتري الأن</button>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item" onclick="storeProductData(this)"
-                            data-src="assets/images/480 (4).jpeg"
-                            data-name="عسل زهور الحمضيات"
-                            data-price="15,00"
-                            data-code="22"
-                            data-weight="450"
-                            >
-                                <a href="product_ar.html">
-                                    <img src="assets/images/480 (4).jpeg" alt="image" >
-                                </a>
-                                <div class="body_card">
-                                    <a href="product_ar.html">
-                                        <h3>عسل زهور الحمضيات</h3>
-                                    </a>
-                                    <h3 class="price" >$15.00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >اشتري الأن</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev store-prev"></div>
-                    <div class="swiper-button-next store-next"></div>
+            <div class="features-container">
+              <ul>
+                <div class="feature-box">
+                  <div class="feature-icon">
+                    <img src="./assets/images/icon6.svg" alt="image" />
+                  </div>
+                  <div class="feature-text">
+                    <h3 class="feature-title">بيئة الطبيعية</h3>
+                    <p class="feature-description">
+                      تقع خلايانا في مناطق بيئية نظيفة في كاليفورنيا. النحل يشعر
+                      بالسعادة هناك!
+                    </p>
+                  </div>
                 </div>
+
+                <div class="feature-box">
+                  <div class="feature-icon">
+                    <img src="./assets/images/icon5.svg" alt="image" />
+                  </div>
+                  <div class="feature-text">
+                    <h3 class="feature-title">إنتاج العسل المعتمد</h3>
+                    <p class="feature-description">
+                      نقوم بإنتاج عسل خام عضوي 100% دون عمليات البسترة أو
+                      الفلترة.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-box">
+                  <div class="feature-icon">
+                    <img src="./assets/images/icon7.svg" alt="image" />
+                  </div>
+                  <div class="feature-text">
+                    <h3 class="feature-title">شحن سريع</h3>
+                    <p class="feature-description">
+                      نحن سريعون جدًا في الشحن، لذا يمكنك الاستمتاع بعسلنا بعد
+                      بضعة أيام من طلبك!
+                    </p>
+                  </div>
+                </div>
+              </ul>
             </div>
-        </section>
-        
-        <!--============ ORDER ============-->
-        <section class="order">
-            <div class="backgourng-top"></div>
+          </div>
+        </div>
+      </section>
 
-            
-            <div class="container">
-                <h5 class="section-label">كيف تطلب</h5>
-                <h1 class="section-title">هل تريد ان تطلب عسل؟</h1>
-                <p class="section-description">نحن سلسلة خلايا نحل صغيرة مملوكة لعائلة في كاليفورنيا وننتج كمية محدودة من العسل في كل موسم. إذا كنت ترغب في شراء العسل، فالمعلومات أدناه هي لك:
-                </p>
+      <!--============ HERO VIDEO ============-->
+      <section class="hero-video">
+        <div class="play-icon">
+          <i class="fa-solid fa-play"></i>
+        </div>
+        <h3>كيف يصنع العسل</h3>
+      </section>
 
-                <div class="order-container">
-                    <div class="box-order">
-                        <img src="assets/images/icon12.svg" alt="image">
-                        <h3>1. انتظر قليلاً</h3>
-                        <p>نقوم بحصاد العسل تقريبًا 4 مرات في السنة، باستثناء فصل الشتاء.</p>
-                    </div>
-
-                    <div class="box-order">
-                        <img src="assets/images/icon13.svg" alt="image">
-                        <h3>2. اختر نوع العسل</h3>
-                        <p>اعتمادًا على الموسم، قد توجد أنواع مختلفة من العسل المعبأ حديثًا على موقعنا.</p>
-                    </div>
-
-                    <div class="box-order">
-                        <img src="assets/images/icon14.svg" alt="image">
-                        <h3>3. اطلب واستمتع</h3>
-                        <p>نحن سريعون جدًا في الشحن، لذا ستتلقى طردك في غضون أيام قليلة.</p>
-                    </div>
-                </div>
-                <a class="btn-primary" href="#">هل لديك طلب خاص؟</a>
-            </div>
-        </section>
-
-        <!--============ TESTIMONIALS ============-->
-        <section class="testimonials" id="testimonials">
-            <div class="container">
-                <h5 class="section-label">التعليقات</h5>
-                <h1 class="section-title">ماذا يقول عملاؤنا</h1>
-                <p class="section-description">نحن سعيدون لأن عسلنا يلقى إعجاب عملائنا. تعليقاتكم وكلماتكم الدافئة من التقدير تجعلنا أفضل!
-                </p>
-
-                <div class="sliders">
-                    <!-- Slider main container -->
-                    <div class="testimonials_slider swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide card-item">
-                                <div class="body_card">
-                                    <img src="assets/images/user1.jpeg" alt="user Image" class="image">
-                                    <h3>Jessica Peterson</h3>
-                                    <blockquote>"هذا عسل رائع، 100% طبيعي! ليست هذه المرة الأولى التي أطلب فيها العسل من هذه الشركة، وفي كل مرة أعلم أنني سأحصل على عسل لذيذ وعالي الجودة وغير متبلور. أستخدم العسل كإضافة على الفطائر والحلويات المختلفة، وكذلك في التتبيلات. إنه لذيذ، وأطفالي يحبون هذا العسل أيضًا!"
-                                    </blockquote>
-                                    <p class="post-date">October 28, 2024</p>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item">
-                                <div class="body_card">
-                                    <img src="assets/images/user-2.png" alt="user Image">
-                                    <h3>Dean Nillstrom</h3>
-                                    <blockquote>“في الوقت الحاضر، ليس من السهل العثور على عسل جيد ولذيذ وطبيعي حقًا. جربت عسل HoneyBee لأول مرة منذ عدة سنوات، ومنذ ذلك الحين أصبحت زبونًا منتظمًا لهذا المنتج. أنا متأكد تمامًا من أن هؤلاء الأشخاص يعملون بحرفية ويبيعون عسلًا حقيقيًا من خلاياهم. أنا دائمًا راضٍ عن المنتج الذي أستلمه."
-                                    </blockquote>
-                                    <p class="post-date">February 12, 2024</p>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item">
-                                <div class="body_card">
-                                    <img src="assets/images/user2.jpeg" alt="user Image" class="image">
-                                    <h3>Diana Fergusson</h3>
-                                    <blockquote>
-                                        “بعد أن تذوقت هذا العسل مرة واحدة، لم أعد بحاجة إلى بدائل. هذا هو ألذ عسل جربته على الإطلاق! أشتري أنواعًا مختلفة من العسل، من عسل البرسيم إلى عسل الحنطة السوداء. كل جرة من العسل هي انتصار حقيقي في الطعم. هذا هو العسل الحقيقي — كثيف، عطره رائع، داكن، وحلو معتدل. بالضبط ما أحتاجه!"
-                                    </blockquote>
-                                    <p class="post-date">April 18, 2024</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev testimonials-prev"></div>
-                    <div class="swiper-button-next testimonials-next"></div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination swiper-pagination-testimonials"></div>
-                </div>
-            </div>
-        </section>
-
-        <!--============ STATS NUMBER ============-->
-        <section class="stats-number">
-            <div class="container">
-
-                <div class="box-stat">
-                    <h1 class="section-title">2574</h1>
-                    <h3>جرار العسل المنتجة في عام 2022</h3>
-                </div>
-
-                <div class="box-stat">
-                    <h1 class="section-title">130</h1>
-                    <h3>العملاء كل شهر</h3>
-                </div>
-
-                <div class="box-stat">
-                    <h1 class="section-title">12</h1>
-                    <h3>خلايا النحل في كاليفورنيا</h3>
-                </div>
-
-                <div class="box-stat">
-                    <h1 class="section-title">3946</h1>
-                    <h3>النحل الذي يعمل من أجلك</h3>
-                </div>
-
-            </div>
-        </section>
-
-        <!--============ BLOG ============-->
-        <section class="blog">
-            <h5 class="section-label">المدونة</h5>
-            <h1 class="section-title">تعرف أكثر عن HoneyBee</h1>
-            <p class="section-description">تعتقد أن إنتاج العسل ممل؟ على الإطلاق! اقرأ مدونتنا وآخر الأخبار من خلايانا لتعرف المزيد!
+      <!--============ HONEY TYPES ============-->
+      <section class="honey-types" id="type">
+        <div class="container">
+          <div class="data-honey-types">
+            <h5 class="section-label">انواع العسل</h5>
+            <h1 class="section-title">أفضل نكهات العسل من خلايانا</h1>
+            <p class="section-description">
+              العسل هو مصدر متعدد الاستخدامات للفيتامينات والمواد المفيدة لصحتك:
             </p>
-            <div class="container">
-                <div class="sliders">
-                    <!-- Slider main container -->
-                    <div class="blog_slider swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide card-item">
-                                <div class="body_card">
-                                    <img src="assets/images/news-2.jpg" alt="">
-                                    <p class="post-date">FEBRUARY 7, 2024</p>
-                                    <h3>ما هو العسل الطبيعي؟</h3>
-                                    <p>لنرى كيف يمكن التمييز بين العسل الطبيعي والعسل الصناعي.</p>
-                                </div>
-                            </div>
 
-                            <div class="swiper-slide card-item">
-                                <div class="body_card">
-                                    <img src="assets/images/news-3.jpg" alt="">
-                                    <p class="post-date">MARCH 10, 2024</p>
-                                    <h3>الموسم الجديد هنا!</h3>
-                                    <p>بعد الشتاء، يبدأ العمل في خلايانا في كاليفورنيا من جديد وبكامل طاقته.</p>
-                                </div>
-                            </div>
+            <ul class="honey-benefits">
+              <div>
+                <img src="assets/images/check-20icon.svg" alt="image" />
+                <li>مفيد لجهازك الهضمي.</li>
+              </div>
+              <div>
+                <img src="assets/images/check-20icon.svg" alt="image" />
+                <li>العسل الخام غني بمضادات الأكسدة.</li>
+              </div>
+              <div>
+                <img src="assets/images/check-20icon.svg" alt="image" />
+                <li>للعسل تأثيرات مفيدة على صحة القلب.</li>
+              </div>
+              <div>
+                <img src="assets/images/check-20icon.svg" alt="image" />
+                <li>يعمل على تحسين معدل الكوليسترول.</li>
+              </div>
+            </ul>
+          </div>
 
-                            <div class="swiper-slide card-item">
-                                <div class="body_card">
-                                    <img src="assets/images/news-1.jpg" alt="">
-                                    <p class="post-date">MARCH 17, 2023</p>
-                                    <h3>العسل في الجرار</h3>
-                                    <p>لماذا يُباع العسل عادة في الجرار الزجاجية؟ <br> خبيرنا يشرح.</p>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item">
-                                <div class="body_card">
-                                    <img src="assets/images/news-4.jpg" alt="">
-                                    <p class="post-date">APRIL 12, 2023</p>
-                                    <h3>كيف يتم حصاد العسل؟</h3>
-                                    <p>بعد الشتاء، يبدأ العمل في خلايانا في كاليفورنيا من جديد وبكامل طاقته.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev blog-prev"></div>
-                    <div class="swiper-button-next blog-next"></div>
-                </div>
-            </div>
-        </section>
-
-        <!--============ FAQ ============-->
-        <section class="faq">
-            <div class="container">
-                <img src="assets/images/60a6203d80a13d0021b9d5b9_optimized_900_c900x1000-0x0.jpeg" alt="image">
-                <div class="data-faq">
-                    <h5 class="section-label">الأسئلة الشائعة</h5>
-                    <h1 class="section-title">أسئلة العسل</h1>
-                    <p class="section-description">فيما يلي أشهر الأسئلة من عملائنا.</p>
-
-                    <div class="faq-container">
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h2>ما هو العسل الخام؟</h2>
-                                <div class="faq-toggle">
-                                    <span></span>
-                                    <span class="toggle-ele"></span>
-                                </div>
-                            </div>
-                            <div class="faq-answer">
-                                <p>العسل الخام هو العسل كما هو في خلية النحل. يتم صنع العسل الخام عن طريق استخراج العسل من الأقراص العسلية وفصل الشوائب عنه. لا يحتوي على أي سكريات مخفية ولم يخضع لعملية البسترة أو المعالجة.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h2>هل يمكن أن يسبب عسلنا الحساسية؟</h2>
-                                <div class="faq-toggle">
-                                    <span></span>
-                                    <span class="toggle-ele"></span>
-                                </div>
-                            </div>
-                            <div class="faq-answer">
-                                <p>نحن نبيع عسلًا عضويًا نقيًا، ولكن يمكن أن يسبب الحساسية بالفعل. الأعراض الشائعة هي نفسها أعراض حساسية حبوب اللقاح الشائعة: سيلان الأنف، والعطس، والتورم.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h2>ما هي خيارات الدفع التي تقدمها؟</h2>
-                                <div class="faq-toggle">
-                                    <span></span>
-                                    <span class="toggle-ele"></span>
-                                </div>
-                            </div>
-                            <div class="faq-answer">
-                                <p>نحن نقبل بطاقات فيزا وماستر كارد الصادرة من أي بنك أمريكي. يمكنك أيضًا استخدام بايبال.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h2>لماذا يتغير التشكيل أحيانًا؟</h2>
-                                <div class="faq-toggle">
-                                    <span></span>
-                                    <span class="toggle-ele"></span>
-                                </div>
-                            </div>
-                            <div class="faq-answer">
-                                <p>نقوم بتعبئة العسل 3-4 مرات في السنة، وفقًا لمواسم الحصاد. قدراتنا محدودة بحوالي 3000 جرة في السنة. لذلك، اعتمادًا على الموسم، قد يكون هناك أنواع مختلفة من العسل في تشكيلنا، وقد تكون بعض المنتجات غير متوفرة مؤقتًا.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <!--============ CONTACT ============-->
-        <section class="contact" id="contact_us">
-            <div class="container">
-                <div class="data-contact">
-                    <h5 class="section-label">التواصل</h5>
-                    <h1 class="section-title">اتصل بنا في أي وقت</h1>
-                    <p class="section-description">لا تتردد في الاتصال بنا لأي استفسارات أو عروض تجارية:</p>
-
-                    <div class="data-info">
-                        <div class="info-group">
-                            <h3>العنوان</h3>
-                            <p>
-                                44670 طريق ماتول، هونيديو،
-                                كاليفورنيا 95545
-                            </p>
-                        </div>
-
-                        <div class="info-group">
-                            <h3>ساعات العمل</h3>
-                            <p>
-                                الأحد: من 11 صباحًا حتى 7 مساءً <br>
-                                الإثنين - السبت: من 11 صباحًا حتى 9 مساءً
-                            </p>
-                        </div>
-
-                        <div class="info-group">
-                            <h3>وسائل الاتصال</h3>
-                            <p>
-                                +1 (234) 567 89 00 <br>
-                                honeybee@email.com
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d698150.6230082805!2d8.2231001!3d46.8800804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ff3d94530bdab%3A0xb5df0b1031f484c4!2sSelbstbedienungs%20Hofladen%20Imkerei%20Wilen!5e0!3m2!1sar!2ssa!4v1733448809404!5m2!1sar!2ssa" width="570" height="244" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+          <div class="sliders">
+            <!-- Slider main container -->
+            <div class="cards_honey swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide card-item">
+                  <img src="assets/images/icon1.svg" alt="image" />
+                  <div class="body_card">
+                    <h3>عسل البرسيم</h3>
+                    <p>
+                      العسل الكثيف الذي ينتجه النحل من رحيق نباتات البرسيم.
+                      يتميز بطعمه المعتدل ولونه الفاتح.
+                    </p>
+                    <a class="btn-primary" href="#">اشتري الأن</a>
+                  </div>
                 </div>
 
-                <form class="form" action="#">
-                    <input type="text" class="input required" placeholder="ادخل اسمك كامل*" required>
-                    <input type="number" class="input required" placeholder="ادخل رقم هاتفك*" required min="9">
-                    <input type="email" class="input required" placeholder="ادخل بريدك الإكتروني*" required>
-                    <textarea class="input" placeholder="ادخل رسالتك"></textarea>
-                    <input type="submit" class="btn-primary" id="input_request" value="طلب عرض الاسعار">
-                </form>
-            </div>
-        </section>
+                <div class="swiper-slide card-item">
+                  <img src="assets/images/icon3.svg" alt="" />
+                  <div class="body_card">
+                    <h3>عسل الحنطة السوداء</h3>
+                    <p>
+                      هو عسل غني بالمواد الغذائية بلون الكهرمان مع لمسة من اللون
+                      الأحمر. يتمتع بطعم حلو لذيذ.
+                    </p>
+                    <a class="btn-primary" href="#">اشتري الأن</a>
+                  </div>
+                </div>
 
-        <div class="pop-up-contact" id="pop_up_contact">
-            <i class="fa-solid fa-xmark close" id="close"></i>
-            <img src="./assets/images/done.png" alt="done">
-            <h4>شكرا لك!</h4>
-            <p>سنتواصل معك في اقرب وقت</p>
-            <button class="btn-primary">حسناً</button>
+                <div class="swiper-slide card-item">
+                  <img src="assets/images/icon2.svg" alt="" />
+                  <div class="body_card">
+                    <h3>عسل الأزهار البرية</h3>
+                    <p>
+                      يُعرف أيضًا باسم العسل متعدد الأزهار. يتم إنتاجه من رحيق
+                      أنواع مختلفة من الأزهار أو الأزهار المتنوعة.
+                    </p>
+                    <a class="btn-primary" href="#">اشتري الان</a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-item">
+                  <img src="assets/images/icon4.svg" alt="" />
+                  <div class="body_card">
+                    <h3>عسل زهور الحمضيات</h3>
+                    <p>
+                      هذا العسل حلو وقوامه كثيف نسبيًا، وهو يتناسب تمامًا مع
+                      الشاي أو التوست. إنه أفضل ارتباط مع كاليفورنيا!
+                    </p>
+                    <a class="btn-primary" href="#">اشتري الان</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev type-prev"></div>
+            <div class="swiper-button-next type-next"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination swiper-pagination-honey"></div>
+          </div>
         </div>
-        <div class="pop-up-shadow" id="pop_up_shadow">
+      </section>
 
+      <!--============ STORE ============-->
+      <section class="store" id="store">
+        <h5 class="section-label">المتجر</h5>
+        <h1 class="section-title">عسلنا</h1>
+        <p class="section-description">
+          تسوق أفضل أنواع العسل المعبأ لهذا الموسم. نحن ننتج فقط العسل الطبيعي
+          الخام والحلو دون أي شوائب أو إضافات. إذا كنت ترغب في شراء العسل، سارع
+          الآن!
+        </p>
+
+        <div class="container">
+          <div class="sliders">
+            <!-- Slider main container -->
+            <div class="store_slider swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+
+                <div
+                  class="swiper-slide card-item"
+                  onclick="storeProductData(this)"
+                  data-name="عسل الحنطة السوداء"
+                  data-price="7,00"
+                  data-src="assets/images/480 (3).jpeg"
+                  data-code="18"
+                  data-weight="300"
+                >
+                  <a href="product_ar.html">
+                    <img src="assets/images/480 (3).jpeg" alt="image" />
+                  </a>
+                  <div class="body_card">
+                    <a href="product_ar.html">
+                      <h3>عسل الحنطة السوداء</h3>
+                    </a>
+                    <h3 class="price">$7,00USD</h3>
+                    <button
+                      class="btn-primary"
+                      onclick="addProductToCart(this.closest('.card-item'))"
+                    >
+                      اشتري الأن
+                    </button>
+                    <!-- <button class="btn-primary" onclick="addProductToCart(false)">اشتري الأن</button> -->
+                  </div>
+                </div>
+
+                <div
+                  class="swiper-slide card-item"
+                  onclick="storeProductData(this)"
+                  data-src="assets/images/480.jpeg"
+                  data-name="عسل الأزهار"
+                  data-price="20,00"
+                  data-code="19"
+                  data-weight="450"
+                >
+                  <a href="./product_ar.html">
+                    <img src="assets/images/480.jpeg" alt="image" />
+                  </a>
+                  <div class="body_card">
+                    <a href="./product_ar.html">
+                      <h3>عسل الأزهار</h3>
+                    </a>
+                    <h3 class="price">$20.00USD</h3>
+                    <button
+                      class="btn-primary"
+                      onclick="addProductToCart(this.closest('.card-item'))"
+                    >
+                      اشتري الأن
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="swiper-slide card-item"
+                  onclick="storeProductData(this)"
+                  data-src="assets/images/480 (1).jpeg"
+                  data-name="عسل البرسيم"
+                  data-price="8,00"
+                  data-code="20"
+                  data-weight="300"
+                >
+                  <a href="product_ar.html">
+                    <img src="assets/images/480 (1).jpeg" alt="image" />
+                  </a>
+                  <div class="body_card">
+                    <a href="product_ar.html">
+                      <h3>عسل البرسيم</h3>
+                    </a>
+                    <h3 class="price">$8.00USD</h3>
+                    <button
+                      class="btn-primary"
+                      onclick="addProductToCart(this.closest('.card-item'))"
+                    >
+                      اشتري الأن
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="swiper-slide card-item"
+                  onclick="storeProductData(this)"
+                  data-src="assets/images/480 (2).jpeg"
+                  data-name="عسل الحنطة السوداء"
+                  data-price="10,00"
+                  data-code="21"
+                  data-weight="300"
+                >
+                  <a href="product_ar.html">
+                    <img src="assets/images/480 (2).jpeg" alt="image" />
+                  </a>
+                  <div class="body_card">
+                    <a href="product_ar.html">
+                      <h3>عسل الحنطة السوداء</h3>
+                    </a>
+                    <h3 class="price">$10.00USD</h3>
+                    <button
+                      class="btn-primary"
+                      onclick="addProductToCart(this.closest('.card-item'))"
+                    >
+                      اشتري الأن
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="swiper-slide card-item"
+                  onclick="storeProductData(this)"
+                  data-src="assets/images/480 (4).jpeg"
+                  data-name="عسل زهور الحمضيات"
+                  data-price="15,00"
+                  data-code="22"
+                  data-weight="450"
+                >
+                  <a href="product_ar.html">
+                    <img src="assets/images/480 (4).jpeg" alt="image" />
+                  </a>
+                  <div class="body_card">
+                    <a href="product_ar.html">
+                      <h3>عسل زهور الحمضيات</h3>
+                    </a>
+                    <h3 class="price">$15.00USD</h3>
+                    <button
+                      class="btn-primary"
+                      onclick="addProductToCart(this.closest('.card-item'))"
+                    >
+                      اشتري الأن
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev store-prev"></div>
+            <div class="swiper-button-next store-next"></div>
+          </div>
         </div>
-        
+      </section>
 
-        <!--============ HONEY GALLERY ============-->
-        <section class="honey-gallery">
-                <img src="assets/images/gallery-5.jpg" alt="image">
-                <img src="assets/images/gallery-4.jpg" alt="image">
-                <img src="assets/images/gallery-1.jpeg" alt="image">
-                <img src="assets/images/gallery-3.jpg" alt="image">
-                <img src="assets/images/gallery-2.jpg" alt="image">
-        </section>
+      <!--============ ORDER ============-->
+      <section class="order">
+        <div class="backgourng-top"></div>
+
+        <div class="container">
+          <h5 class="section-label">كيف تطلب</h5>
+          <h1 class="section-title">هل تريد ان تطلب عسل؟</h1>
+          <p class="section-description">
+            نحن سلسلة خلايا نحل صغيرة مملوكة لعائلة في كاليفورنيا وننتج كمية
+            محدودة من العسل في كل موسم. إذا كنت ترغب في شراء العسل، فالمعلومات
+            أدناه هي لك:
+          </p>
+
+          <div class="order-container">
+            <div class="box-order">
+              <img src="assets/images/icon12.svg" alt="image" />
+              <h3>1. انتظر قليلاً</h3>
+              <p>
+                نقوم بحصاد العسل تقريبًا 4 مرات في السنة، باستثناء فصل الشتاء.
+              </p>
+            </div>
+
+            <div class="box-order">
+              <img src="assets/images/icon13.svg" alt="image" />
+              <h3>2. اختر نوع العسل</h3>
+              <p>
+                اعتمادًا على الموسم، قد توجد أنواع مختلفة من العسل المعبأ حديثًا
+                على موقعنا.
+              </p>
+            </div>
+
+            <div class="box-order">
+              <img src="assets/images/icon14.svg" alt="image" />
+              <h3>3. اطلب واستمتع</h3>
+              <p>
+                نحن سريعون جدًا في الشحن، لذا ستتلقى طردك في غضون أيام قليلة.
+              </p>
+            </div>
+          </div>
+          <a class="btn-primary" href="#">هل لديك طلب خاص؟</a>
+        </div>
+      </section>
+
+      <!--============ TESTIMONIALS ============-->
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <h5 class="section-label">التعليقات</h5>
+          <h1 class="section-title">ماذا يقول عملاؤنا</h1>
+          <p class="section-description">
+            نحن سعيدون لأن عسلنا يلقى إعجاب عملائنا. تعليقاتكم وكلماتكم الدافئة
+            من التقدير تجعلنا أفضل!
+          </p>
+
+          <div class="sliders">
+            <!-- Slider main container -->
+            <div class="testimonials_slider swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide card-item">
+                  <div class="body_card">
+                    <img
+                      src="assets/images/user1.jpeg"
+                      alt="user Image"
+                      class="image"
+                    />
+                    <h3>Jessica Peterson</h3>
+                    <blockquote>
+                      "هذا عسل رائع، 100% طبيعي! ليست هذه المرة الأولى التي أطلب
+                      فيها العسل من هذه الشركة، وفي كل مرة أعلم أنني سأحصل على
+                      عسل لذيذ وعالي الجودة وغير متبلور. أستخدم العسل كإضافة على
+                      الفطائر والحلويات المختلفة، وكذلك في التتبيلات. إنه لذيذ،
+                      وأطفالي يحبون هذا العسل أيضًا!"
+                    </blockquote>
+                    <p class="post-date">October 28, 2024</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-item">
+                  <div class="body_card">
+                    <img src="assets/images/user-2.png" alt="user Image" />
+                    <h3>Dean Nillstrom</h3>
+                    <blockquote>
+                      “في الوقت الحاضر، ليس من السهل العثور على عسل جيد ولذيذ
+                      وطبيعي حقًا. جربت عسل HoneyBee لأول مرة منذ عدة سنوات،
+                      ومنذ ذلك الحين أصبحت زبونًا منتظمًا لهذا المنتج. أنا متأكد
+                      تمامًا من أن هؤلاء الأشخاص يعملون بحرفية ويبيعون عسلًا
+                      حقيقيًا من خلاياهم. أنا دائمًا راضٍ عن المنتج الذي
+                      أستلمه."
+                    </blockquote>
+                    <p class="post-date">February 12, 2024</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-item">
+                  <div class="body_card">
+                    <img
+                      src="assets/images/user2.jpeg"
+                      alt="user Image"
+                      class="image"
+                    />
+                    <h3>Diana Fergusson</h3>
+                    <blockquote>
+                      “بعد أن تذوقت هذا العسل مرة واحدة، لم أعد بحاجة إلى بدائل.
+                      هذا هو ألذ عسل جربته على الإطلاق! أشتري أنواعًا مختلفة من
+                      العسل، من عسل البرسيم إلى عسل الحنطة السوداء. كل جرة من
+                      العسل هي انتصار حقيقي في الطعم. هذا هو العسل الحقيقي —
+                      كثيف، عطره رائع، داكن، وحلو معتدل. بالضبط ما أحتاجه!"
+                    </blockquote>
+                    <p class="post-date">April 18, 2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev testimonials-prev"></div>
+            <div class="swiper-button-next testimonials-next"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination swiper-pagination-testimonials"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--============ STATS NUMBER ============-->
+      <section class="stats-number">
+        <div class="container">
+          <div class="box-stat">
+            <h1 class="section-title">2574</h1>
+            <h3>جرار العسل المنتجة في عام 2022</h3>
+          </div>
+
+          <div class="box-stat">
+            <h1 class="section-title">130</h1>
+            <h3>العملاء كل شهر</h3>
+          </div>
+
+          <div class="box-stat">
+            <h1 class="section-title">12</h1>
+            <h3>خلايا النحل في كاليفورنيا</h3>
+          </div>
+
+          <div class="box-stat">
+            <h1 class="section-title">3946</h1>
+            <h3>النحل الذي يعمل من أجلك</h3>
+          </div>
+        </div>
+      </section>
+
+      <!--============ BLOG ============-->
+      <section class="blog">
+        <h5 class="section-label">المدونة</h5>
+        <h1 class="section-title">تعرف أكثر عن HoneyBee</h1>
+        <p class="section-description">
+          تعتقد أن إنتاج العسل ممل؟ على الإطلاق! اقرأ مدونتنا وآخر الأخبار من
+          خلايانا لتعرف المزيد!
+        </p>
+        <div class="container">
+          <div class="sliders">
+            <!-- Slider main container -->
+            <div class="blog_slider swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide card-item">
+                  <div class="body_card">
+                    <img src="assets/images/news-2.jpg" alt="" />
+                    <p class="post-date">FEBRUARY 7, 2024</p>
+                    <h3>ما هو العسل الطبيعي؟</h3>
+                    <p>
+                      لنرى كيف يمكن التمييز بين العسل الطبيعي والعسل الصناعي.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-item">
+                  <div class="body_card">
+                    <img src="assets/images/news-3.jpg" alt="" />
+                    <p class="post-date">MARCH 10, 2024</p>
+                    <h3>الموسم الجديد هنا!</h3>
+                    <p>
+                      بعد الشتاء، يبدأ العمل في خلايانا في كاليفورنيا من جديد
+                      وبكامل طاقته.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-item">
+                  <div class="body_card">
+                    <img src="assets/images/news-1.jpg" alt="" />
+                    <p class="post-date">MARCH 17, 2023</p>
+                    <h3>العسل في الجرار</h3>
+                    <p>
+                      لماذا يُباع العسل عادة في الجرار الزجاجية؟ <br />
+                      خبيرنا يشرح.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-item">
+                  <div class="body_card">
+                    <img src="assets/images/news-4.jpg" alt="" />
+                    <p class="post-date">APRIL 12, 2023</p>
+                    <h3>كيف يتم حصاد العسل؟</h3>
+                    <p>
+                      بعد الشتاء، يبدأ العمل في خلايانا في كاليفورنيا من جديد
+                      وبكامل طاقته.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev blog-prev"></div>
+            <div class="swiper-button-next blog-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--============ FAQ ============-->
+      <section class="faq">
+        <div class="container">
+          <img
+            src="assets/images/60a6203d80a13d0021b9d5b9_optimized_900_c900x1000-0x0.jpeg"
+            alt="image"
+          />
+          <div class="data-faq">
+            <h5 class="section-label">الأسئلة الشائعة</h5>
+            <h1 class="section-title">أسئلة العسل</h1>
+            <p class="section-description">فيما يلي أشهر الأسئلة من عملائنا.</p>
+
+            <div class="faq-container">
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h2>ما هو العسل الخام؟</h2>
+                  <div class="faq-toggle">
+                    <span></span>
+                    <span class="toggle-ele"></span>
+                  </div>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    العسل الخام هو العسل كما هو في خلية النحل. يتم صنع العسل
+                    الخام عن طريق استخراج العسل من الأقراص العسلية وفصل الشوائب
+                    عنه. لا يحتوي على أي سكريات مخفية ولم يخضع لعملية البسترة أو
+                    المعالجة.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h2>هل يمكن أن يسبب عسلنا الحساسية؟</h2>
+                  <div class="faq-toggle">
+                    <span></span>
+                    <span class="toggle-ele"></span>
+                  </div>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    نحن نبيع عسلًا عضويًا نقيًا، ولكن يمكن أن يسبب الحساسية
+                    بالفعل. الأعراض الشائعة هي نفسها أعراض حساسية حبوب اللقاح
+                    الشائعة: سيلان الأنف، والعطس، والتورم.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h2>ما هي خيارات الدفع التي تقدمها؟</h2>
+                  <div class="faq-toggle">
+                    <span></span>
+                    <span class="toggle-ele"></span>
+                  </div>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    نحن نقبل بطاقات فيزا وماستر كارد الصادرة من أي بنك أمريكي.
+                    يمكنك أيضًا استخدام بايبال.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h2>لماذا يتغير التشكيل أحيانًا؟</h2>
+                  <div class="faq-toggle">
+                    <span></span>
+                    <span class="toggle-ele"></span>
+                  </div>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    نقوم بتعبئة العسل 3-4 مرات في السنة، وفقًا لمواسم الحصاد.
+                    قدراتنا محدودة بحوالي 3000 جرة في السنة. لذلك، اعتمادًا على
+                    الموسم، قد يكون هناك أنواع مختلفة من العسل في تشكيلنا، وقد
+                    تكون بعض المنتجات غير متوفرة مؤقتًا.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--============ CONTACT ============-->
+      <section class="contact" id="contact_us">
+        <div class="container">
+          <div class="data-contact">
+            <h5 class="section-label">التواصل</h5>
+            <h1 class="section-title">اتصل بنا في أي وقت</h1>
+            <p class="section-description">
+              لا تتردد في الاتصال بنا لأي استفسارات أو عروض تجارية:
+            </p>
+
+            <div class="data-info">
+              <div class="info-group">
+                <h3>العنوان</h3>
+                <p>44670 طريق ماتول، هونيديو، كاليفورنيا 95545</p>
+              </div>
+
+              <div class="info-group">
+                <h3>ساعات العمل</h3>
+                <p>
+                  الأحد: من 11 صباحًا حتى 7 مساءً <br />
+                  الإثنين - السبت: من 11 صباحًا حتى 9 مساءً
+                </p>
+              </div>
+
+              <div class="info-group">
+                <h3>وسائل الاتصال</h3>
+                <p>
+                  +1 (234) 567 89 00 <br />
+                  honeybee@email.com
+                </p>
+              </div>
+            </div>
+
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d698150.6230082805!2d8.2231001!3d46.8800804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ff3d94530bdab%3A0xb5df0b1031f484c4!2sSelbstbedienungs%20Hofladen%20Imkerei%20Wilen!5e0!3m2!1sar!2ssa!4v1733448809404!5m2!1sar!2ssa"
+                width="570"
+                height="244"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <form class="form" action="#">
+            <input
+              type="text"
+              class="input required"
+              placeholder="ادخل اسمك كامل*"
+              required
+            />
+            <input
+              type="number"
+              class="input required"
+              placeholder="ادخل رقم هاتفك*"
+              required
+              min="9"
+            />
+            <input
+              type="email"
+              class="input required"
+              placeholder="ادخل بريدك الإكتروني*"
+              required
+            />
+            <textarea class="input" placeholder="ادخل رسالتك"></textarea>
+            <input
+              type="submit"
+              class="btn-primary"
+              id="input_request"
+              value="طلب عرض الاسعار"
+            />
+          </form>
+        </div>
+      </section>
+
+      <div class="pop-up-contact" id="pop_up_contact">
+        <i class="fa-solid fa-xmark close" id="close"></i>
+        <img src="./assets/images/done.png" alt="done" />
+        <h4>شكرا لك!</h4>
+        <p>سنتواصل معك في اقرب وقت</p>
+        <button class="btn-primary">حسناً</button>
+      </div>
+      <div class="pop-up-shadow" id="pop_up_shadow"></div>
+
+      <!--============ HONEY GALLERY ============-->
+      <section class="honey-gallery">
+        <img src="assets/images/gallery-5.jpg" alt="image" />
+        <img src="assets/images/gallery-4.jpg" alt="image" />
+        <img src="assets/images/gallery-1.jpeg" alt="image" />
+        <img src="assets/images/gallery-3.jpg" alt="image" />
+        <img src="assets/images/gallery-2.jpg" alt="image" />
+      </section>
     </main>
 
     <!--============ SHOPPING PAGE ============-->
     <div class="overlay" id="overlay">
-        <div class="" id="change-height">
-            <div class="shopping-page" id="shopping_page">
-                <div class="header-shopping-page">
-                    <h2>السلة</h2>
-                    <i class="fa-solid fa-xmark" id="close_shopping_page"></i>
-                </div>
-                <div class="container-shopping" id="container_shopping">
-        
-                    <div class="layer-empty" id="layer_empty">
-                        <p>عربة التسوق فارغة</p>
-                        <p>تابع التسوق لإضافة منتج إلى عربة التسوق الخاصة بك.</p>
-                    </div>
-        
-                    <div class="body-shopping-page">
-                        <p>المنتجات</p>
-                        <div class="shop-carts" id="shop_carts">
-                            <!-- <div class="cart-item">
+      <div class="" id="change-height">
+        <div class="shopping-page" id="shopping_page">
+          <div class="header-shopping-page">
+            <h2>السلة</h2>
+            <i class="fa-solid fa-xmark" id="close_shopping_page"></i>
+          </div>
+          <div class="container-shopping" id="container_shopping">
+            <div class="layer-empty" id="layer_empty">
+              <p>عربة التسوق فارغة</p>
+              <p>تابع التسوق لإضافة منتج إلى عربة التسوق الخاصة بك.</p>
+            </div>
+
+            <div class="body-shopping-page">
+              <p>المنتجات</p>
+              <div class="shop-carts" id="shop_carts">
+                <!-- <div class="cart-item">
                                 <div class="item-image">
                                     <img src="./assets/images/480 (2).jpeg" alt="cart item">
                                 </div>
@@ -780,103 +938,140 @@
                                     <i class="fa-regular fa-trash-can trash"></i>
                                 </div>
                             </div> -->
-                        </div>
-                    </div>
-            
-                    <div class="promo-total">
-                        <div>
-                            <button class="promo-code" id="promo_code">كود الخصم</button>
-                            <div class="container-promo-input" id="container_promo_input">
-                                <div>
-                                    <input type="text" placeholder="ادخل كود الخصم" id="input_promo">
-                                    <p class="promo-invalid" id="promo_invalid">كود الخصم غير صالح</p>
-                                </div>
-                                <button id="promo_ok">تطبيق</button>
-                            </div>
-                        </div>
-                        <div class="container_total">المجموع: <p class="total" id="total">$60,000</p></div>
-                    </div>
-            
-                    <div class="place">
-                        Place an order
-                    </div>
-                    
-                    <form action="order-confirmation_ar.html">
-                        <div class="input-container">
-                            <p>الاسم <span>*</span></p>
-                            <input type="text" name="name" id="name_input" placeholder="اسمك" required>
-                        </div>
-            
-                        <div class="input-container">
-                            <p>البريد الإكتروني <span>*</span></p>
-                            <input type="email" name="email" id="email_input" placeholder="بريدك الإكتروني" required>
-                        </div>
-            
-                        <div class="input-container">
-                            <p>رقم الهاتف <span>*</span></p>
-                            <input type="text" name="phone" id="phone_input" placeholder="رقم هاتفك" required>
-                        </div>
-            
-                        <div class="input-container">
-                            <p>التعليق</p>
-                            <textarea type="text" name="comment" id="comment_input" placeholder="تعليقك"></textarea>
-                        </div>
-            
-                        <input type="submit" class="btn-primary" id="order_honey" value="طلب">
-                    </form>
-                </div>
+              </div>
             </div>
+
+            <div class="promo-total">
+              <div>
+                <button class="promo-code" id="promo_code">كود الخصم</button>
+                <div class="container-promo-input" id="container_promo_input">
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="ادخل كود الخصم"
+                      id="input_promo"
+                    />
+                    <p class="promo-invalid" id="promo_invalid">
+                      كود الخصم غير صالح
+                    </p>
+                  </div>
+                  <button id="promo_ok">تطبيق</button>
+                </div>
+              </div>
+              <div class="container_total">
+                المجموع:
+                <p class="total" id="total">$60,000</p>
+              </div>
+            </div>
+
+            <div class="place">Place an order</div>
+
+            <form action="order-confirmation_ar.html">
+              <div class="input-container">
+                <p>الاسم <span>*</span></p>
+                <input
+                  type="text"
+                  name="name"
+                  id="name_input"
+                  placeholder="اسمك"
+                  required
+                />
+              </div>
+
+              <div class="input-container">
+                <p>البريد الإكتروني <span>*</span></p>
+                <input
+                  type="email"
+                  name="email"
+                  id="email_input"
+                  placeholder="بريدك الإكتروني"
+                  required
+                />
+              </div>
+
+              <div class="input-container">
+                <p>رقم الهاتف <span>*</span></p>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone_input"
+                  placeholder="رقم هاتفك"
+                  required
+                />
+              </div>
+
+              <div class="input-container">
+                <p>التعليق</p>
+                <textarea
+                  type="text"
+                  name="comment"
+                  id="comment_input"
+                  placeholder="تعليقك"
+                ></textarea>
+              </div>
+
+              <input
+                type="submit"
+                class="btn-primary"
+                id="order_honey"
+                value="طلب"
+              />
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-    
+
     <!--============ CART SHOPPING ============-->
     <div class="cart-shopping" id="cart_shopping" data-count="0">
-        <i class="fa-solid fa-cart-shopping"></i>
+      <i class="fa-solid fa-cart-shopping"></i>
     </div>
-    
+
     <!--============ FOOTER ============-->
     <footer>
-        <div class="container">
-            <div class="logo">
-                <img src="assets/images/logotype2.svg" alt="Logo">
-                <span>شركة إنتاج العسل</span>
-            </div>
-            <ul class="nav__list">
-                <li>
-                    <a href="#about" class="nav__link">من نحن</a>
-                </li>
-
-                <li>
-                    <a href="#type" class="nav__link">انواع العسل</a>
-                </li>
-
-                <li>
-                    <a href="#store" class="nav__link">المتجر</a>
-                </li>
-
-                <li>
-                    <a href="#testimonials" class="nav__link">التعليقات</a>
-                </li>
-
-                <li>
-                    <a href="#contact_us" class="nav__link">تواصل معنا</a>
-                </li>
-            </ul>
-
-            <div class="social">
-                <div class="social_link">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </div>
-                <div class="social_link">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-                <div class="social_link">
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-            </div>
-
-            <p class="copyright">&copy; تم الإنشاء بواسطة  <span>محمد العمري</span> جميع الحقوق محفوظة</p>
+      <div class="container">
+        <div class="logo">
+          <img src="assets/images/logotype2.svg" alt="Logo" />
+          <span>شركة إنتاج العسل</span>
         </div>
+        <ul class="nav__list">
+          <li>
+            <a href="#about" class="nav__link">من نحن</a>
+          </li>
+
+          <li>
+            <a href="#type" class="nav__link">انواع العسل</a>
+          </li>
+
+          <li>
+            <a href="#store" class="nav__link">المتجر</a>
+          </li>
+
+          <li>
+            <a href="#testimonials" class="nav__link">التعليقات</a>
+          </li>
+
+          <li>
+            <a href="#contact_us" class="nav__link">تواصل معنا</a>
+          </li>
+        </ul>
+
+        <div class="social">
+          <div class="social_link">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="social_link">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="social_link">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+
+        <p class="copyright">
+          &copy; تم الإنشاء بواسطة <span>محمد العمري</span> جميع الحقوق محفوظة
+        </p>
+      </div>
     </footer>
 
     <!--============ MAIN JS ============-->
@@ -887,6 +1082,5 @@
     <script src="assets/js/swiper_rtl.js"></script>
     <!--============ MAIN LOGIC JS ============-->
     <script src="assets/js/mainLogic.js"></script>
-
-</body>
+  </body>
 </html>

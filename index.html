@@ -1,767 +1,930 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Honey Bee</title>
-    <link rel="shortcut icon" href="./assets/images/bee_icon_website.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/bee_icon_website.png"
+      type="image/x-icon"
+    />
     <!--============ Render All Elements Normally ============-->
-    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
     <!--============ Font Awesome Library ============-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!--============ SWIPER CSS ============-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
     <!--============ Main Template CSS File ============-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.min.css" />
 
     <!--============ Global Template CSS File ============-->
-    <link rel="stylesheet" href="assets/css/global.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/global.css" />
+  </head>
+  <body>
     <!--============ HEADER ============-->
     <header>
-        <nav class="nav container">
-            <a href="index.html" class="nav__logo">
-                <img src="assets/images/logotype.svg" alt="image">
-            </a>
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/images/logotype.svg" alt="image" />
+        </a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li>
-                        <a href="#about" class="nav__link">About Us</a>
-                    </li>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a href="#about" class="nav__link">About Us</a>
+            </li>
 
-                    <li>
-                        <a href="#type" class="nav__link">Types of Honey</a>
-                    </li>
+            <li>
+              <a href="#type" class="nav__link">Types of Honey</a>
+            </li>
 
-                    <li>
-                        <a href="#store" class="nav__link">Store</a>
-                    </li>
+            <li>
+              <a href="#store" class="nav__link">Store</a>
+            </li>
 
-                    <li>
-                        <a href="#testimonials" class="nav__link">Testimonials</a>
-                    </li>
+            <li>
+              <a href="#testimonials" class="nav__link">Testimonials</a>
+            </li>
 
-                    <li>
-                        <a href="#contact_us" class="nav__link">Contact Us</a>
-                    </li>
+            <li>
+              <a href="#contact_us" class="nav__link">Contact Us</a>
+            </li>
 
-                    <div class="dropdown14">
-                        <input type="checkbox" id="dropdown14" name="dropdown" >
-                        <label for="dropdown14">
-                            language <span class="arrow-down"></span>
-                        </label>
-                        <ul class="dropdown14-links">
-                            <li>
-                                <a href="./index.ar.html">العربية</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <li>
-                        <a href="#store" class="btn__link">Buy Honey</a>
-                    </li>
-                </ul>
-
-                <!-- Close button -->
-                <div class="nav__close" id="nav-close">
-                    <i class="fa-solid fa-x"></i>
-                </div>
+            <div class="dropdown14">
+              <input type="checkbox" id="dropdown14" name="dropdown" />
+              <label for="dropdown14">
+                language <span class="arrow-down"></span>
+              </label>
+              <ul class="dropdown14-links">
+                <li>
+                  <a href="./index.ar.html">العربية</a>
+                </li>
+              </ul>
             </div>
 
-            <!-- Toggle button -->
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </nav>
+            <li>
+              <a href="#store" class="btn__link">Buy Honey</a>
+            </li>
+          </ul>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </div>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
     </header>
 
     <!--============ MAIN ============-->
     <main class="main">
+      <!--============ HOME ============-->
+      <section class="hero">
+        <div class="container">
+          <div class="data-hero">
+            <p>100% ORGANIC HONEY</p>
+            <h1>HONEYBEE</h1>
+            <p>
+              We offer a great assortment of pure raw honey from our swaths in
+              California. Order honey from our honeycombs!
+            </p>
+            <a href="#" class="btn-primary"> Buy Now </a>
+          </div>
+        </div>
+      </section>
 
-        <!--============ HOME ============-->
-        <section class="hero">
-            <div class="container">
-                <div class="data-hero">
-                    <p >100% ORGANIC HONEY</p>
-                    <h1>HONEYBEE</h1>
-                    <p>We offer a great assortment of pure raw honey from our swaths in California. Order honey from our honeycombs!</p>
-                    <a href="#" class="btn-primary">
-                        Buy Now
+      <!--============ SERVICES ============-->
+      <section class="services">
+        <div class="container">
+          <div class="data-services">
+            <h5 class="section-label">SERVICES</h5>
+            <h1 class="section-title">WHAT WE DO</h1>
+            <p class="section-description">
+              Our family-owned company is engaged with everything related to
+              honey and its production. Learn more below about our services.
+            </p>
+          </div>
+
+          <div class="sliders">
+            <!-- Slider main container -->
+            <div class="card_container swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide card-item">
+                  <img src="assets/images/icon1.svg" alt="" />
+                  <div class="body_card">
+                    <h3>Honey Production</h3>
+                    <p>
+                      We produce, bottle, and sell honey harvested by our
+                      beekeepers.
+                    </p>
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-item">
+                  <img src="assets/images/icon3.svg" alt="" />
+                  <div class="body_card">
+                    <h3>Honey Shop</h3>
+                    <p>
+                      We offer over 10 types of organic raw honey in our online
+                      store.
+                    </p>
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-item">
+                  <img src="assets/images/icon2.svg" alt="" />
+                  <div class="body_card">
+                    <h3>Supplements</h3>
+                    <p>You can buy bee pollen, propolis, and hive mixtures.</p>
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-item">
+                  <img src="assets/images/icon4.svg" alt="" />
+                  <div class="body_card">
+                    <h3>Beekeeping Classes</h3>
+                    <p>
+                      Feel free to book excursions and workshops at our swaths.
+                    </p>
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev services-prev"></div>
+            <div class="swiper-button-next services-next"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination swiper-pagination-services"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--============ ABOUT ============-->
+      <section class="about" id="about">
+        <div class="container">
+          <img src="./assets/images/about.png" alt="image" />
+          <div class="data-about">
+            <h5 class="section-label">WHY CHOOSE US</h5>
+            <h1 class="section-title">ABOUT BEEHONEY</h1>
+            <p class="section-description">
+              We are a family-owned business managing 5+ swaths in California.
+              We bottle our honey with love and care.
+            </p>
+
+            <div class="features-container">
+              <ul>
+                <div class="feature-box">
+                  <div class="feature-icon">
+                    <img src="./assets/images/icon6.svg" alt="image" />
+                  </div>
+                  <div class="feature-text">
+                    <h3 class="feature-title">Natural Environment</h3>
+                    <p class="feature-description">
+                      Our swaths are located in ecologically clean areas in
+                      California. The bees feel really happy there!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-box">
+                  <div class="feature-icon">
+                    <img src="./assets/images/icon5.svg" alt="image" />
+                  </div>
+                  <div class="feature-text">
+                    <h3 class="feature-title">Certified Honey Production</h3>
+                    <p class="feature-description">
+                      We produce 100% organic raw honey without pasteurization
+                      or filtration processes.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-box">
+                  <div class="feature-icon">
+                    <img src="./assets/images/icon7.svg" alt="image" />
+                  </div>
+                  <div class="feature-text">
+                    <h3 class="feature-title">Fast Shipping</h3>
+                    <p class="feature-description">
+                      We are really fast at shipping, so you can enjoy our honey
+                      in a couple of days after your order!
+                    </p>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--============ HERO VIDEO ============-->
+      <section class="hero-video">
+        <div class="play-icon">
+          <i class="fa-solid fa-play"></i>
+        </div>
+        <h3>How Honey Is Made</h3>
+      </section>
+
+      <!--============ HONEY TYPES ============-->
+      <section class="honey-types" id="type">
+        <div class="container">
+          <div class="data-honey-types">
+            <h5 class="section-label">TYPES OF HONEY</h5>
+            <h1 class="section-title">TOP HONEY FLAVORS FROM OUR SWATHS</h1>
+            <p class="section-description">
+              Honey is a versatile source of vitamins and useful materials for
+              your health:
+            </p>
+
+            <ul class="honey-benefits">
+              <div>
+                <img src="assets/images/check-20icon.svg" alt="image" />
+                <li>It is good for your digestive system.</li>
+              </div>
+              <div>
+                <img src="assets/images/check-20icon.svg" alt="image" />
+                <li>Raw honey is rich in antioxidants.</li>
+              </div>
+              <div>
+                <img src="assets/images/check-20icon.svg" alt="image" />
+                <li>Honey has beneficial effects on heart health.</li>
+              </div>
+              <div>
+                <img src="assets/images/check-20icon.svg" alt="image" />
+                <li>It improves the cholesterol rate.</li>
+              </div>
+            </ul>
+          </div>
+
+          <div class="sliders">
+            <!-- Slider main container -->
+            <div class="cards_honey swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide card-item">
+                  <img src="assets/images/icon1.svg" alt="image" />
+                  <div class="body_card">
+                    <h3>Clover Honey</h3>
+                    <p>
+                      Thick honey is produced by honeybees that collect the
+                      nectar of clover plants. Mild in taste and light in color.
+                    </p>
+                    <a class="btn-primary" href="#">Shop Now</a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-item">
+                  <img src="assets/images/icon3.svg" alt="" />
+                  <div class="body_card">
+                    <h3>Buckwheat Honey</h3>
+                    <p>
+                      It is highly nutritious amber-colored honey with a slight
+                      reddish tint. It has a has a pleasant sweet taste.
+                    </p>
+                    <a class="btn-primary" href="#">Shop Now</a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-item">
+                  <img src="assets/images/icon2.svg" alt="" />
+                  <div class="body_card">
+                    <h3>Wildflower Honey</h3>
+                    <p>
+                      It is also known as polyfloral honey. It is made from the
+                      nectar of different species of flowers or blossoms.
+                    </p>
+                    <a class="btn-primary" href="#">Shop Now</a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-item">
+                  <img src="assets/images/icon4.svg" alt="" />
+                  <div class="body_card">
+                    <h3>Citrus Blossom Honey</h3>
+                    <p>
+                      This honey is sweet and relatively thick, a perfect match
+                      for your tea or toast. It is the best association with
+                      California!
+                    </p>
+                    <a class="btn-primary" href="#">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev type-prev"></div>
+            <div class="swiper-button-next type-next"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination swiper-pagination-honey"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--============ STORE ============-->
+      <section class="store" id="store">
+        <h5 class="section-label">STORE</h5>
+        <h1 class="section-title">OUR HONEY</h1>
+        <p class="section-description">
+          Shop our best honey bottled this season. We produce only natural, raw,
+          and sweet honey without any impurities or additives. If you want to
+          buy honey, hurry up!
+        </p>
+
+        <div class="container">
+          <div class="sliders">
+            <!-- Slider main container -->
+            <div class="store_slider swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+
+                <div
+                  class="swiper-slide card-item"
+                  onclick="storeProductData(this)"
+                  data-name="Wildflower Honey"
+                  data-price="7,00"
+                  data-src="assets/images/480 (3).jpeg"
+                  data-code="18"
+                  data-weight="300"
+                >
+                  <a href="product.html">
+                    <img src="assets/images/480 (3).jpeg" alt="image" />
+                  </a>
+                  <div class="body_card">
+                    <a href="product.html">
+                      <h3>Wildflower Honey</h3>
                     </a>
+                    <h3 class="price">$7,00USD</h3>
+                    <button
+                      class="btn-primary"
+                      onclick="addProductToCart(this.closest('.card-item'))"
+                    >
+                      Buy Now
+                    </button>
+                    <!-- <button class="btn-primary" onclick="addProductToCart(false)">Buy Now</button> -->
+                  </div>
                 </div>
+
+                <div
+                  class="swiper-slide card-item"
+                  onclick="storeProductData(this)"
+                  data-src="assets/images/480.jpeg"
+                  data-name="Blossom Honey"
+                  data-price="20,00"
+                  data-code="19"
+                  data-weight="450"
+                >
+                  <a href="./product.html">
+                    <img src="assets/images/480.jpeg" alt="image" />
+                  </a>
+                  <div class="body_card">
+                    <a href="./product.html">
+                      <h3>Blossom Honey</h3>
+                    </a>
+                    <h3 class="price">$20.00USD</h3>
+                    <button
+                      class="btn-primary"
+                      onclick="addProductToCart(this.closest('.card-item'))"
+                    >
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="swiper-slide card-item"
+                  onclick="storeProductData(this)"
+                  data-src="assets/images/480 (1).jpeg"
+                  data-name="Clover Honey"
+                  data-price="8,00"
+                  data-code="20"
+                  data-weight="300"
+                >
+                  <a href="product.html">
+                    <img src="assets/images/480 (1).jpeg" alt="image" />
+                  </a>
+                  <div class="body_card">
+                    <a href="product.html">
+                      <h3>Clover Honey</h3>
+                    </a>
+                    <h3 class="price">$8.00USD</h3>
+                    <button
+                      class="btn-primary"
+                      onclick="addProductToCart(this.closest('.card-item'))"
+                    >
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="swiper-slide card-item"
+                  onclick="storeProductData(this)"
+                  data-src="assets/images/480 (2).jpeg"
+                  data-name="Buckwheat Honey"
+                  data-price="10,00"
+                  data-code="21"
+                  data-weight="300"
+                >
+                  <a href="product.html">
+                    <img src="assets/images/480 (2).jpeg" alt="image" />
+                  </a>
+                  <div class="body_card">
+                    <a href="product.html">
+                      <h3>Buckwheat Honey</h3>
+                    </a>
+                    <h3 class="price">$10.00USD</h3>
+                    <button
+                      class="btn-primary"
+                      onclick="addProductToCart(this.closest('.card-item'))"
+                    >
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="swiper-slide card-item"
+                  onclick="storeProductData(this)"
+                  data-src="assets/images/480 (4).jpeg"
+                  data-name="Citrus Blossom Honey"
+                  data-price="15,00"
+                  data-code="22"
+                  data-weight="450"
+                >
+                  <a href="product.html">
+                    <img src="assets/images/480 (4).jpeg" alt="image" />
+                  </a>
+                  <div class="body_card">
+                    <a href="product.html">
+                      <h3>Citrus Blossom Honey</h3>
+                    </a>
+                    <h3 class="price">$15.00USD</h3>
+                    <button
+                      class="btn-primary"
+                      onclick="addProductToCart(this.closest('.card-item'))"
+                    >
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-        
-        <!--============ SERVICES ============-->
-        <section class="services">
-            <div class="container">
-                <div class="data-services">
-                    <h5 class="section-label">SERVICES</h5>
-                    <h1 class="section-title">WHAT WE DO</h1>
-                    <p class="section-description">Our family-owned company is engaged with everything related to honey and its production. Learn more below about our services.
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev store-prev"></div>
+            <div class="swiper-button-next store-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--============ ORDER ============-->
+      <section class="order">
+        <div class="backgourng-top"></div>
+
+        <div class="container">
+          <h5 class="section-label">HOW TO ORDER</h5>
+          <h1 class="section-title">WANT TO ORDER HONEY?</h1>
+          <p class="section-description">
+            We are a small family-owned swath chain in California and we produce
+            a limited amount of honey every season. If you want to buy honey,
+            the information below is for you:
+          </p>
+
+          <div class="order-container">
+            <div class="box-order">
+              <img src="assets/images/icon12.svg" alt="image" />
+              <h3>1. Wait a Bit</h3>
+              <p>
+                We harvest honey approximately 4 times a year, excluding winter.
+              </p>
+            </div>
+
+            <div class="box-order">
+              <img src="assets/images/icon13.svg" alt="image" />
+              <h3>2. Choose Honey Type</h3>
+              <p>
+                Depending on the season, there may be different types of
+                recently bottled honey on our site.
+              </p>
+            </div>
+
+            <div class="box-order">
+              <img src="assets/images/icon14.svg" alt="image" />
+              <h3>3. Order & Enjoy</h3>
+              <p>
+                We are really quick at shipping, so you'll get your parcel in a
+                couple of days.
+              </p>
+            </div>
+          </div>
+          <a class="btn-primary" href="#">Have a Special Request</a>
+        </div>
+      </section>
+
+      <!--============ TESTIMONIALS ============-->
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <h5 class="section-label">TESTIMONIALS</h5>
+          <h1 class="section-title">WHAT OUR CLIENTS SAY</h1>
+          <p class="section-description">
+            We are glad that our honey is to our clients' liking. Your reviews
+            and warm words of appreciation make us better!
+          </p>
+
+          <div class="sliders">
+            <!-- Slider main container -->
+            <div class="testimonials_slider swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide card-item">
+                  <div class="body_card">
+                    <img
+                      src="assets/images/user1.jpeg"
+                      alt="user Image"
+                      class="image"
+                    />
+                    <h3>Jessica Peterson</h3>
+                    <blockquote>
+                      “This is great honey, 100% natural! It is not the first
+                      time I order honey from this company, and every time I
+                      know that I will get delicious, high-quality, not
+                      crystallized honey. I use honey as a topping for pancakes,
+                      various desserts, and marinades. It is delicious and my
+                      children also like this honey!"
+                    </blockquote>
+                    <p class="post-date">October 28, 2024</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-item">
+                  <div class="body_card">
+                    <img src="assets/images/user-2.png" alt="user Image" />
+                    <h3>Dean Nillstrom</h3>
+                    <blockquote>
+                      “Nowadays it is not so easy to find really good, tasty,
+                      and natural honey. I first tried the HoneyBee honey
+                      several years ago, and since then I have been a regular
+                      customer of this producer. I know for sure that these guys
+                      work with feeling and sell real honey from their swaths. I
+                      am always happy with the product I receive."
+                    </blockquote>
+                    <p class="post-date">February 12, 2024</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide card-item">
+                  <div class="body_card">
+                    <img
+                      src="assets/images/user2.jpeg"
+                      alt="user Image"
+                      class="image"
+                    />
+                    <h3>Diana Fergusson</h3>
+                    <blockquote>
+                      “Having tasted this honey once, I no longer needed
+                      alternatives. This is the tastiest honey I've ever tried!
+                      I buy different types of honey, from clover to buckwheat.
+                      Each jar of honey is a real triumph of taste. This is real
+                      honey — thick, aromatic, dark, and moderately sweet.
+                      Exactly what I need!"
+                    </blockquote>
+                    <p class="post-date">April 18, 2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev testimonials-prev"></div>
+            <div class="swiper-button-next testimonials-next"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination swiper-pagination-testimonials"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--============ STATS NUMBER ============-->
+      <section class="stats-number">
+        <div class="container">
+          <div class="box-stat">
+            <h1 class="section-title">2574</h1>
+            <h3>Honey jars produced in 2022</h3>
+          </div>
+
+          <div class="box-stat">
+            <h1 class="section-title">130</h1>
+            <h3>Customers every month</h3>
+          </div>
+
+          <div class="box-stat">
+            <h1 class="section-title">12</h1>
+            <h3>Swaths in California</h3>
+          </div>
+
+          <div class="box-stat">
+            <h1 class="section-title">3946</h1>
+            <h3>Bees working for you</h3>
+          </div>
+        </div>
+      </section>
+
+      <!--============ BLOG ============-->
+      <section class="blog">
+        <h5 class="section-label">BLOG</h5>
+        <h1 class="section-title">LEARN MORE ABOUT HONEYBEE</h1>
+        <p class="section-description">
+          Think that honey production is boring? Not at all! Read our blog and
+          the latest news from our swaths to learn more!
+        </p>
+        <div class="container">
+          <div class="sliders">
+            <!-- Slider main container -->
+            <div class="blog_slider swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide card-item">
+                  <div class="body_card">
+                    <img src="assets/images/news-2.jpg" alt="" />
+                    <p class="post-date">FEBRUARY 7, 2024</p>
+                    <h3>What is Natural Honey?</h3>
+                    <p>
+                      Let's see how to distinguish natural honey from artificial
+                      honey.
                     </p>
+                  </div>
                 </div>
 
-
-                <div class="sliders">
-                    <!-- Slider main container -->
-                    <div class="card_container swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide card-item">
-                                <img src="assets/images/icon1.svg" alt="">
-                                <div class="body_card">
-                                    <h3>Honey Production</h3>
-                                    <p>We produce, bottle, and sell honey harvested by our beekeepers.</p>
-                                    <a href="#">Learn More</a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item">
-                                <img src="assets/images/icon3.svg" alt="">
-                                <div class="body_card">
-                                    <h3>Honey Shop</h3>
-                                    <p>We offer over 10 types of organic raw honey in our online store. </p>
-                                    <a href="#">Learn More</a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item">
-                                <img src="assets/images/icon2.svg" alt="">
-                                <div class="body_card">
-                                    <h3>Supplements</h3>
-                                    <p>You can buy bee pollen, propolis, and hive mixtures. </p>
-                                    <a href="#">Learn More</a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item">
-                                <img src="assets/images/icon4.svg" alt="">
-                                <div class="body_card">
-                                    <h3>Beekeeping Classes</h3>
-                                    <p>Feel free to book excursions and workshops at our swaths.</p>
-                                    <a href="#">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev services-prev"></div>
-                    <div class="swiper-button-next services-next"></div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination swiper-pagination-services"></div>
-                </div>
-            </div>
-        </section>
-
-        <!--============ ABOUT ============-->
-        <section class="about" id="about">
-            <div class="container">
-                <img src="./assets/images/about.png" alt="image">
-                <div class="data-about">
-                    <h5 class="section-label">WHY CHOOSE US</h5>
-                    <h1 class="section-title">ABOUT BEEHONEY</h1>
-                    <p class="section-description">We are a family-owned business managing 5+ swaths in California. We bottle our honey with love and care.
+                <div class="swiper-slide card-item">
+                  <div class="body_card">
+                    <img src="assets/images/news-3.jpg" alt="" />
+                    <p class="post-date">MARCH 10, 2024</p>
+                    <h3>New Season is Here!</h3>
+                    <p>
+                      After winter, work in our Californian swaths is in full
+                      swing again.
                     </p>
-
-                    <div class="features-container">
-                        <ul>
-                            <div class="feature-box">
-                                <div class="feature-icon">
-                                    <img src="./assets/images/icon6.svg" alt="image">
-                                </div>
-                                <div class="feature-text">
-                                    <h3 class="feature-title">Natural Environment</h3>
-                                    <p class="feature-description">Our swaths are located in ecologically clean areas in California. The bees feel really happy there!
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="feature-box">
-                                <div class="feature-icon">
-                                    <img src="./assets/images/icon5.svg" alt="image">
-                                </div>
-                                <div class="feature-text">
-                                    <h3 class="feature-title">Certified Honey Production</h3>
-                                    <p class="feature-description">We produce 100% organic raw honey without pasteurization or filtration processes.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="feature-box">
-                                <div class="feature-icon">
-                                    <img src="./assets/images/icon7.svg" alt="image">
-                                </div>
-                                <div class="feature-text">
-                                    <h3 class="feature-title">Fast Shipping</h3>
-                                    <p class="feature-description">We are really fast at shipping, so you can enjoy our honey in a couple of days after your order!
-                                    </p>
-                                </div>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!--============ HERO VIDEO ============-->
-        <section class="hero-video">
-            <div class="play-icon">
-                <i class="fa-solid fa-play"></i>
-            </div>
-            <h3>How Honey Is Made</h3>
-        </section>
-
-        <!--============ HONEY TYPES ============-->
-        <section class="honey-types" id="type">
-            <div class="container">
-                <div class="data-honey-types">
-                    <h5 class="section-label">TYPES OF HONEY</h5>
-                    <h1 class="section-title">TOP HONEY FLAVORS FROM OUR SWATHS</h1>
-                    <p class="section-description">Honey is a versatile source of vitamins and useful materials for your health:</p>
-
-                    <ul class="honey-benefits">
-                        <div>
-                            <img src="assets/images/check-20icon.svg" alt="image">
-                            <li>It is good for your digestive system.</li>
-                        </div>
-                        <div>
-                            <img src="assets/images/check-20icon.svg" alt="image">
-                            <li>Raw honey is rich in antioxidants.</li>
-                        </div>
-                        <div>
-                            <img src="assets/images/check-20icon.svg" alt="image">
-                            <li>Honey has beneficial effects on heart health.</li>
-                        </div>
-                        <div>
-                            <img src="assets/images/check-20icon.svg" alt="image">
-                            <li>It improves the cholesterol rate.</li>
-                        </div>
-                    </ul>
+                  </div>
                 </div>
 
-                <div class="sliders">
-                    <!-- Slider main container -->
-                    <div class="cards_honey swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide card-item">
-                                <img src="assets/images/icon1.svg" alt="image">
-                                <div class="body_card">
-                                    <h3>Clover Honey</h3>
-                                    <p>Thick honey is produced by honeybees that collect the nectar of clover plants. Mild in taste and light in color.
-                                    </p>
-                                    <a class="btn-primary" href="#">Shop Now</a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item">
-                                <img src="assets/images/icon3.svg" alt="">
-                                <div class="body_card">
-                                    <h3>Buckwheat Honey</h3>
-                                    <p>It is highly nutritious amber-colored honey with a slight reddish tint. It has a has a pleasant sweet taste.
-                                    </p>
-                                    <a class="btn-primary" href="#">Shop Now</a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item">
-                                <img src="assets/images/icon2.svg" alt="">
-                                <div class="body_card">
-                                    <h3>Wildflower Honey</h3>
-                                    <p>It is also known as polyfloral honey. It is made from the nectar of different species of flowers or blossoms.
-                                    </p>
-                                    <a class="btn-primary" href="#">Shop Now</a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item">
-                                <img src="assets/images/icon4.svg" alt="">
-                                <div class="body_card">
-                                    <h3>Citrus Blossom Honey</h3>
-                                    <p>This honey is sweet and relatively thick, a perfect match for your tea or toast. It is the best association with California!
-                                    </p>
-                                    <a class="btn-primary" href="#">Shop Now</a>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev type-prev"></div>
-                    <div class="swiper-button-next type-next"></div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination swiper-pagination-honey"></div>
+                <div class="swiper-slide card-item">
+                  <div class="body_card">
+                    <img src="assets/images/news-1.jpg" alt="" />
+                    <p class="post-date">MARCH 17, 2023</p>
+                    <h3>Honey in Jars</h3>
+                    <p>
+                      Why is honey usually sold in glass jars? <br />
+                      Our expert explains.
+                    </p>
+                  </div>
                 </div>
-            </div>
-        </section>
 
-        <!--============ STORE ============-->
-        <section class="store" id="store">
-            <h5 class="section-label">STORE</h5>
-            <h1 class="section-title">OUR HONEY</h1>
-            <p class="section-description">Shop our best honey bottled this season. We produce only natural, raw, and sweet honey without any impurities or additives. If you want to buy honey, hurry up!
+                <div class="swiper-slide card-item">
+                  <div class="body_card">
+                    <img src="assets/images/news-4.jpg" alt="" />
+                    <p class="post-date">APRIL 12, 2023</p>
+                    <h3>How is Honey Harvested?</h3>
+                    <p>
+                      After winter, work in our Californian <br />
+                      swaths is in full swing again
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev blog-prev"></div>
+            <div class="swiper-button-next blog-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--============ FAQ ============-->
+      <section class="faq">
+        <div class="container">
+          <img
+            src="assets/images/60a6203d80a13d0021b9d5b9_optimized_900_c900x1000-0x0.jpeg"
+            alt="image"
+          />
+          <div class="data-faq">
+            <h5 class="section-label">FAQ</h5>
+            <h1 class="section-title">HONEY QUESTIONS</h1>
+            <p class="section-description">
+              Below are the most popular questions from our clients.
             </p>
 
-            <div class="container">
-                <div class="sliders">
-                    <!-- Slider main container -->
-                    <div class="store_slider swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            
-                            <div class="swiper-slide card-item" onclick="storeProductData(this)"
-                            data-name="Wildflower Honey"
-                            data-price="7,00"
-                            data-src="assets/images/480 (3).jpeg"
-                            data-code="18"
-                            data-weight="300"
-                            >
-                                <a href="product.html">
-                                    <img src="assets/images/480 (3).jpeg" alt="image">
-                                </a>
-                                <div class="body_card">
-                                    <a href="product.html">
-                                        <h3>Wildflower Honey</h3>
-                                    </a>
-                                    <h3 class="price">$7,00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))">Buy Now</button>
-                                    <!-- <button class="btn-primary" onclick="addProductToCart(false)">Buy Now</button> -->
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item" onclick="storeProductData(this)"
-                            data-src="assets/images/480.jpeg"
-                            data-name="Blossom Honey"
-                            data-price="20,00"
-                            data-code="19"
-                            data-weight="450"
-                            >
-                                <a href="./product.html">
-                                    <img src="assets/images/480.jpeg" alt="image">
-                                </a>
-                                <div class="body_card">
-                                    <a href="./product.html">
-                                        <h3>Blossom Honey</h3>
-                                    </a>
-                                    <h3 class="price">$20.00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >Buy Now</button>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item" onclick="storeProductData(this)"
-                            data-src="assets/images/480 (1).jpeg"
-                            data-name="Clover Honey"
-                            data-price="8,00"
-                            data-code="20"
-                            data-weight="300"
-                            >
-                                <a href="product.html">
-                                    <img src="assets/images/480 (1).jpeg" alt="image">
-                                </a>
-                                <div class="body_card">
-                                    <a href="product.html">
-                                        <h3 >Clover Honey</h3>
-                                    </a>
-                                    <h3 class="price">$8.00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >Buy Now</button>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item" onclick="storeProductData(this)"
-                            data-src="assets/images/480 (2).jpeg"
-                            data-name="Buckwheat Honey"
-                            data-price="10,00"
-                            data-code="21"
-                            data-weight="300"
-                            >
-                                <a href="product.html">
-                                    <img src="assets/images/480 (2).jpeg" alt="image">
-                                </a>
-                                <div class="body_card">
-                                    <a href="product.html">
-                                        <h3>Buckwheat Honey</h3>
-                                    </a>
-                                    <h3 class="price">$10.00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >Buy Now</button>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item" onclick="storeProductData(this)"
-                            data-src="assets/images/480 (4).jpeg"
-                            data-name="Citrus Blossom Honey"
-                            data-price="15,00"
-                            data-code="22"
-                            data-weight="450"
-                            >
-                                <a href="product.html">
-                                    <img src="assets/images/480 (4).jpeg" alt="image" >
-                                </a>
-                                <div class="body_card">
-                                    <a href="product.html">
-                                        <h3>Citrus Blossom Honey</h3>
-                                    </a>
-                                    <h3 class="price" >$15.00USD</h3>
-                                    <button class="btn-primary" onclick="addProductToCart(this.closest('.card-item'))" >Buy Now</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev store-prev"></div>
-                    <div class="swiper-button-next store-next"></div>
+            <div class="faq-container">
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h2>What is raw honey?</h2>
+                  <div class="faq-toggle">
+                    <span></span>
+                    <span class="toggle-ele"></span>
+                  </div>
                 </div>
+                <div class="faq-answer">
+                  <p>
+                    Raw honey is honey as it is in the beehive. Raw honey is
+                    made by extracting honey from the honeycombs and separating
+                    it from impurities. It doesn't contain any hidden sugars and
+                    is not pasteurized or processed.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h2>Can your honey cause allergies?</h2>
+                  <div class="faq-toggle">
+                    <span></span>
+                    <span class="toggle-ele"></span>
+                  </div>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    We sell pure organic honey but it can cause allergies,
+                    indeed. Typical symptoms are the same as common pollen
+                    allergy symptoms: runny nose, sneezing, and swelling.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h2>What payment options do you provide?</h2>
+                  <div class="faq-toggle">
+                    <span></span>
+                    <span class="toggle-ele"></span>
+                  </div>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    We accept Visa and MasterCard cards issued by any American
+                    bank. You can also use PayPal.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h2>Why does the assortment change sometimes?</h2>
+                  <div class="faq-toggle">
+                    <span></span>
+                    <span class="toggle-ele"></span>
+                  </div>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    We bottle honey 3-4 times per year, according to the harvest
+                    seasons. Our capabilities are limited to around 3000 jars a
+                    year. Therefore, depending on the season, there may be
+                    different honey in our assortment, and some products may be
+                    temporarily unavailable.
+                  </p>
+                </div>
+              </div>
             </div>
-        </section>
-        
-        <!--============ ORDER ============-->
-        <section class="order">
-            <div class="backgourng-top"></div>
+          </div>
+        </div>
+      </section>
 
-            
-            <div class="container">
-                <h5 class="section-label">HOW TO ORDER</h5>
-                <h1 class="section-title">WANT TO ORDER HONEY?</h1>
-                <p class="section-description">We are a small family-owned swath chain in California and we produce a limited amount of honey every season. If you want to buy honey, the information below is for you:
-                </p>
-
-                <div class="order-container">
-                    <div class="box-order">
-                        <img src="assets/images/icon12.svg" alt="image">
-                        <h3>1. Wait a Bit</h3>
-                        <p>We harvest honey approximately 4 times a year, excluding winter.</p>
-                    </div>
-
-                    <div class="box-order">
-                        <img src="assets/images/icon13.svg" alt="image">
-                        <h3>2. Choose Honey Type</h3>
-                        <p>Depending on the season, there may be different types of recently bottled honey on our site.</p>
-                    </div>
-
-                    <div class="box-order">
-                        <img src="assets/images/icon14.svg" alt="image">
-                        <h3>3. Order & Enjoy</h3>
-                        <p>We are really quick at shipping, so you'll get your parcel in a couple of days.</p>
-                    </div>
-                </div>
-                <a class="btn-primary" href="#">Have a Special Request</a>
-            </div>
-        </section>
-
-        <!--============ TESTIMONIALS ============-->
-        <section class="testimonials" id="testimonials">
-            <div class="container">
-                <h5 class="section-label">TESTIMONIALS</h5>
-                <h1 class="section-title">WHAT OUR CLIENTS SAY</h1>
-                <p class="section-description">We are glad that our honey is to our clients' liking. Your reviews and warm words of appreciation make us better! 
-                </p>
-
-                <div class="sliders">
-                    <!-- Slider main container -->
-                    <div class="testimonials_slider swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide card-item">
-                                <div class="body_card">
-                                    <img src="assets/images/user1.jpeg" alt="user Image" class="image">
-                                    <h3>Jessica Peterson</h3>
-                                    <blockquote>“This is great honey, 100% natural! It is not the first time I order honey from this company, and every time I know that I will get delicious, high-quality, not crystallized honey. I use honey as a topping for pancakes, various desserts, and marinades. It is delicious and my children also like this honey!"
-                                    </blockquote>
-                                    <p class="post-date">October 28, 2024</p>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item">
-                                <div class="body_card">
-                                    <img src="assets/images/user-2.png" alt="user Image">
-                                    <h3>Dean Nillstrom</h3>
-                                    <blockquote>“Nowadays it is not so easy to find really good, tasty, and natural honey. I first tried the HoneyBee honey several years ago, and since then I have been a regular customer of this producer. I know for sure that these guys work with feeling and sell real honey from their swaths. I am always happy with the product I receive."
-                                    </blockquote>
-                                    <p class="post-date">February 12, 2024</p>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card-item">
-                                <div class="body_card">
-                                    <img src="assets/images/user2.jpeg" alt="user Image" class="image">
-                                    <h3>Diana Fergusson</h3>
-                                    <blockquote>
-                                        “Having tasted this honey once, I no longer needed alternatives. This is the tastiest honey I've ever tried! I buy different types of honey, from clover to buckwheat. Each jar of honey is a real triumph of taste. This is real honey — thick, aromatic, dark, and moderately sweet. Exactly what I need!"
-                                    </blockquote>
-                                    <p class="post-date">April 18, 2024</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev testimonials-prev"></div>
-                    <div class="swiper-button-next testimonials-next"></div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination swiper-pagination-testimonials"></div>
-                </div>
-            </div>
-        </section>
-
-        <!--============ STATS NUMBER ============-->
-        <section class="stats-number">
-            <div class="container">
-
-                <div class="box-stat">
-                    <h1 class="section-title">2574</h1>
-                    <h3>Honey jars produced in 2022</h3>
-                </div>
-
-                <div class="box-stat">
-                    <h1 class="section-title">130</h1>
-                    <h3>Customers every month</h3>
-                </div>
-
-                <div class="box-stat">
-                    <h1 class="section-title">12</h1>
-                    <h3>Swaths in California</h3>
-                </div>
-
-                <div class="box-stat">
-                    <h1 class="section-title">3946</h1>
-                    <h3>Bees working for you</h3>
-                </div>
-
-            </div>
-        </section>
-
-        <!--============ BLOG ============-->
-        <section class="blog">
-            <h5 class="section-label">BLOG</h5>
-            <h1 class="section-title">LEARN MORE ABOUT HONEYBEE</h1>
-            <p class="section-description">Think that honey production is boring? Not at all! Read our blog and the latest news from our swaths to learn more!
+      <!--============ CONTACT ============-->
+      <section class="contact" id="contact_us">
+        <div class="container">
+          <div class="data-contact">
+            <h5 class="section-label">CONTACTS</h5>
+            <h1 class="section-title">CONTACT US ANYTIME</h1>
+            <p class="section-description">
+              Feel free to contact us for any inquiries or commercial offers:
             </p>
-            <div class="container">
-                <div class="sliders">
-                    <!-- Slider main container -->
-                    <div class="blog_slider swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide card-item">
-                                <div class="body_card">
-                                    <img src="assets/images/news-2.jpg" alt="">
-                                    <p class="post-date">FEBRUARY 7, 2024</p>
-                                    <h3>What is Natural Honey?</h3>
-                                    <p>Let's see how to distinguish natural honey from artificial honey. </p>
-                                </div>
-                            </div>
 
-                            <div class="swiper-slide card-item">
-                                <div class="body_card">
-                                    <img src="assets/images/news-3.jpg" alt="">
-                                    <p class="post-date">MARCH 10, 2024</p>
-                                    <h3>New Season is Here!</h3>
-                                    <p>After winter, work in our Californian swaths is in full swing again.</p>
-                                </div>
-                            </div>
+            <div class="data-info">
+              <div class="info-group">
+                <h3>Address</h3>
+                <p>
+                  44670 Mattole Rd, Honeydew, <br />
+                  CA 95545
+                </p>
+              </div>
 
-                            <div class="swiper-slide card-item">
-                                <div class="body_card">
-                                    <img src="assets/images/news-1.jpg" alt="">
-                                    <p class="post-date">MARCH 17, 2023</p>
-                                    <h3>Honey in Jars</h3>
-                                    <p>Why is honey usually sold in glass jars? <br> Our expert explains.</p>
-                                </div>
-                            </div>
+              <div class="info-group">
+                <h3>Hours</h3>
+                <p>
+                  Monday - Saturday: 11 AM - 9 PM <br />
+                  Sunday: 11 AM - 7 PM
+                </p>
+              </div>
 
-                            <div class="swiper-slide card-item">
-                                <div class="body_card">
-                                    <img src="assets/images/news-4.jpg" alt="">
-                                    <p class="post-date">APRIL 12, 2023</p>
-                                    <h3>How is Honey Harvested?</h3>
-                                    <p>After winter, work in our Californian <br> swaths is in full swing again</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev blog-prev"></div>
-                    <div class="swiper-button-next blog-next"></div>
-                </div>
-            </div>
-        </section>
-
-        <!--============ FAQ ============-->
-        <section class="faq">
-            <div class="container">
-                <img src="assets/images/60a6203d80a13d0021b9d5b9_optimized_900_c900x1000-0x0.jpeg" alt="image">
-                <div class="data-faq">
-                    <h5 class="section-label">FAQ</h5>
-                    <h1 class="section-title">HONEY QUESTIONS</h1>
-                    <p class="section-description">Below are the most popular questions from our clients.</p>
-
-                    <div class="faq-container">
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h2>What is raw honey?</h2>
-                                <div class="faq-toggle">
-                                    <span></span>
-                                    <span class="toggle-ele"></span>
-                                </div>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Raw honey is honey as it is in the beehive. Raw honey is made by extracting honey from the honeycombs and separating it from impurities. It doesn't contain any hidden sugars and is not pasteurized or processed.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h2>Can your honey cause allergies?</h2>
-                                <div class="faq-toggle">
-                                    <span></span>
-                                    <span class="toggle-ele"></span>
-                                </div>
-                            </div>
-                            <div class="faq-answer">
-                                <p>We sell pure organic honey but it can cause allergies, indeed. Typical symptoms are the same as common pollen allergy symptoms: runny nose, sneezing, and swelling.
-                                </p>
-                            </div>
-                        </div>
-
-
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h2>What payment options do you provide?</h2>
-                                <div class="faq-toggle">
-                                    <span></span>
-                                    <span class="toggle-ele"></span>
-                                </div>
-                            </div>
-                            <div class="faq-answer">
-                                <p>We accept Visa and MasterCard cards issued by any American bank. You can also use PayPal.
-                                </p>
-                            </div>
-                        </div>
-
-
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h2>Why does the assortment change sometimes?</h2>
-                                <div class="faq-toggle">
-                                    <span></span>
-                                    <span class="toggle-ele"></span>
-                                </div>
-                            </div>
-                            <div class="faq-answer">
-                                <p>We bottle honey 3-4 times per year, according to the harvest seasons. Our capabilities are limited to around 3000 jars a year. Therefore, depending on the season, there may be different honey in our assortment, and some products may be temporarily unavailable.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <div class="info-group">
+                <h3>Contacts</h3>
+                <p>
+                  +1 (234) 567 89 00 <br />
+                  honeybee@email.com
+                </p>
+              </div>
             </div>
 
-        </section>
-
-        <!--============ CONTACT ============-->
-        <section class="contact" id="contact_us">
-            <div class="container">
-                <div class="data-contact">
-                    <h5 class="section-label">CONTACTS</h5>
-                    <h1 class="section-title">CONTACT US ANYTIME</h1>
-                    <p class="section-description">Feel free to contact us for any inquiries or commercial offers:</p>
-
-                    <div class="data-info">
-                        <div class="info-group">
-                            <h3>Address</h3>
-                            <p>
-                                44670 Mattole Rd, Honeydew, <br>
-                                CA 95545
-                            </p>
-                        </div>
-
-                        <div class="info-group">
-                            <h3>Hours</h3>
-                            <p>
-                                Monday - Saturday: 11 AM - 9 PM <br>
-                                Sunday: 11 AM - 7 PM
-                            </p>
-                        </div>
-
-                        <div class="info-group">
-                            <h3>Contacts</h3>
-                            <p>
-                                +1 (234) 567 89 00 <br>
-                                honeybee@email.com
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d698150.6230082805!2d8.2231001!3d46.8800804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ff3d94530bdab%3A0xb5df0b1031f484c4!2sSelbstbedienungs%20Hofladen%20Imkerei%20Wilen!5e0!3m2!1sar!2ssa!4v1733448809404!5m2!1sar!2ssa" width="570" height="244" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-
-                <form class="form" action="#">
-                    <input type="text" class="input required" placeholder="Enter your full name*" required>
-                    <input type="tel" class="input required" placeholder="Enter your phone number*" required min="9">
-                    <input type="email" class="input required" placeholder="Enter your e-mail*" required>
-                    <textarea class="input" placeholder="Type your message"></textarea>
-                    <input type="submit" class="btn-primary" id="input_request" value="Request a Quote">
-                </form>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d698150.6230082805!2d8.2231001!3d46.8800804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ff3d94530bdab%3A0xb5df0b1031f484c4!2sSelbstbedienungs%20Hofladen%20Imkerei%20Wilen!5e0!3m2!1sar!2ssa!4v1733448809404!5m2!1sar!2ssa"
+                width="570"
+                height="244"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
-        </section>
+          </div>
 
-        <div class="pop-up-contact" id="pop_up_contact">
-            <i class="fa-solid fa-xmark close" id="close"></i>
-            <img src="./assets/images/done.png" alt="done">
-            <h4>Thank you!</h4>
-            <p>We will contact you shortly.</p>
-            <button class="btn-primary">ok</button>
+          <form class="form" action="#">
+            <input
+              type="text"
+              class="input required"
+              placeholder="Enter your full name*"
+              required
+            />
+            <input
+              type="tel"
+              class="input required"
+              placeholder="Enter your phone number*"
+              required
+              min="9"
+            />
+            <input
+              type="email"
+              class="input required"
+              placeholder="Enter your e-mail*"
+              required
+            />
+            <textarea class="input" placeholder="Type your message"></textarea>
+            <input
+              type="submit"
+              class="btn-primary"
+              id="input_request"
+              value="Request a Quote"
+            />
+          </form>
         </div>
-        <div class="pop-up-shadow" id="pop_up_shadow">
+      </section>
 
-        </div>
-        
+      <div class="pop-up-contact" id="pop_up_contact">
+        <i class="fa-solid fa-xmark close" id="close"></i>
+        <img src="./assets/images/done.png" alt="done" />
+        <h4>Thank you!</h4>
+        <p>We will contact you shortly.</p>
+        <button class="btn-primary">ok</button>
+      </div>
+      <div class="pop-up-shadow" id="pop_up_shadow"></div>
 
-        <!--============ HONEY GALLERY ============-->
-        <section class="honey-gallery">
-                <img src="assets/images/gallery-5.jpg" alt="image">
-                <img src="assets/images/gallery-4.jpg" alt="image">
-                <img src="assets/images/gallery-1.jpeg" alt="image">
-                <img src="assets/images/gallery-3.jpg" alt="image">
-                <img src="assets/images/gallery-2.jpg" alt="image">
-        </section>
+      <!--============ HONEY GALLERY ============-->
+      <section class="honey-gallery">
+        <img src="assets/images/gallery-5.jpg" alt="image" />
+        <img src="assets/images/gallery-4.jpg" alt="image" />
+        <img src="assets/images/gallery-1.jpeg" alt="image" />
+        <img src="assets/images/gallery-3.jpg" alt="image" />
+        <img src="assets/images/gallery-2.jpg" alt="image" />
+      </section>
     </main>
 
     <!--============ SHOPPING PAGE ============-->
     <div class="overlay" id="overlay">
-        <div class="" id="change-height">
-            <div class="shopping-page" id="shopping_page">
-                <div class="header-shopping-page">
-                    <h2>Shopping cart</h2>
-                    <i class="fa-solid fa-xmark" id="close_shopping_page"></i>
-                </div>
-                <div class="container-shopping" id="container_shopping">
-        
-                    <div class="layer-empty" id="layer_empty">
-                        <p>Shopping cart is empty</p>
-                        <p>Continue shopping to add product to your cart</p>
-                    </div>
-        
-                    <div class="body-shopping-page">
-                        <p>Products</p>
-                        <div class="shop-carts" id="shop_carts">
-                            <!-- <div class="cart-item">
+      <div class="" id="change-height">
+        <div class="shopping-page" id="shopping_page">
+          <div class="header-shopping-page">
+            <h2>Shopping cart</h2>
+            <i class="fa-solid fa-xmark" id="close_shopping_page"></i>
+          </div>
+          <div class="container-shopping" id="container_shopping">
+            <div class="layer-empty" id="layer_empty">
+              <p>Shopping cart is empty</p>
+              <p>Continue shopping to add product to your cart</p>
+            </div>
+
+            <div class="body-shopping-page">
+              <p>Products</p>
+              <div class="shop-carts" id="shop_carts">
+                <!-- <div class="cart-item">
                                 <div class="item-image">
                                     <img src="./assets/images/480 (2).jpeg" alt="cart item">
                                 </div>
@@ -772,103 +935,140 @@
                                     <i class="fa-regular fa-trash-can trash"></i>
                                 </div>
                             </div> -->
-                        </div>
-                    </div>
-            
-                    <div class="promo-total">
-                        <div>
-                            <button class="promo-code" id="promo_code">Promo code</button>
-                            <div class="container-promo-input" id="container_promo_input">
-                                <div>
-                                    <input type="text" placeholder="Enter Promo code" id="input_promo">
-                                    <p class="promo-invalid" id="promo_invalid">Promo code can't be applied</p>
-                                </div>
-                                <button id="promo_ok">ok</button>
-                            </div>
-                        </div>
-                        <div class="container_total">Total: <p class="total" id="total">$60,000</p></div>
-                    </div>
-            
-                    <div class="place">
-                        Place an order
-                    </div>
-                    
-                    <form action="order-confirmation.html">
-                        <div class="input-container">
-                            <p>Name <span>*</span></p>
-                            <input type="text" name="name" id="name_input" placeholder="Your Name" required>
-                        </div>
-            
-                        <div class="input-container">
-                            <p>Email <span>*</span></p>
-                            <input type="email" name="email" id="email_input" placeholder="Your email address" required>
-                        </div>
-            
-                        <div class="input-container">
-                            <p>Phone <span>*</span></p>
-                            <input type="text" name="phone" id="phone_input" placeholder="Your Phone" required>
-                        </div>
-            
-                        <div class="input-container">
-                            <p>Comment</p>
-                            <textarea type="text" name="comment" id="comment_input" placeholder="Your comment"></textarea>
-                        </div>
-            
-                        <input type="submit" class="btn-primary" id="order_honey" value="Order">
-                    </form>
-                </div>
+              </div>
             </div>
+
+            <div class="promo-total">
+              <div>
+                <button class="promo-code" id="promo_code">Promo code</button>
+                <div class="container-promo-input" id="container_promo_input">
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Enter Promo code"
+                      id="input_promo"
+                    />
+                    <p class="promo-invalid" id="promo_invalid">
+                      Promo code can't be applied
+                    </p>
+                  </div>
+                  <button id="promo_ok">ok</button>
+                </div>
+              </div>
+              <div class="container_total">
+                Total:
+                <p class="total" id="total">$60,000</p>
+              </div>
+            </div>
+
+            <div class="place">Place an order</div>
+
+            <form action="order-confirmation.html">
+              <div class="input-container">
+                <p>Name <span>*</span></p>
+                <input
+                  type="text"
+                  name="name"
+                  id="name_input"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+
+              <div class="input-container">
+                <p>Email <span>*</span></p>
+                <input
+                  type="email"
+                  name="email"
+                  id="email_input"
+                  placeholder="Your email address"
+                  required
+                />
+              </div>
+
+              <div class="input-container">
+                <p>Phone <span>*</span></p>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone_input"
+                  placeholder="Your Phone"
+                  required
+                />
+              </div>
+
+              <div class="input-container">
+                <p>Comment</p>
+                <textarea
+                  type="text"
+                  name="comment"
+                  id="comment_input"
+                  placeholder="Your comment"
+                ></textarea>
+              </div>
+
+              <input
+                type="submit"
+                class="btn-primary"
+                id="order_honey"
+                value="Order"
+              />
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-    
+
     <!--============ CART SHOPPING ============-->
     <div class="cart-shopping" id="cart_shopping" data-count="0">
-        <i class="fa-solid fa-cart-shopping"></i>
+      <i class="fa-solid fa-cart-shopping"></i>
     </div>
-    
+
     <!--============ FOOTER ============-->
     <footer>
-        <div class="container">
-            <div class="logo">
-                <img src="assets/images/logotype2.svg" alt="Logo">
-                <span>Honey Production Company</span>
-            </div>
-            <ul class="nav__list">
-                <li>
-                    <a href="#about" class="nav__link">About Us</a>
-                </li>
-
-                <li>
-                    <a href="#type" class="nav__link">Types of Honey</a>
-                </li>
-
-                <li>
-                    <a href="#store" class="nav__link">Store</a>
-                </li>
-
-                <li>
-                    <a href="#testimonials" class="nav__link">Testimonials</a>
-                </li>
-
-                <li>
-                    <a href="#contact_us" class="nav__link">Contact Us</a>
-                </li>
-            </ul>
-
-            <div class="social">
-                <div class="social_link">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </div>
-                <div class="social_link">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-                <div class="social_link">
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-            </div>
-
-            <p class="copyright">&copy; Created by <span>Mohammed</span> All rights Reserved</p>
+      <div class="container">
+        <div class="logo">
+          <img src="assets/images/logotype2.svg" alt="Logo" />
+          <span>Honey Production Company</span>
         </div>
+        <ul class="nav__list">
+          <li>
+            <a href="#about" class="nav__link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#type" class="nav__link">Types of Honey</a>
+          </li>
+
+          <li>
+            <a href="#store" class="nav__link">Store</a>
+          </li>
+
+          <li>
+            <a href="#testimonials" class="nav__link">Testimonials</a>
+          </li>
+
+          <li>
+            <a href="#contact_us" class="nav__link">Contact Us</a>
+          </li>
+        </ul>
+
+        <div class="social">
+          <div class="social_link">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="social_link">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="social_link">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+
+        <p class="copyright">
+          &copy; Created by <span>Mohammed</span> All rights Reserved
+        </p>
+      </div>
     </footer>
 
     <!--============ MAIN JS ============-->
@@ -879,7 +1079,5 @@
     <script src="assets/js/swiper_ltr.js"></script>
     <!--============ MAIN LOGIC JS ============-->
     <script src="assets/js/mainLogic.js"></script>
-
-
-</body>
+  </body>
 </html>

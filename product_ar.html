@@ -1,135 +1,151 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!--============ Render All Elements Normally ============-->
-    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
     <!--============ Font Awesome Library ============-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!--============ Main Template CSS File ============-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.min.css" />
 
     <!--============ Product CSS File ============-->
-    <link rel="stylesheet" href="assets/css/product.css">
+    <link rel="stylesheet" href="assets/css/product.css" />
 
     <!--============ Main Template Arabic lang CSS File ============-->
-    <link rel="stylesheet" href="assets/css/product_ar.css">
+    <link rel="stylesheet" href="assets/css/product_ar.css" />
 
     <!--============ Global Template CSS File ============-->
-    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/global.css" />
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 
-
-    :root {
-        --primary-font:"El Messiri", serif;
+      :root {
+        --primary-font: "El Messiri", serif;
         --secondary-font: "El Messiri", serif;
-        --bg-color: #F9F4F0;
-    }
+        --bg-color: #f9f4f0;
+      }
     </style>
-
-</head>
-<body>
+  </head>
+  <body>
     <!--============ HEADER ============-->
     <header>
-        <nav class="nav container">
-            <a href="index.ar.html" class="nav__logo">
-                <img src="assets/images/logotype.svg" alt="image">
-            </a>
+      <nav class="nav container">
+        <a href="index.ar.html" class="nav__logo">
+          <img src="assets/images/logotype.svg" alt="image" />
+        </a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li>
-                        <a href="index.ar.html#about" class="nav__link">من نحن</a>
-                    </li>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a href="index.ar.html#about" class="nav__link">من نحن</a>
+            </li>
 
-                    <li>
-                        <a href="index.ar.html#type" class="nav__link">انواع العسل</a>
-                    </li>
+            <li>
+              <a href="index.ar.html#type" class="nav__link">انواع العسل</a>
+            </li>
 
-                    <li>
-                        <a href="index.ar.html#store" class="nav__link">المتجر</a>
-                    </li>
+            <li>
+              <a href="index.ar.html#store" class="nav__link">المتجر</a>
+            </li>
 
-                    <li>
-                        <a href="index.ar.html#testimonials" class="nav__link">التعليقات</a>
-                    </li>
+            <li>
+              <a href="index.ar.html#testimonials" class="nav__link"
+                >التعليقات</a
+              >
+            </li>
 
-                    <li>
-                        <a href="index.ar.html#contact_us" class="nav__link">تواصل معنا</a>
-                    </li>
+            <li>
+              <a href="index.ar.html#contact_us" class="nav__link"
+                >تواصل معنا</a
+              >
+            </li>
 
-                    <li>
-                        <a href="index.ar.html#store" class="btn__link">شراء عسل</a>
-                    </li>
-                </ul>
+            <li>
+              <a href="index.ar.html#store" class="btn__link">شراء عسل</a>
+            </li>
+          </ul>
 
-                <!-- Close button -->
-                <div class="nav__close" id="nav-close">
-                    <i class="fa-solid fa-x"></i>
-                </div>
-            </div>
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </div>
 
-            <!-- Toggle button -->
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </nav>
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
     </header>
 
     <!--============ PRODUCT DEATAILS ============-->
     <section class="section product-deatails">
-        <div class="container" id="container_product">
-            <div class="image-container">
-                <img src="./assets/images/480 (1).jpeg" alt="">
-            </div>
-            <div class="product-info">
-                <p class="product-available">متوفر في المخزون</p>
-                <h1 class="title-product" id="title_product">Wildflower Honey</h1>
-                <p class="product-code" id="product_code">Product code 18</p>
-                <strong class="product-price" id="product_price">$7,00 USD</strong>
-                <hr>
-
-                <div class="quantity">
-                    <input type="number" class="input-count" name="" id="product_count" value="1">
-                    <button class="btn-primary" id="addToCart">Add to cart</button>
-                </div>
-
-                <p class="description">Description</p>
-
-                <hr>
-
-                <p class="description-text">This honey is harvested from sunny Californian meadows. It features mild taste and intense aroma. Great for your breakfasts!</p>
-
-                <p class="weight">Weight: 300g</p>
-            </div>
+      <div class="container" id="container_product">
+        <div class="image-container">
+          <img src="./assets/images/480 (1).jpeg" alt="" />
         </div>
+        <div class="product-info">
+          <p class="product-available">متوفر في المخزون</p>
+          <h1 class="title-product" id="title_product">Wildflower Honey</h1>
+          <p class="product-code" id="product_code">Product code 18</p>
+          <strong class="product-price" id="product_price">$7,00 USD</strong>
+          <hr />
+
+          <div class="quantity">
+            <input
+              type="number"
+              class="input-count"
+              name=""
+              id="product_count"
+              value="1"
+            />
+            <button class="btn-primary" id="addToCart">Add to cart</button>
+          </div>
+
+          <p class="description">Description</p>
+
+          <hr />
+
+          <p class="description-text">
+            This honey is harvested from sunny Californian meadows. It features
+            mild taste and intense aroma. Great for your breakfasts!
+          </p>
+
+          <p class="weight">Weight: 300g</p>
+        </div>
+      </div>
     </section>
 
     <!--============ SHOPPING PAGE ============-->
     <div class="overlay" id="overlay">
-        <div class="" id="change-height">
-            <div class="shopping-page" id="shopping_page">
-                <div class="header-shopping-page">
-                    <h2>السلة</h2>
-                    <i class="fa-solid fa-xmark" id="close_shopping_page"></i>
-                </div>
-                <div class="container-shopping" id="container_shopping">
-        
-                    <div class="layer-empty" id="layer_empty">
-                        <p>عربة التسوق فارغة</p>
-                        <p>تابع التسوق لإضافة منتج إلى عربة التسوق الخاصة بك.</p>
-                    </div>
-        
-                    <div class="body-shopping-page">
-                        <p>المنتجات</p>
-                        <div class="shop-carts" id="shop_carts">
-                            <!-- <div class="cart-item">
+      <div class="" id="change-height">
+        <div class="shopping-page" id="shopping_page">
+          <div class="header-shopping-page">
+            <h2>السلة</h2>
+            <i class="fa-solid fa-xmark" id="close_shopping_page"></i>
+          </div>
+          <div class="container-shopping" id="container_shopping">
+            <div class="layer-empty" id="layer_empty">
+              <p>عربة التسوق فارغة</p>
+              <p>تابع التسوق لإضافة منتج إلى عربة التسوق الخاصة بك.</p>
+            </div>
+
+            <div class="body-shopping-page">
+              <p>المنتجات</p>
+              <div class="shop-carts" id="shop_carts">
+                <!-- <div class="cart-item">
                                 <div class="item-image">
                                     <img src="./assets/images/480 (2).jpeg" alt="cart item">
                                 </div>
@@ -140,103 +156,140 @@
                                     <i class="fa-regular fa-trash-can trash"></i>
                                 </div>
                             </div> -->
-                        </div>
-                    </div>
-            
-                    <div class="promo-total">
-                        <div>
-                            <button class="promo-code" id="promo_code">كود الخصم</button>
-                            <div class="container-promo-input" id="container_promo_input">
-                                <div>
-                                    <input type="text" placeholder="ادخل كود الخصم" id="input_promo">
-                                    <p class="promo-invalid" id="promo_invalid">كود الخصم غير صالح</p>
-                                </div>
-                                <button id="promo_ok">تطبيق</button>
-                            </div>
-                        </div>
-                        <div class="container_total">المجموع: <p class="total" id="total">$60,000</p></div>
-                    </div>
-            
-                    <div class="place">
-                        Place an order
-                    </div>
-                    
-                    <form action="order-confirmation_ar.html">
-                        <div class="input-container">
-                            <p>الاسم <span>*</span></p>
-                            <input type="text" name="name" id="name_input" placeholder="اسمك" required>
-                        </div>
-            
-                        <div class="input-container">
-                            <p>البريد الإكتروني <span>*</span></p>
-                            <input type="email" name="email" id="email_input" placeholder="بريدك الإكتروني" required>
-                        </div>
-            
-                        <div class="input-container">
-                            <p>رقم الهاتف <span>*</span></p>
-                            <input type="text" name="phone" id="phone_input" placeholder="رقم هاتفك" required>
-                        </div>
-            
-                        <div class="input-container">
-                            <p>التعليق</p>
-                            <textarea type="text" name="comment" id="comment_input" placeholder="تعليقك"></textarea>
-                        </div>
-            
-                        <input type="submit" class="btn-primary" id="order_honey" value="طلب">
-                    </form>
-                </div>
+              </div>
             </div>
+
+            <div class="promo-total">
+              <div>
+                <button class="promo-code" id="promo_code">كود الخصم</button>
+                <div class="container-promo-input" id="container_promo_input">
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="ادخل كود الخصم"
+                      id="input_promo"
+                    />
+                    <p class="promo-invalid" id="promo_invalid">
+                      كود الخصم غير صالح
+                    </p>
+                  </div>
+                  <button id="promo_ok">تطبيق</button>
+                </div>
+              </div>
+              <div class="container_total">
+                المجموع:
+                <p class="total" id="total">$60,000</p>
+              </div>
+            </div>
+
+            <div class="place">Place an order</div>
+
+            <form action="order-confirmation_ar.html">
+              <div class="input-container">
+                <p>الاسم <span>*</span></p>
+                <input
+                  type="text"
+                  name="name"
+                  id="name_input"
+                  placeholder="اسمك"
+                  required
+                />
+              </div>
+
+              <div class="input-container">
+                <p>البريد الإكتروني <span>*</span></p>
+                <input
+                  type="email"
+                  name="email"
+                  id="email_input"
+                  placeholder="بريدك الإكتروني"
+                  required
+                />
+              </div>
+
+              <div class="input-container">
+                <p>رقم الهاتف <span>*</span></p>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone_input"
+                  placeholder="رقم هاتفك"
+                  required
+                />
+              </div>
+
+              <div class="input-container">
+                <p>التعليق</p>
+                <textarea
+                  type="text"
+                  name="comment"
+                  id="comment_input"
+                  placeholder="تعليقك"
+                ></textarea>
+              </div>
+
+              <input
+                type="submit"
+                class="btn-primary"
+                id="order_honey"
+                value="طلب"
+              />
+            </form>
+          </div>
         </div>
+      </div>
     </div>
 
     <!--============ CART SHOPPING ============-->
     <div class="cart-shopping" id="cart_shopping" data-count="0">
-        <i class="fa-solid fa-cart-shopping"></i>
+      <i class="fa-solid fa-cart-shopping"></i>
     </div>
-    
+
     <!--============ FOOTER ============-->
     <footer>
-        <div class="container">
-            <div class="logo">
-                <img src="assets/images/logotype2.svg" alt="Logo">
-                <span>شركة إنتاج العسل</span>
-            </div>
-            <ul class="nav__list">
-                <li>
-                    <a href="index.ar.html#about" class="nav__link">من نحن</a>
-                </li>
-
-                <li>
-                    <a href="index.ar.html#type" class="nav__link">انواع العسل</a>
-                </li>
-
-                <li>
-                    <a href="index.ar.html#store" class="nav__link">المتجر</a>
-                </li>
-
-                <li>
-                    <a href="index.ar.html#testimonials" class="nav__link">التعليقات</a>
-                </li>
-
-                <li>
-                    <a href="index.ar.html#contact_us" class="nav__link">تواصل معنا</a>
-                </li>
-            </ul>
-
-            <div class="social">
-                <div class="social_link">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </div>
-                <div class="social_link">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-                <div class="social_link">
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-            </div>
-
-            <p class="copyright">&copy; تم الإنشاء بواسطة  <span>محمد العمري</span> جميع الحقوق محفوظة</p>
+      <div class="container">
+        <div class="logo">
+          <img src="assets/images/logotype2.svg" alt="Logo" />
+          <span>شركة إنتاج العسل</span>
         </div>
+        <ul class="nav__list">
+          <li>
+            <a href="index.ar.html#about" class="nav__link">من نحن</a>
+          </li>
+
+          <li>
+            <a href="index.ar.html#type" class="nav__link">انواع العسل</a>
+          </li>
+
+          <li>
+            <a href="index.ar.html#store" class="nav__link">المتجر</a>
+          </li>
+
+          <li>
+            <a href="index.ar.html#testimonials" class="nav__link">التعليقات</a>
+          </li>
+
+          <li>
+            <a href="index.ar.html#contact_us" class="nav__link">تواصل معنا</a>
+          </li>
+        </ul>
+
+        <div class="social">
+          <div class="social_link">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="social_link">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="social_link">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+
+        <p class="copyright">
+          &copy; تم الإنشاء بواسطة <span>محمد العمري</span> جميع الحقوق محفوظة
+        </p>
+      </div>
     </footer>
 
     <!--============ MAIN JSs ============-->
@@ -245,6 +298,5 @@
     <script src="./assets/js/mainLogic.js"></script>
     <!--============ SWIPER JS ============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
-
-</body>
+  </body>
 </html>

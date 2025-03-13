@@ -1,119 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!--============ Render All Elements Normally ============-->
-    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
     <!--============ Font Awesome Library ============-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!--============ Main Template CSS File ============-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.min.css" />
 
     <!--============ Product CSS File ============-->
-    <link rel="stylesheet" href="assets/css/product.css">
+    <link rel="stylesheet" href="assets/css/product.css" />
 
     <!--============ Global Template CSS File ============-->
-    <link rel="stylesheet" href="assets/css/global.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/global.css" />
+  </head>
+  <body>
     <!--============ HEADER ============-->
     <header>
-        <nav class="nav container">
-            <a href="index.html" class="nav__logo">
-                <img src="assets/images/logotype.svg" alt="image">
-            </a>
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/images/logotype.svg" alt="image" />
+        </a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li>
-                        <a href="index.html#about" class="nav__link">About Us</a>
-                    </li>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a href="index.html#about" class="nav__link">About Us</a>
+            </li>
 
-                    <li>
-                        <a href="index.html#type" class="nav__link">Types of Honey</a>
-                    </li>
+            <li>
+              <a href="index.html#type" class="nav__link">Types of Honey</a>
+            </li>
 
-                    <li>
-                        <a href="index.html#store" class="nav__link">Store</a>
-                    </li>
+            <li>
+              <a href="index.html#store" class="nav__link">Store</a>
+            </li>
 
-                    <li>
-                        <a href="index.html#testimonials" class="nav__link">Testimonials</a>
-                    </li>
+            <li>
+              <a href="index.html#testimonials" class="nav__link"
+                >Testimonials</a
+              >
+            </li>
 
-                    <li>
-                        <a href="index.html#contact_us" class="nav__link">Contact Us</a>
-                    </li>
+            <li>
+              <a href="index.html#contact_us" class="nav__link">Contact Us</a>
+            </li>
 
-                    <li>
-                        <a href="index.html#sotre" class="btn__link">Buy Honey</a>
-                    </li>
-                </ul>
+            <li>
+              <a href="index.html#sotre" class="btn__link">Buy Honey</a>
+            </li>
+          </ul>
 
-                <!-- Close button -->
-                <div class="nav__close" id="nav-close">
-                    <i class="fa-solid fa-x"></i>
-                </div>
-            </div>
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </div>
 
-            <!-- Toggle button -->
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </nav>
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
     </header>
 
     <!--============ PRODUCT DEATAILS ============-->
     <section class="section product-deatails">
-        <div class="container" id="container_product">
-            <div class="image-container">
-                <img src="./assets/images/480 (1).jpeg" alt="">
-            </div>
-            <div class="product-info">
-                <p class="product-available">In stock</p>
-                <h1 class="title-product" id="title_product">Wildflower Honey</h1>
-                <p class="product-code" id="product_code">Product code 18</p>
-                <strong class="product-price" id="product_price">$7,00 USD</strong>
-                <hr>
-
-                <div class="quantity">
-                    <input type="number" class="input-count" name="" id="product_count" value="1">
-                    <button class="btn-primary" id="addToCart">Add to cart</button>
-                </div>
-
-                <p class="description">Description</p>
-
-                <hr>
-
-                <p class="description-text">This honey is harvested from sunny Californian meadows. It features mild taste and intense aroma. Great for your breakfasts!</p>
-
-                <p class="weight">Weight: 300g</p>
-            </div>
+      <div class="container" id="container_product">
+        <div class="image-container">
+          <img src="./assets/images/480 (1).jpeg" alt="" />
         </div>
+        <div class="product-info">
+          <p class="product-available">In stock</p>
+          <h1 class="title-product" id="title_product">Wildflower Honey</h1>
+          <p class="product-code" id="product_code">Product code 18</p>
+          <strong class="product-price" id="product_price">$7,00 USD</strong>
+          <hr />
+
+          <div class="quantity">
+            <input
+              type="number"
+              class="input-count"
+              name=""
+              id="product_count"
+              value="1"
+            />
+            <button class="btn-primary" id="addToCart">Add to cart</button>
+          </div>
+
+          <p class="description">Description</p>
+
+          <hr />
+
+          <p class="description-text">
+            This honey is harvested from sunny Californian meadows. It features
+            mild taste and intense aroma. Great for your breakfasts!
+          </p>
+
+          <p class="weight">Weight: 300g</p>
+        </div>
+      </div>
     </section>
 
     <!--============ SHOPPING PAGE ============-->
     <div class="overlay" id="overlay">
-        <div class="" id="change-height">
-            <div class="shopping-page" id="shopping_page">
-                <div class="header-shopping-page">
-                    <h2>Shopping cart</h2>
-                    <i class="fa-solid fa-xmark" id="close_shopping_page"></i>
-                </div>
-                <div class="container-shopping" id="container_shopping">
-        
-                    <div class="layer-empty" id="layer_empty">
-                        <p>Shopping cart is empty</p>
-                        <p>Continue shopping to add product to your cart</p>
-                    </div>
-        
-                    <div class="body-shopping-page">
-                        <p>Products</p>
-                        <div class="shop-carts" id="shop_carts">
-                            <!-- <div class="cart-item">
+      <div class="" id="change-height">
+        <div class="shopping-page" id="shopping_page">
+          <div class="header-shopping-page">
+            <h2>Shopping cart</h2>
+            <i class="fa-solid fa-xmark" id="close_shopping_page"></i>
+          </div>
+          <div class="container-shopping" id="container_shopping">
+            <div class="layer-empty" id="layer_empty">
+              <p>Shopping cart is empty</p>
+              <p>Continue shopping to add product to your cart</p>
+            </div>
+
+            <div class="body-shopping-page">
+              <p>Products</p>
+              <div class="shop-carts" id="shop_carts">
+                <!-- <div class="cart-item">
                                 <div class="item-image">
                                     <img src="./assets/images/480 (2).jpeg" alt="cart item">
                                 </div>
@@ -124,103 +140,140 @@
                                     <i class="fa-regular fa-trash-can trash"></i>
                                 </div>
                             </div> -->
-                        </div>
-                    </div>
-            
-                    <div class="promo-total">
-                        <div>
-                            <button class="promo-code" id="promo_code">Promo code</button>
-                            <div class="container-promo-input" id="container_promo_input">
-                                <div>
-                                    <input type="text" placeholder="Enter Promo code" id="input_promo">
-                                    <p class="promo-invalid" id="promo_invalid">Promo code can't be applied</p>
-                                </div>
-                                <button id="promo_ok">ok</button>
-                            </div>
-                        </div>
-                        <div class="container_total">Total: <p class="total" id="total">$60,000</p></div>
-                    </div>
-            
-                    <div class="place">
-                        Place an order
-                    </div>
-                    
-                    <form action="order-confirmation.html">
-                        <div class="input-container">
-                            <p>Name <span>*</span></p>
-                            <input type="text" name="name" id="name_input" placeholder="Your Name" required>
-                        </div>
-            
-                        <div class="input-container">
-                            <p>Email <span>*</span></p>
-                            <input type="email" name="email" id="email_input" placeholder="Your email address" required>
-                        </div>
-            
-                        <div class="input-container">
-                            <p>Phone <span>*</span></p>
-                            <input type="text" name="phone" id="phone_input" placeholder="Your Phone" required>
-                        </div>
-            
-                        <div class="input-container">
-                            <p>Comment</p>
-                            <textarea type="text" name="comment" id="comment_input" placeholder="Your comment"></textarea>
-                        </div>
-            
-                        <input type="submit" class="btn-primary" id="order_honey" value="Order">
-                    </form>
-                </div>
+              </div>
             </div>
+
+            <div class="promo-total">
+              <div>
+                <button class="promo-code" id="promo_code">Promo code</button>
+                <div class="container-promo-input" id="container_promo_input">
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Enter Promo code"
+                      id="input_promo"
+                    />
+                    <p class="promo-invalid" id="promo_invalid">
+                      Promo code can't be applied
+                    </p>
+                  </div>
+                  <button id="promo_ok">ok</button>
+                </div>
+              </div>
+              <div class="container_total">
+                Total:
+                <p class="total" id="total">$60,000</p>
+              </div>
+            </div>
+
+            <div class="place">Place an order</div>
+
+            <form action="order-confirmation.html">
+              <div class="input-container">
+                <p>Name <span>*</span></p>
+                <input
+                  type="text"
+                  name="name"
+                  id="name_input"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+
+              <div class="input-container">
+                <p>Email <span>*</span></p>
+                <input
+                  type="email"
+                  name="email"
+                  id="email_input"
+                  placeholder="Your email address"
+                  required
+                />
+              </div>
+
+              <div class="input-container">
+                <p>Phone <span>*</span></p>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone_input"
+                  placeholder="Your Phone"
+                  required
+                />
+              </div>
+
+              <div class="input-container">
+                <p>Comment</p>
+                <textarea
+                  type="text"
+                  name="comment"
+                  id="comment_input"
+                  placeholder="Your comment"
+                ></textarea>
+              </div>
+
+              <input
+                type="submit"
+                class="btn-primary"
+                id="order_honey"
+                value="Order"
+              />
+            </form>
+          </div>
         </div>
+      </div>
     </div>
 
     <!--============ CART SHOPPING ============-->
     <div class="cart-shopping" id="cart_shopping" data-count="0">
-        <i class="fa-solid fa-cart-shopping"></i>
+      <i class="fa-solid fa-cart-shopping"></i>
     </div>
-    
+
     <!--============ FOOTER ============-->
     <footer>
-        <div class="container">
-            <div class="logo">
-                <img src="assets/images/logotype2.svg" alt="Logo">
-                <span>Honey Production Company</span>
-            </div>
-            <ul class="nav__list">
-                <li>
-                    <a href="index.html#about" class="nav__link">About Us</a>
-                </li>
-
-                <li>
-                    <a href="index.html#type" class="nav__link">Types of Honey</a>
-                </li>
-
-                <li>
-                    <a href="index.html#store" class="nav__link">Store</a>
-                </li>
-
-                <li>
-                    <a href="index.html#testimonials" class="nav__link">Testimonials</a>
-                </li>
-
-                <li>
-                    <a href="index.html#contact_us" class="nav__link">Contact Us</a>
-                </li>
-            </ul>
-
-            <div class="social">
-                <div class="social_link">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </div>
-                <div class="social_link">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-                <div class="social_link">
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-            </div>
-
-            <p class="copyright">&copy; Created by <span>Mohammed</span> All rights Reserved</p>
+      <div class="container">
+        <div class="logo">
+          <img src="assets/images/logotype2.svg" alt="Logo" />
+          <span>Honey Production Company</span>
         </div>
+        <ul class="nav__list">
+          <li>
+            <a href="index.html#about" class="nav__link">About Us</a>
+          </li>
+
+          <li>
+            <a href="index.html#type" class="nav__link">Types of Honey</a>
+          </li>
+
+          <li>
+            <a href="index.html#store" class="nav__link">Store</a>
+          </li>
+
+          <li>
+            <a href="index.html#testimonials" class="nav__link">Testimonials</a>
+          </li>
+
+          <li>
+            <a href="index.html#contact_us" class="nav__link">Contact Us</a>
+          </li>
+        </ul>
+
+        <div class="social">
+          <div class="social_link">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="social_link">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="social_link">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+
+        <p class="copyright">
+          &copy; Created by <span>Mohammed</span> All rights Reserved
+        </p>
+      </div>
     </footer>
 
     <!--============ MAIN JS ============-->
@@ -229,6 +282,5 @@
     <script src="./assets/js/product.js"></script>
     <!--============ SWIPER JS ============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
-
-</body>
+  </body>
 </html>
